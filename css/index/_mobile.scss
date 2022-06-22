@@ -11,6 +11,7 @@ body {
     margin: 0px;
     margin: 0 auto;
     text-align: center;
+    display: grid;
 }
 
 #navbar {
@@ -18,8 +19,10 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+
     #logo {
         display: grid;
+
         img {
             height: 60px;
             width: 70px;
@@ -27,70 +30,113 @@ body {
             padding: 10px;
         }
     }
-    #nav_links{
+
+    #nav_links {
         display: none;
         grid-auto-flow: row;
-        a{
+
+        a {
             text-decoration: none;
             background-color: orange;
             color: white;
             font-size: 2rem;
         }
     }
-    .hamburger{
+
+    .hamburger {
         display: none;
     }
-    .label{
+
+    .label {
         display: grid;
     }
-    #menu_mini{
+
+    #menu_mini {
         height: 40px;
         justify-self: end;
         padding: 10px
     }
-    #show_content:checked #nav_links{
-        display:block;
+
+    #show_content:checked #nav_links {
+        display: block;
         background-color: orange;
         z-index: 5;
     }
 }
 
 #main {
+    display: grid;
     padding: 0px;
     margin: 0px;
+    width: 100%;
 
     #starting {
-        font-family: 'Caveat', cursive;
+        background-color: black;
+        font-family: cursive;
         justify-items: center;
         align-items: center;
-        padding: 2px;
-        margin: 2px;
         width: 100%;
-        min-height: 400px;
+        min-height: 80vh;
 
         #starting_image {
-            height: 700px;
+            height: 80vh;
             width: 100vw;
             object-fit: cover;
-            opacity: 1;
+            opacity: .7;
         }
 
         #starting_text {
-
             position: absolute;
-            top: 100px;
+            top: 90px;
+            z-index: 3;
+            font-weight: bold;
 
             h1 {
                 text-align: center;
                 color: orange;
-                font-size: 5rem;
+                font-size: 3rem;
             }
+
             .link {
                 a {
                     color: orange;
-                    font-size: 2rem;
+                    font-size: 1.5rem;
+                }
+            }
+
+            #starting_links {
+                display: grid;
+                position: relative;
+                top: 100px;
+                gap: 10px;
+
+                #or {
+                    color: orange;
+                    font-size: 1.9rem;
+                }
+
+                a {
+                    color: orange;
+                    text-decoration: none;
+                    font-size: 1.9rem;
+                    font-weight: bold;
+                    border: 1px solid #4a4948;
+                    border-radius: 10px;
+                    background-color: #232221;
                 }
             }
         }
+    }
+}
+
+#footer {
+    display: grid;
+    background-color: #232221;
+    color:white;
+    min-height: 20vh;
+    place-items: center;
+
+    #copyright {
+        align-self: center;
     }
 }
