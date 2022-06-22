@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Varela+Round&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#navbar {
+  background-color: orange;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+#navbar #logo {
+  display: grid;
+}
+#navbar #logo img {
+  height: 60px;
+  width: 70px;
+  justify-self: start;
+  padding: 10px;
+}
+#navbar #nav_links {
+  display: none;
+  grid-auto-flow: row;
+}
+#navbar #nav_links a {
+  text-decoration: none;
+  background-color: orange;
+  color: white;
+  font-size: 2rem;
+}
+#navbar .hamburger {
+  display: none;
+}
+#navbar .label {
+  display: grid;
+}
+#navbar #menu_mini {
+  height: 40px;
+  justify-self: end;
+  padding: 10px;
+}
+#navbar #show_content:checked #nav_links {
+  display: block;
+  background-color: orange;
+  z-index: 5;
+}
+
+#main {
+  padding: 0px;
+  margin: 0px;
+}
+#main #starting {
+  font-family: "Caveat", cursive;
+  justify-items: center;
+  align-items: center;
+  padding: 2px;
+  margin: 2px;
+  width: 100%;
+  min-height: 400px;
+}
+#main #starting #starting_image {
+  height: 700px;
+  width: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 1;
+}
+#main #starting #starting_text {
+  position: absolute;
+  top: 100px;
+}
+#main #starting #starting_text h1 {
+  text-align: center;
+  color: orange;
+  font-size: 5rem;
+}
+#main #starting #starting_text .link a {
+  color: orange;
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 600px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    padding: 0px;
+    margin: 0px;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+#starting {
+  display: grid;
+}/*# sourceMappingURL=style.css.map */

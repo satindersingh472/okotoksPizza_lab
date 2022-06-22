@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang=en>
+
 <head>
     <meta charset=UTF-8>
     <meta http-equiv=X-UA-Compatible content=IE=edge>
     <meta name=viewport content=width=device-width, initial-scale=1.0>
-   
-  
+
+
     <meta http-equiv=X-UA-Compatible content=IE=edge>
     <meta name=viewport content=width=device-width, initial-scale=1.0>
     <meta name=description content=>
@@ -22,15 +23,54 @@
     <meta name=twitter:site content= />
     <meta name=twitter:creator content= />
     <meta property=og:url content= />
-    <meta property=og:title content=/>
+    <meta property=og:title content= />
     <meta property=og:description content= />
     <meta property=og:image content= />
- 
+
     <title>okotoksPizza_lab</title>
-    <link rel=stylesheet href=css/style.css>
+    <link rel=stylesheet href="css/index/style.css">
 
 </head>
-<body>
 
+<body>
+    <header>
+        <section id="navbar">
+            <div id="logo">
+                <img src="images/logo.png" alt="a logo for okotoks pizza">
+            </div>
+            <div id="nav_links">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">About</a>
+            </div>
+            <div>
+                <input type="radio" id="open_links" name="minimized" class="hamburger">
+                <input type="radio" id="close_links" name="minimized" class="hamburger">
+                <label for="open_links" id="show_content" class="label">
+                    <img id="menu_mini" src="images/index/hamburger.svg" alt="minimize logo for menu">
+                </label>
+                <label for="close_links" name="hide" class="label">
+                   
+                </label>
+            </div>
+
+        </section>
+    </header>
+    <main id="main">
+        <div id="starting">
+            <div>
+                <img id="starting_image" src="images/index/starting_background.jpg" alt="pizza on the table">
+            </div>
+            <div id="starting_text">
+                <h1>OKOTOKS <br> PIZZA </h1>
+
+                <div class="link">
+                    <a href="about.html">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
 </body>
+
 </html>
