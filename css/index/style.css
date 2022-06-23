@@ -19,40 +19,37 @@ body {
   grid-template-columns: 1fr 1fr;
   align-items: center;
 }
-#navbar #logo {
+#navbar #hidden_menu_header {
+  display: none;
+  background-color: black;
   display: grid;
 }
-#navbar #logo img {
+#navbar .logo {
   height: 60px;
   width: 70px;
   justify-self: start;
   padding: 10px;
 }
-#navbar #nav_links {
+
+#nav_links {
   display: none;
   grid-auto-flow: row;
 }
-#navbar #nav_links a {
+#nav_links a {
   text-decoration: none;
   background-color: orange;
   color: white;
   font-size: 2rem;
 }
-#navbar .hamburger {
+
+.radio_button {
   display: none;
 }
-#navbar .label {
-  display: grid;
-}
-#navbar #menu_mini {
+
+.menu_mini_image {
   height: 40px;
   justify-self: end;
   padding: 10px;
-}
-#navbar #show_content:checked #nav_links {
-  display: block;
-  background-color: orange;
-  z-index: 5;
 }
 
 #main {
@@ -63,7 +60,6 @@ body {
 }
 #main #starting {
   background-color: black;
-  font-family: cursive;
   justify-items: center;
   align-items: center;
   width: 100%;
@@ -102,10 +98,11 @@ body {
   font-size: 1.9rem;
 }
 #main #starting #starting_text #starting_links a {
-  color: orange;
+  color: white;
   text-decoration: none;
-  font-size: 1.9rem;
-  font-weight: bold;
+  font-weight: normal;
+  padding: 5px;
+  font-size: 1.5rem;
   border: 1px solid #4a4948;
   border-radius: 10px;
   background-color: #232221;

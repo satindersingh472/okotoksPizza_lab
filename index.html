@@ -35,24 +35,32 @@
 <body>
     <header>
         <section id="navbar">
-            <div id="logo">
-                <img src="images/logo.png" alt="a logo for okotoks pizza">
-            </div>
-            <div id="nav_links">
-                <a href="index.html">Home</a>
-                <a href="menu.html">Menu</a>
-                <a href="about.html">About</a>
-            </div>
+            <input type="radio" id="open_links" name="minimized" class="radio_button">
+            <input type="radio" id="close_links" name="minimized" class="radio_button">
+
             <div>
-                <input type="radio" id="open_links" name="minimized" class="hamburger">
-                <input type="radio" id="close_links" name="minimized" class="hamburger">
-                <label for="open_links" id="show_content" class="label">
-                    <img id="menu_mini" src="images/index/hamburger.svg" alt="minimize logo for menu">
-                </label>
-                <label for="close_links" name="hide" class="label">
-                   
-                </label>
+                <img class="logo" src="images/logo.png" alt="a logo for okotoks pizza">
             </div>
+
+            <label for="open_links" id="show_content">
+                <img class="menu_mini_image" src="images/index/hamburger.svg" alt="logo to open menu" class="hoverable">
+            </label>
+
+            <section id="hidden_menu_header">
+                <div id="menu_header">
+
+                    <img class="logo" src="images/logo.png" alt="a logo for okotoks pizza">
+
+                    <label for="close_links">
+                        <img class="menu_mini_image" src="images/index/hamburger_close.svg" alt="logo to minimize menu" class="hoverable">
+                    </label>
+                </div>
+                <div id="nav_links">
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="about.html">About</a>
+                </div>
+            </section>
 
         </section>
     </header>
@@ -69,7 +77,7 @@
                 </div>
                 <div id="starting_links">
                     <a href="delivery.html">Delivery</a>
-                    <p id="or" >OR</p>
+                    <p id="or">OR</p>
                     <a href="carryout.html">Carry Out</a>
                 </div>
             </div>

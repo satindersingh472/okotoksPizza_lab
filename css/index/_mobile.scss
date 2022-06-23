@@ -19,11 +19,19 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    .hoverable{
+        display: none;
+    }
 
-    #logo {
-        display: grid;
+    #hidden_menu_header{
+        display: none;
+        #menu_header{
+            display: grid;
 
-        img {
+        }
+
+    }
+        .logo {
             height: 60px;
             width: 70px;
             justify-self: start;
@@ -43,26 +51,16 @@ body {
         }
     }
 
-    .hamburger {
+    .radio_button {
         display: none;
     }
 
-    .label {
-        display: grid;
-    }
-
-    #menu_mini {
+    .menu_mini_image {
         height: 40px;
         justify-self: end;
         padding: 10px
     }
 
-    #show_content:checked #nav_links {
-        display: block;
-        background-color: orange;
-        z-index: 5;
-    }
-}
 
 #main {
     display: grid;
@@ -72,7 +70,7 @@ body {
 
     #starting {
         background-color: black;
-        font-family: cursive;
+        z-index: 1;
         justify-items: center;
         align-items: center;
         width: 100%;
@@ -116,10 +114,11 @@ body {
                 }
 
                 a {
-                    color: orange;
+                    color: white;
                     text-decoration: none;
-                    font-size: 1.9rem;
-                    font-weight: bold;
+                    font-weight: normal;
+                    padding: 5px;
+                    font-size: 1.5rem;
                     border: 1px solid #4a4948;
                     border-radius: 10px;
                     background-color: #232221;
