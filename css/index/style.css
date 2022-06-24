@@ -133,6 +133,7 @@ body {
   font-size: 1.7rem;
   color: black;
   padding: 14.5px;
+  text-shadow: 3px 3px 6px #232221;
 }
 
 #footer {
@@ -156,13 +157,16 @@ body {
 }
 #footer #footer_links .list h2 {
   justify-self: start;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 #footer #footer_links .list a {
-  font-size: 0.8em;
+  font-size: 0.9em;
   justify-self: start;
   color: white;
   text-decoration: none;
+}
+#footer #footer_links .list a:hover {
+  text-shadow: 3px 3px 6px white;
 }
 #footer #follow_us h2 {
   font-size: 1rem;
@@ -196,6 +200,43 @@ body {
 
   body {
     padding: 0px;
+  }
+
+  #navbar {
+    display: none;
+  }
+
+  #navbar_tablet_desktop {
+    display: grid;
+    grid-auto-flow: column;
+    background-color: orange;
+    align-items: center;
+  }
+  #navbar_tablet_desktop p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    word-spacing: 0.3rem;
+  }
+  #navbar_tablet_desktop #logo {
+    justify-self: start;
+    padding: 10px;
+  }
+  #navbar_tablet_desktop #logo .logo {
+    height: 60px;
+    width: 70px;
+  }
+  #navbar_tablet_desktop #nav_links_tablet_desktop {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+  }
+  #navbar_tablet_desktop #nav_links_tablet_desktop a {
+    margin: 5px;
+    text-decoration: none;
+    color: #232221;
+  }
+  #navbar_tablet_desktop #nav_links_tablet_desktop a:hover {
+    text-shadow: 3px 3px 6px #232221;
   }
 
   #footer #footer_links {

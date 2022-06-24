@@ -34,6 +34,7 @@
 
 <body>
     <header>
+        <!-- this section will be shown in mobile and hidden in tablet and desktop -->
         <section id="navbar">
             <input type="radio" id="open_links" name="minimized" class="radio_button">
             <input type="radio" id="close_links" name="minimized" class="radio_button">
@@ -70,21 +71,38 @@
             </section>
 
         </section>
+        <!-- this section will be shown in tablet and desktop view for navigation bar and hidden in phone -->
+        <section id="navbar_tablet_desktop">
+            <div id="logo">
+                <img class="logo" src="images/allLogos/logo.png" alt="a logo for okotoks pizza">
+            </div>
+
+            <p>☎️ 1234567890</p>
+
+            <div id="nav_links_tablet_desktop">
+                <a href="order.html">Order Online</a>
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="coupons.html">Coupons</a>
+                <a href="about.html">About</a>
+                <a href="Login.html">Account</a>
+            </div>
+        </section>
     </header>
     <main id="main">
 
-            <div id="starting_text">
-                <h1>OKOTOKS <br> PIZZA </h1>
-            </div>
+        <div id="starting_text">
+            <h1>OKOTOKS <br> PIZZA </h1>
+        </div>
 
-            <div class="link">
-                <a href="about.html">Learn More</a>
-            </div>
+        <div class="link">
+            <a href="about.html">Learn More</a>
+        </div>
 
-            <div id="starting_links">
-                <a href="#">Delivery</a>
-                <a href="#">Carry Out</a>
-            </div>
+        <div id="starting_links">
+            <a href="#">Delivery</a>
+            <a href="#">Carry Out</a>
+        </div>
     </main>
     <footer id="footer">
         <div id="footer_links">
@@ -124,10 +142,14 @@
         </div>
         <div id="follow_us">
             <h2>Follow Us</h2>
-            <a href="https://facebook.com"><img class="footer_icon" src="images/icons/facebook_icon.svg" alt="icon for facebook"></a>
-            <a href="https://twitter.com"><img class="footer_icon" src="images/icons/twitter_icon.svg" alt="icon for twitter"></a>
-            <a href="https://instagran.com"><img class="footer_icon" src="images/icons/instagram_icon.svg" alt="icon for instagram"></a>
-            <a href="https://youtube.com"><img class="footer_icon" src="images/icons/youtube_icon.svg" alt="icon for youtube"></a>
+            <a href="https://facebook.com"><img class="footer_icon" src="images/icons/facebook_icon.svg"
+                    alt="icon for facebook"></a>
+            <a href="https://twitter.com"><img class="footer_icon" src="images/icons/twitter_icon.svg"
+                    alt="icon for twitter"></a>
+            <a href="https://instagran.com"><img class="footer_icon" src="images/icons/instagram_icon.svg"
+                    alt="icon for instagram"></a>
+            <a href="https://youtube.com"><img class="footer_icon" src="images/icons/youtube_icon.svg"
+                    alt="icon for youtube"></a>
         </div>
     </footer>
 </body>

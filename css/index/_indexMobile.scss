@@ -155,6 +155,7 @@ body {
                 font-size: 1.7rem;
                 color:black;
                 padding:14.5px;
+                text-shadow: 3px 3px 6px $grey-color;
             }
         }
     }
@@ -183,13 +184,16 @@ body {
             h2{
                 
                 justify-self: start;
-                font-size: 1rem;
+                font-size: 1.5rem;
             }
             a{
-                font-size: .8em;
+                font-size: .9em;
                 justify-self: start;
                 color: white;
                 text-decoration: none;
+                &:hover{
+                    text-shadow:3px 3px 6px white;
+                }
             }
         }
     }
