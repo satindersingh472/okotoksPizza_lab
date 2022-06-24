@@ -13,23 +13,64 @@ body {
     text-align: center;
     display: grid;
 }
-
+// this section is for header
 #navbar {
     background-color: orange;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+    #tel{
+        a{
+            color: black;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+    }
     .hoverable{
-        display: none;
+        transition: all .3s ease-in-out;
+        filter: drop-shadow(0px 0px 0px black);
+
+        &:hover{
+            cursor: pointer;
+            filter: drop-shadow(2px 2px 4px white);
+        }
     }
 
     #hidden_menu_header{
         display: none;
+        place-items: center;
+        position:absolute;
+        top:0px;
+        right:0px;
+        z-index: 10;
+        width: 50%;
+        height:100%;
+        background-color:black;
+        opacity:.7;
+
         #menu_header{
             display: grid;
+            grid-template-columns: 1fr;
+            position: absolute;
+            background-color:orange;
+            top: 10px;
+            right:0px;
+            z-index: 10;
 
         }
 
+    }
+    #open_links:checked~#hidden_menu_header{
+        display: grid;
+        grid-auto-flow: row;
+        #menu_header{
+            text-align: center;
+            align-self: center;
+        }
+    }
+    #logo,#show_content{
+        display: grid;
     }
         .logo {
             height: 60px;
@@ -40,12 +81,12 @@ body {
     }
 
     #nav_links {
-        display: none;
+        display: grid;
         grid-auto-flow: row;
+        gap:20px;
 
         a {
             text-decoration: none;
-            background-color: orange;
             color: white;
             font-size: 2rem;
         }
@@ -58,10 +99,10 @@ body {
     .menu_mini_image {
         height: 40px;
         justify-self: end;
-        padding: 10px
+        padding: 10px;
     }
 
-
+// this section is for main
 #main {
     display: grid;
     padding: 0px;
