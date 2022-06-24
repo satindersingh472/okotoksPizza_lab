@@ -13,166 +13,162 @@ body {
     text-align: center;
     display: grid;
 }
+
 // this section is for header
 #navbar {
     background-color: orange;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    #tel{
-        a{
+
+    #tel {
+        a {
             color: black;
             text-decoration: none;
             font-size: 1.2rem;
             font-weight: bold;
         }
     }
-    .hoverable{
+
+    .hoverable {
         transition: all .3s ease-in-out;
         filter: drop-shadow(0px 0px 0px black);
 
-        &:hover{
+        &:hover {
             cursor: pointer;
             filter: drop-shadow(2px 2px 4px white);
         }
     }
 
-    #hidden_menu_header{
+    #hidden_menu_header {
         display: none;
         place-items: center;
-        position:absolute;
-        top:0px;
-        right:0px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
         z-index: 10;
         width: 50%;
-        height:100%;
-        background-color:black;
+        height: 100%;
+        background-color: black;
         opacity:.7;
 
-        #menu_header{
+        #menu_header {
             display: grid;
             grid-template-columns: 1fr;
             position: absolute;
-            background-color:orange;
+            background-color: orange;
             top: 10px;
-            right:0px;
+            left: 0px;
             z-index: 10;
 
         }
 
     }
-    #open_links:checked~#hidden_menu_header{
+
+    #open_links:checked~#hidden_menu_header {
         display: grid;
         grid-auto-flow: row;
-        #menu_header{
+
+        #menu_header {
             text-align: center;
             align-self: center;
         }
     }
-    #logo,#show_content{
+
+    #logo,
+    #show_content {
         display: grid;
     }
-        .logo {
-            height: 60px;
-            width: 70px;
-            justify-self: start;
-            padding: 10px;
-        }
-    }
 
-    #nav_links {
-        display: grid;
-        grid-auto-flow: row;
-        gap:20px;
-
-        a {
-            text-decoration: none;
-            color: white;
-            font-size: 2rem;
-        }
-    }
-
-    .radio_button {
-        display: none;
-    }
-
-    .menu_mini_image {
-        height: 40px;
-        justify-self: end;
+    .logo {
+        height: 60px;
+        width: 70px;
+        justify-self: start;
         padding: 10px;
     }
+}
+
+#nav_links {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 10px;
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 2rem;
+    }
+}
+
+.radio_button {
+    display: none;
+}
+
+.menu_mini_image {
+    height: 40px;
+    justify-self: end;
+    padding: 10px;
+}
 
 // this section is for main
 #main {
     display: grid;
-    padding: 0px;
-    margin: 0px;
     width: 100%;
+    background-image: url("../../images/index/starting_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-items: center;
+    align-items: center;
+    min-height: 70vh;
 
-    #starting {
-        background-color: black;
-        z-index: 1;
-        justify-items: center;
-        align-items: center;
-        width: 100%;
-        min-height: 80vh;
+    #starting_text {
+        font-weight: bold;
+        text-align: center;
+        font-size: 2rem;
+        color: orange;
 
-        #starting_image {
-            height: 80vh;
-            width: 100vw;
-            object-fit: cover;
-            opacity: .7;
+    }
+
+    .link {
+        display: grid;
+        align-self: start;
+        a {
+            color: orange;
+            font-size: 1.5rem;
         }
+    }
 
-        #starting_text {
-            position: absolute;
-            top: 90px;
-            z-index: 3;
-            font-weight: bold;
+    #starting_links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
 
-            h1 {
-                text-align: center;
-                color: orange;
-                font-size: 3rem;
-            }
-
-            .link {
-                a {
-                    color: orange;
-                    font-size: 1.5rem;
-                }
-            }
-
-            #starting_links {
-                display: grid;
-                position: relative;
-                top: 100px;
-                gap: 10px;
-
-                #or {
-                    color: orange;
-                    font-size: 1.9rem;
-                }
-
-                a {
-                    color: white;
-                    text-decoration: none;
-                    font-weight: normal;
-                    padding: 5px;
-                    font-size: 1.5rem;
-                    border: 1px solid #4a4948;
-                    border-radius: 10px;
-                    background-color: #232221;
-                }
+        a {
+            color: white;
+            text-decoration: none;
+            font-weight: normal;
+            padding: 10px;
+            font-size: 1.5rem;
+            border: 1px solid #4a4948;
+            border-radius: 10px;
+            background-color:#4a4948;
+            width:auto;
+            transition: all .3s ease-in-out;
+            &:hover{
+                background-color: orange;
+                font-size: 1.9rem;
+                padding:20px;
             }
         }
     }
 }
 
+
+
 #footer {
     display: grid;
     background-color: #232221;
-    color:orange;
+    color: orange;
     min-height: 20vh;
     place-items: center;
 

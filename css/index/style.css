@@ -38,7 +38,7 @@ body {
   place-items: center;
   position: absolute;
   top: 0px;
-  right: 0px;
+  left: 0px;
   z-index: 10;
   width: 50%;
   height: 100%;
@@ -51,7 +51,7 @@ body {
   position: absolute;
   background-color: orange;
   top: 10px;
-  right: 0px;
+  left: 0px;
   z-index: 10;
 }
 #navbar #open_links:checked ~ #hidden_menu_header {
@@ -62,7 +62,8 @@ body {
   text-align: center;
   align-self: center;
 }
-#navbar #logo, #navbar #show_content {
+#navbar #logo,
+#navbar #show_content {
   display: grid;
 }
 #navbar .logo {
@@ -75,7 +76,7 @@ body {
 #nav_links {
   display: grid;
   grid-auto-flow: row;
-  gap: 20px;
+  gap: 10px;
 }
 #nav_links a {
   text-decoration: none;
@@ -95,59 +96,49 @@ body {
 
 #main {
   display: grid;
-  padding: 0px;
-  margin: 0px;
   width: 100%;
-}
-#main #starting {
-  background-color: black;
-  z-index: 1;
+  background-image: url("../../images/index/starting_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   justify-items: center;
   align-items: center;
-  width: 100%;
-  min-height: 80vh;
+  min-height: 70vh;
 }
-#main #starting #starting_image {
-  height: 80vh;
-  width: 100vw;
-  -o-object-fit: cover;
-     object-fit: cover;
-  opacity: 0.7;
-}
-#main #starting #starting_text {
-  position: absolute;
-  top: 90px;
-  z-index: 3;
+#main #starting_text {
   font-weight: bold;
-}
-#main #starting #starting_text h1 {
   text-align: center;
+  font-size: 2rem;
   color: orange;
-  font-size: 3rem;
 }
-#main #starting #starting_text .link a {
+#main .link {
+  display: grid;
+  align-self: start;
+}
+#main .link a {
   color: orange;
   font-size: 1.5rem;
 }
-#main #starting #starting_text #starting_links {
+#main #starting_links {
   display: grid;
-  position: relative;
-  top: 100px;
+  grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
-#main #starting #starting_text #starting_links #or {
-  color: orange;
-  font-size: 1.9rem;
-}
-#main #starting #starting_text #starting_links a {
+#main #starting_links a {
   color: white;
   text-decoration: none;
   font-weight: normal;
-  padding: 5px;
+  padding: 10px;
   font-size: 1.5rem;
   border: 1px solid #4a4948;
   border-radius: 10px;
-  background-color: #232221;
+  background-color: #4a4948;
+  width: auto;
+  transition: all 0.3s ease-in-out;
+}
+#main #starting_links a:hover {
+  background-color: orange;
+  font-size: 1.9rem;
+  padding: 20px;
 }
 
 #footer {
