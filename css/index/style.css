@@ -164,8 +164,13 @@ body {
   color: white;
   text-decoration: none;
 }
-#footer #copyright {
-  align-self: center;
+#footer #follow_us h2 {
+  font-size: 1rem;
+}
+#footer #follow_us .footer_icon {
+  height: 30px;
+  width: 30px;
+  margin: 10px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -195,5 +200,9 @@ body {
 
   #footer #footer_links {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  #footer #footer_links .list {
+    margin: 30px;
+    padding: 40px;
   }
 }/*# sourceMappingURL=style.css.map */
