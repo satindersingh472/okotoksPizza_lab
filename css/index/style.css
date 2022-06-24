@@ -38,20 +38,21 @@ body {
   place-items: center;
   position: absolute;
   top: 0px;
-  left: 0px;
+  right: 0px;
   z-index: 10;
   width: 50%;
   height: 100%;
   background-color: black;
-  opacity: 0.7;
+  opacity: 0.85;
 }
 #navbar #hidden_menu_header #menu_header {
   display: grid;
   grid-template-columns: 1fr;
   position: absolute;
-  background-color: orange;
+  background-color: black;
+  opacity: 1;
   top: 10px;
-  left: 0px;
+  right: 0px;
   z-index: 10;
 }
 #navbar #open_links:checked ~ #hidden_menu_header {
@@ -127,18 +128,18 @@ body {
   color: white;
   text-decoration: none;
   font-weight: normal;
-  padding: 10px;
+  padding: 12.5px;
   font-size: 1.5rem;
-  border: 1px solid #4a4948;
   border-radius: 10px;
-  background-color: #4a4948;
+  background-color: #232221;
   width: auto;
+  border: 1px solid orange;
   transition: all 0.3s ease-in-out;
 }
 #main #starting_links a:hover {
   background-color: orange;
-  font-size: 1.9rem;
-  padding: 20px;
+  font-size: 1.7rem;
+  color: black;
 }
 
 #footer {

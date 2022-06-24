@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Varela+Round&display=swap');
+$grey-color:#232221;
 
 * {
     padding: 0;
@@ -45,20 +46,21 @@ body {
         place-items: center;
         position: absolute;
         top: 0px;
-        left: 0px;
+        right: 0px;
         z-index: 10;
         width: 50%;
         height: 100%;
         background-color: black;
-        opacity:.7;
+        opacity: .85;
 
         #menu_header {
             display: grid;
             grid-template-columns: 1fr;
             position: absolute;
-            background-color: orange;
+            background-color: black;
+            opacity: 1;
             top: 10px;
-            left: 0px;
+            right: 0px;
             z-index: 10;
 
         }
@@ -147,17 +149,17 @@ body {
             color: white;
             text-decoration: none;
             font-weight: normal;
-            padding: 10px;
+            padding: 12.5px;
             font-size: 1.5rem;
-            border: 1px solid #4a4948;
             border-radius: 10px;
-            background-color:#4a4948;
+            background-color:#232221;
             width:auto;
+            border: 1px solid orange;
             transition: all .3s ease-in-out;
             &:hover{
                 background-color: orange;
-                font-size: 1.9rem;
-                padding:20px;
+                font-size: 1.7rem;
+                color:black;
             }
         }
     }
@@ -167,7 +169,7 @@ body {
 
 #footer {
     display: grid;
-    background-color: #232221;
+    background-color:$grey-color;
     color: orange;
     min-height: 20vh;
     place-items: center;
