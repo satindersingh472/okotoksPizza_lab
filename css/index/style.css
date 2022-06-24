@@ -95,7 +95,7 @@ body {
   background-size: cover;
   justify-items: center;
   align-items: center;
-  min-height: 70vh;
+  min-height: 50vh;
 }
 #main #starting_text {
   font-weight: bold;
@@ -140,12 +140,11 @@ body {
   background-color: #0f0c0a;
   color: orange;
   place-items: center;
-  text-align: center;
 }
 #footer #footer_links {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-self: start;
+  justify-self: center;
   text-align: center;
 }
 #footer #footer_links .list {
@@ -153,18 +152,17 @@ body {
   color: white;
   min-height: 170px;
   text-align: center;
+  margin: 20px;
 }
 #footer #footer_links .list h2 {
-  padding: 5px;
-  margin: 5px;
   justify-self: start;
+  font-size: 1rem;
 }
 #footer #footer_links .list a {
+  font-size: 0.8em;
   justify-self: start;
   color: white;
   text-decoration: none;
-  padding: 1px 5px;
-  margin: 0 5px;
 }
 #footer #copyright {
   align-self: center;
@@ -182,7 +180,7 @@ body {
   }
 
   #footer #footer_links {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media only screen and (min-width: 800px) {
@@ -197,8 +195,5 @@ body {
 
   #footer #footer_links {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  #footer #footer_links .list {
-    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */

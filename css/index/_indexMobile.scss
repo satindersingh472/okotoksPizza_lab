@@ -115,7 +115,7 @@ body {
     background-size: cover;
     justify-items: center;
     align-items: center;
-    min-height: 70vh;
+    min-height: 50vh;
 
     #starting_text {
         font-weight: bold;
@@ -133,7 +133,7 @@ body {
             font-size: 1.5rem;
         }
     }
-
+// this section is for del and carryout buttons under main
     #starting_links {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -160,35 +160,34 @@ body {
     }
 }
 
-
+// this section is for footer
 
 #footer {
     display: grid;
     background-color:$footer-color;
     color: orange;
     place-items: center;
-    text-align: center;
     #footer_links{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        justify-self: start;
+        justify-self: center;
         text-align: center;
         .list{
             display: grid;
             color:white;
             min-height: 170px;
             text-align: center;
+            margin: 20px;
             h2{
-                padding:5px;
-                margin: 5px;
+                
                 justify-self: start;
+                font-size: 1rem;
             }
             a{
+                font-size: .8em;
                 justify-self: start;
                 color: white;
                 text-decoration: none;
-                padding: 1px 5px;
-                margin:0 5px;
             }
         }
     }
