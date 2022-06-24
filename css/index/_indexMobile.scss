@@ -31,15 +31,7 @@ body {
         }
     }
 
-    .hoverable {
-        transition: all .3s ease-in-out;
-        filter: drop-shadow(0px 0px 0px black);
 
-        &:hover {
-            cursor: pointer;
-            filter: drop-shadow(2px 2px 4px white);
-        }
-    }
 
     #hidden_menu_header {
         display: none;
@@ -160,6 +152,7 @@ body {
                 background-color: orange;
                 font-size: 1.7rem;
                 color:black;
+                padding:14.5px;
             }
         }
     }
