@@ -8,4 +8,9 @@ body {
     padding: 0px;
     margin: 0px;
 }
+ #footer{
+        #footer_links{
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
 }

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Varela+Round&display=swap');
 $grey-color:#232221;
+$footer-color:#0f0c0a;
 
 * {
     padding: 0;
@@ -24,7 +25,7 @@ body {
 
     #tel {
         a {
-            color: black;
+            color:black;
             text-decoration: none;
             font-size: 1.2rem;
             font-weight: bold;
@@ -83,7 +84,7 @@ body {
     }
 }
 
-#nav_links {
+#nav_links_mobile {
     display: grid;
     grid-auto-flow: row;
     gap: 10px;
@@ -163,11 +164,34 @@ body {
 
 #footer {
     display: grid;
-    background-color:$grey-color;
+    background-color:$footer-color;
     color: orange;
-    min-height: 20vh;
     place-items: center;
-
+    text-align: center;
+    #footer_links{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-self: start;
+        text-align: center;
+        .list{
+            display: grid;
+            color:white;
+            min-height: 170px;
+            text-align: center;
+            h2{
+                padding:5px;
+                margin: 5px;
+                justify-self: start;
+            }
+            a{
+                justify-self: start;
+                color: white;
+                text-decoration: none;
+                padding: 1px 5px;
+                margin:0 5px;
+            }
+        }
+    }
     #copyright {
         align-self: center;
     }

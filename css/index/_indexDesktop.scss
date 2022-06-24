@@ -9,4 +9,14 @@
     body {
         padding: 0px;
     }
+    #footer{
+        
+        #footer_links{
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            .list{
+                text-align: center;
+               
+            }
+        }
+    }
 }
