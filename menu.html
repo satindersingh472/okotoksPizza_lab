@@ -34,6 +34,7 @@
 
 <body>
     <header>
+        <!-- this section will be shown in mobile and hidden in tablet and desktop -->
         <section id="navbar">
             <input type="radio" id="open_links" name="minimized" class="radio_button">
             <input type="radio" id="close_links" name="minimized" class="radio_button">
@@ -41,41 +42,102 @@
             <div id="logo">
                 <img class="logo" src="images/allLogos/logo.png" alt="a logo for okotoks pizza">
             </div>
-         
-      <div id="tel">
-        <a href="tel:1234567899">📞 123456789</a>
-      </div>
 
+            <div id="tel">
+                <a href="tel:1234567899">📞 123456789</a>
+            </div>
             <label for="open_links" id="show_content">
                 <img class="menu_mini_image" src="images/index/hamburger.svg" alt="logo to open menu" class="hoverable">
             </label>
 
             <section id="hidden_menu_header">
-
                 <div id="menu_header">
-
                     <label for="close_links" id="hide_content">
                         <img class="menu_mini_image" src="images/icons/menu_close_right.svg" alt="logo to minimize menu"
                             class="hoverable">
                     </label>
-
                 </div>
-                <div id="nav_links">
+                <div id="nav_links_mobile">
                     <a href="order.html">Order Online</a>
                     <a href="index.html">Home</a>
                     <a href="menu.html">Menu</a>
-                    <a href="coupons.html">Coupons</a>
                     <a href="about.html">About</a>
                     <a href="Login.html">Account</a>
                 </div>
             </section>
-
         </section>
-        </header>
-        <main>
-            <div id="heading">
-                <h1>MENU</h1>
+        <!-- this section will be shown in tablet and desktop view for navigation bar and hidden in phone -->
+        <section id="navbar_tablet_desktop">
+            <div id="logo">
+                <img class="logo" src="images/allLogos/logo.png" alt="a logo for okotoks pizza">
             </div>
-        </main>
-        <footer></footer>
-        </body>
+
+            <p>☎️ 1234567890</p>
+
+            <div id="nav_links_tablet_desktop">
+                <a href="order.html">Order Online</a>
+                <a href="coupons.html">Coupons</a>
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">About</a>
+                <a href="login.html"><img src="images/icons/login.svg" alt="icon for login user"></a>
+            </div>
+        </section>
+    </header>
+    <main>
+        <div id="heading">
+            <h1>MENU</h1>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div id="footer_links">
+            <div class="list">
+                <h2>Order</h2>
+                <a href="#">Deals</a>
+                <a href="#">Pizzas</a>
+                <a href="#">Calzone</a>
+                <a href="#">Pasta</a>
+                <a href="#">Sides</a>
+                <a href="#">Drinks</a>
+                <a href="#">Desserts</a>
+            </div>
+            <div class="list">
+                <h2>Help & Service</h2>
+                <a href="#">contact Us</a>
+                <a href="#">locations</a>
+                <a href="#">Franchise</a>
+                <a href="#">FAQ's & Help</a>
+                <a href="#">Gift Cards</a>
+                <a href="#">Careers</a>
+            </div>
+            <div class="list">
+                <h2>Nutrition</h2>
+                <a href="#">Nutritional Information</a>
+                <a href="#">Food Allergen</a>
+                <a href="#">Ingredient</a>
+                <a href="#">Gluten Free FAQ</a>
+            </div>
+            <div class="list">
+                <h2>Our Policies</h2>
+                <a href="#">Privacy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Responsible Disclosure</a>
+                <a href="#">Cookies and Ads</a>
+            </div>
+        </div>
+        <div id="follow_us">
+            <h2>Follow Us</h2>
+            <a href="https://facebook.com"><img class="footer_icon" src="images/icons/facebook_icon.svg"
+                    alt="icon for facebook"></a>
+            <a href="https://twitter.com"><img class="footer_icon" src="images/icons/twitter_icon.svg"
+                    alt="icon for twitter"></a>
+            <a href="https://instagran.com"><img class="footer_icon" src="images/icons/instagram_icon.svg"
+                    alt="icon for instagram"></a>
+            <a href="https://youtube.com"><img class="footer_icon" src="images/icons/youtube_icon.svg"
+                    alt="icon for youtube"></a>
+        </div>
+    </footer>
+</body>
+
+</html>

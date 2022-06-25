@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Varela+Round&display=swap');
-
+$grey-color: #232221;
+$footer-color: #0f0c0a;
 * {
     padding: 0;
     margin: 0;
@@ -14,11 +15,16 @@ body {
     display: grid;
 }
 
+
 // this section is for header
+#navbar_tablet_desktop {
+    display: none;
+}
+
 #navbar {
     background-color: orange;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+   grid-auto-flow: column;
     align-items: center;
 
     #tel {
@@ -30,19 +36,12 @@ body {
         }
     }
 
-    .hoverable {
-        transition: all .3s ease-in-out;
-        filter: drop-shadow(0px 0px 0px black);
 
-        &:hover {
-            cursor: pointer;
-            filter: drop-shadow(2px 2px 4px white);
-        }
-    }
 
     #hidden_menu_header {
         display: none;
-        place-items: center;
+        align-items: center;
+        grid-auto-flow: row;
         position: absolute;
         top: 0px;
         right: 0px;
@@ -51,9 +50,12 @@ body {
         height: 100%;
         background-color: black;
         opacity: .85;
+        text-align: center;
+
 
         #menu_header {
             display: grid;
+            text-align: center;
             grid-template-columns: 1fr;
             position: absolute;
             background-color: black;
@@ -68,7 +70,7 @@ body {
 
     #open_links:checked~#hidden_menu_header {
         display: grid;
-        grid-auto-flow: row;
+       
 
         #menu_header {
             text-align: center;
@@ -89,7 +91,7 @@ body {
     }
 }
 
-#nav_links {
+#nav_links_mobile {
     display: grid;
     grid-auto-flow: row;
     gap: 10px;
@@ -97,8 +99,7 @@ body {
     a {
         text-decoration: none;
         color: white;
-        font-size: 1.5rem;
-        padding: 10px;
+        font-size: 2rem;
     }
 }
 
@@ -111,8 +112,61 @@ body {
     justify-self: end;
     padding: 10px;
 }
+
 // this section is for main
 main{
 background-color: #4a4948;
 min-height: 60vh;
+}
+// this section is for footer
+
+#footer {
+    display: grid;
+    background-color: $footer-color;
+    color: orange;
+    place-items: center;
+
+    #footer_links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-self: center;
+        text-align: center;
+
+        .list {
+            display: grid;
+            color: white;
+            min-height: 170px;
+            text-align: center;
+            margin: 20px;
+
+            h2 {
+
+                justify-self: start;
+                font-size: 1.5rem;
+            }
+
+            a {
+                font-size: .9em;
+                justify-self: start;
+                color: white;
+                text-decoration: none;
+
+                &:hover {
+                    text-shadow: 3px 3px 6px white;
+                }
+            }
+        }
+    }
+
+    #follow_us {
+        h2 {
+            font-size: 1rem;
+        }
+
+        .footer_icon {
+            height: 30px;
+            width: 30px;
+            margin: 10px;
+        }
+    }
 }
