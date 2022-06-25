@@ -20,6 +20,7 @@ body {
 // this section is for header
 #navbar_tablet_desktop {
     display: none;
+    height: 10vh;
 }
 
 #navbar {
@@ -144,7 +145,20 @@ main {
         }
         #hidden_menu_pizza {
             display: none;
-            
+            position:absolute;
+            top:10vh;
+            left:0px;
+            background-color: #0f0c0a;
+            height: 60vh;
+            width: 100%;
+
+        }
+        .button_for_closing{
+            height: 100px;
+            width:100px;
+            position:absolute;
+            top:0px;
+            left:0px
         }
 
         .menu_item {

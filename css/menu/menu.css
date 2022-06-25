@@ -15,6 +15,7 @@ body {
 
 #navbar_tablet_desktop {
   display: none;
+  height: 10vh;
 }
 
 #navbar {
@@ -121,6 +122,19 @@ main {
 }
 #menu #menu_list_all #hidden_menu_pizza {
   display: none;
+  position: absolute;
+  top: 10vh;
+  left: 0px;
+  background-color: #0f0c0a;
+  height: 60vh;
+  width: 100%;
+}
+#menu #menu_list_all .button_for_closing {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 #menu #menu_list_all .menu_item {
   display: grid;
