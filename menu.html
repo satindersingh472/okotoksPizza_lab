@@ -90,10 +90,34 @@
         </div>
         <div id="menu">
             <div id="menu_list_all">
-                <div class="menu_item">
-                    <img src="images/menu/pizza.jpg" alt="pizza">
-                    <h2>Pizza</h2>
+                <input type="radio" id="open_menu_pizza" name="menu" class="radio_button">
+                <input type="radio" id="close_menu_pizza" name="menu" class="radio_button">
+                <!-- this label will act like a radio button -->
+                <label for="open_menu_pizza">
+                    <img class="menu_thumbnail_image" src="images/menu/pizza.jpg" alt="pizza" height="100px"
+                        width="100px">
+                    <h2 class="menu_thumbnail_text">Pizza</h2>
+                </label>
+                <!-- this menu will come up when we press the thumbnail on the menu page -->
+                <div id="hidden_menu_pizza">
+                    <!-- button for closing pizza menu -->
+                    <div>
+                        <label for="close_menu_pizza">
+                            <img src="images/icons/menu_close_left.svg" alt="arrow for closing menu">
+                        </label>
+                    </div>
+                    <!-- all of the pizza items will be here -->
+                    <div id="whole_pizza_menu">
+                        <!-- each and every menu item will be defined by class menu-item -->
+                        <div class="menu_item">
+
+
+                        </div>
+                    </div>
+
+
                 </div>
+
                 <div class="menu_item">
                     <img src="images/menu/calzone.jpg" alt="calzone">
                     <h2>Calzone</h2>
