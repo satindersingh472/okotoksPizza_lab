@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Varela+Round&display=swap');
-$grey-color:#232221;
-$footer-color:#0f0c0a;
+$grey-color: #232221;
+$footer-color: #0f0c0a;
 
 * {
     padding: 0;
@@ -11,21 +11,24 @@ $footer-color:#0f0c0a;
 body {
     padding: 0px;
     margin: 0px;
-    margin: 0 auto;
-    text-align: center;
     display: grid;
+    text-align: center;
 }
 
 // this section is for header
+#navbar_tablet_desktop {
+    display: none;
+}
+
 #navbar {
     background-color: orange;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+   grid-auto-flow: column;
     align-items: center;
 
     #tel {
         a {
-            color:black;
+            color: black;
             text-decoration: none;
             font-size: 1.2rem;
             font-weight: bold;
@@ -36,11 +39,22 @@ body {
 
     #hidden_menu_header {
         display: none;
-        place-items: center;
-       
+        align-items: center;
+        grid-auto-flow: row;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 10;
+        width: 50%;
+        height: 100%;
+        background-color: black;
+        opacity: .85;
+        text-align: center;
+
 
         #menu_header {
             display: grid;
+            text-align: center;
             grid-template-columns: 1fr;
             position: absolute;
             background-color: black;
@@ -55,15 +69,7 @@ body {
 
     #open_links:checked~#hidden_menu_header {
         display: grid;
-        grid-auto-flow: row;
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        z-index: 10;
-        width: 50%;
-        height: 100%;
-        background-color: black;
-        opacity: .85;
+       
 
         #menu_header {
             text-align: center;
@@ -109,54 +115,130 @@ body {
 // this section is for main
 #main {
     display: grid;
-    width: 100%;
-    background-image: url("../../images/index/starting_background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    justify-items: center;
-    align-items: center;
-    min-height: 50vh;
 
-    #starting_text {
-        font-weight: bold;
-        text-align: center;
-        font-size: 2rem;
-        color: orange;
-
-    }
-
-    .link {
+    #front_page {
         display: grid;
-        align-self: start;
-        a {
+        background-image: url("../../images/index/starting_background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 80%;
+        justify-items: center;
+        align-items: center;
+        min-height: 70vh;
+
+        #starting_text {
+            font-weight: bold;
+            text-align: center;
+            align-self: start;
+            font-size: 2rem;
             color: orange;
-            font-size: 1.5rem;
+
+        }
+
+        .link {
+            display: grid;
+            align-self: start;
+
+            a {
+                color: orange;
+                font-size: 1.5rem;
+            }
+        }
+
+        // this section is for del and carryout buttons under main
+        #starting_links {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+
+            a {
+                color: white;
+                text-decoration: none;
+                font-weight: normal;
+                padding: 12.5px;
+                font-size: 1.5rem;
+                border-radius: 10px;
+                background-color: #232221;
+                width: auto;
+                border: 1px solid orange;
+                transition: all .3s ease-in-out;
+
+                &:hover {
+                    background-color: orange;
+                    font-size: 1.7rem;
+                    color: black;
+                    padding: 14.5px;
+                    text-shadow: 3px 3px 6px $grey-color;
+                }
+            }
         }
     }
-// this section is for del and carryout buttons under main
-    #starting_links {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
 
-        a {
+    #under_front {
+        display: grid;
+
+        #offer {
+            padding: 10%;
+            background-color: #f7ab79;
             color: white;
-            text-decoration: none;
-            font-weight: normal;
-            padding: 12.5px;
-            font-size: 1.5rem;
-            border-radius: 10px;
-            background-color:#232221;
-            width:auto;
-            border: 1px solid orange;
-            transition: all .3s ease-in-out;
-            &:hover{
-                background-color: orange;
-                font-size: 1.7rem;
-                color:black;
-                padding:14.5px;
-                text-shadow: 3px 3px 6px $grey-color;
+            height: 20vh;
+            display: grid;
+            align-items: center;
+
+            p {
+                display: grid;
+                align-self: start;
             }
+
+            h2 {
+                align-self: end;
+            }
+
+            button {
+                display: grid;
+                align-self: start;
+                width: 150px;
+                margin: 0 auto;
+                background-color: #fce180;
+                padding: 10px;
+                border-radius: 15px;
+                color: black;
+                font-weight: bold;
+            }
+
+
+        }
+
+        #delivery {
+            padding:10%;
+            background-color: #fce180;
+            color: black;
+            height: 20vh;
+            display: grid;
+            align-items: center;
+            
+            p {
+                display: grid;
+                align-self: start;
+            }
+
+            h2 {
+                align-self: end;
+            }
+
+            button {
+                display: grid;
+                align-self: start;
+                width: 150px;
+                margin: 0 auto;
+                background-color: #f7ab79;
+                padding: 10px;
+                border-radius: 15px;
+                font-weight:bold;
+                color: black;
+            }
+
+
         }
     }
 }
@@ -165,47 +247,51 @@ body {
 
 #footer {
     display: grid;
-    background-color:$footer-color;
+    background-color: $footer-color;
     color: orange;
     place-items: center;
 
-    #footer_links{
+    #footer_links {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-self: center;
         text-align: center;
 
-        .list{
+        .list {
             display: grid;
-            color:white;
+            color: white;
             min-height: 170px;
             text-align: center;
-            margin:20px;
-            h2{
-                
+            margin: 20px;
+
+            h2 {
+
                 justify-self: start;
                 font-size: 1.5rem;
             }
-            a{
+
+            a {
                 font-size: .9em;
                 justify-self: start;
                 color: white;
                 text-decoration: none;
-                &:hover{
-                    text-shadow:3px 3px 6px white;
+
+                &:hover {
+                    text-shadow: 3px 3px 6px white;
                 }
             }
         }
     }
 
     #follow_us {
-        h2{
+        h2 {
             font-size: 1rem;
         }
-        .footer_icon{
-            height:30px;
-            width:30px;
-            margin:10px;
+
+        .footer_icon {
+            height: 30px;
+            width: 30px;
+            margin: 10px;
         }
     }
 }

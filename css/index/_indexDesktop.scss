@@ -10,6 +10,7 @@
 
     body {
         padding: 0px;
+        max-width: 1080px;
     }
 
     // this is the navigation section for desktop
@@ -22,7 +23,8 @@
         grid-auto-flow: column;
         background-color: orange;
         align-items: center;
-        p{
+
+        p {
             font-size: 1.2rem;
             font-weight: bold;
             word-spacing: .3rem;
@@ -55,6 +57,26 @@
             }
         }
     }
+
+    // this is section for main for desktop
+        #main{
+            display: grid;
+            background-size: contain;
+            
+            #grid_one{
+                display: grid;
+                grid-auto-flow: column;
+            }
+            #grid_two{
+                display: grid;
+                grid-auto-flow: column;
+                align-items: center;
+                justify-items: center;
+                text-align: center;
+               
+                
+            }
+        }
 
 
 

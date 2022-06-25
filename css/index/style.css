@@ -8,15 +8,18 @@
 body {
   padding: 0px;
   margin: 0px;
-  margin: 0 auto;
-  text-align: center;
   display: grid;
+  text-align: center;
+}
+
+#navbar_tablet_desktop {
+  display: none;
 }
 
 #navbar {
   background-color: orange;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-flow: column;
   align-items: center;
 }
 #navbar #tel a {
@@ -27,10 +30,21 @@ body {
 }
 #navbar #hidden_menu_header {
   display: none;
-  place-items: center;
+  align-items: center;
+  grid-auto-flow: row;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 10;
+  width: 50%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.85;
+  text-align: center;
 }
 #navbar #hidden_menu_header #menu_header {
   display: grid;
+  text-align: center;
   grid-template-columns: 1fr;
   position: absolute;
   background-color: black;
@@ -41,15 +55,6 @@ body {
 }
 #navbar #open_links:checked ~ #hidden_menu_header {
   display: grid;
-  grid-auto-flow: row;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  z-index: 10;
-  width: 50%;
-  height: 100%;
-  background-color: black;
-  opacity: 0.85;
 }
 #navbar #open_links:checked ~ #hidden_menu_header #menu_header {
   text-align: center;
@@ -89,34 +94,38 @@ body {
 
 #main {
   display: grid;
-  width: 100%;
+}
+#main #front_page {
+  display: grid;
   background-image: url("../../images/index/starting_background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 80%;
   justify-items: center;
   align-items: center;
-  min-height: 50vh;
+  min-height: 70vh;
 }
-#main #starting_text {
+#main #front_page #starting_text {
   font-weight: bold;
   text-align: center;
+  align-self: start;
   font-size: 2rem;
   color: orange;
 }
-#main .link {
+#main #front_page .link {
   display: grid;
   align-self: start;
 }
-#main .link a {
+#main #front_page .link a {
   color: orange;
   font-size: 1.5rem;
 }
-#main #starting_links {
+#main #front_page #starting_links {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
-#main #starting_links a {
+#main #front_page #starting_links a {
   color: white;
   text-decoration: none;
   font-weight: normal;
@@ -128,12 +137,67 @@ body {
   border: 1px solid orange;
   transition: all 0.3s ease-in-out;
 }
-#main #starting_links a:hover {
+#main #front_page #starting_links a:hover {
   background-color: orange;
   font-size: 1.7rem;
   color: black;
   padding: 14.5px;
   text-shadow: 3px 3px 6px #232221;
+}
+#main #under_front {
+  display: grid;
+}
+#main #under_front #offer {
+  padding: 10%;
+  background-color: #f7ab79;
+  color: white;
+  height: 20vh;
+  display: grid;
+  align-items: center;
+}
+#main #under_front #offer p {
+  display: grid;
+  align-self: start;
+}
+#main #under_front #offer h2 {
+  align-self: end;
+}
+#main #under_front #offer button {
+  display: grid;
+  align-self: start;
+  width: 150px;
+  margin: 0 auto;
+  background-color: #fce180;
+  padding: 10px;
+  border-radius: 15px;
+  color: black;
+  font-weight: bold;
+}
+#main #under_front #delivery {
+  padding: 10%;
+  background-color: #fce180;
+  color: black;
+  height: 20vh;
+  display: grid;
+  align-items: center;
+}
+#main #under_front #delivery p {
+  display: grid;
+  align-self: start;
+}
+#main #under_front #delivery h2 {
+  align-self: end;
+}
+#main #under_front #delivery button {
+  display: grid;
+  align-self: start;
+  width: 150px;
+  margin: 0 auto;
+  background-color: #f7ab79;
+  padding: 10px;
+  border-radius: 15px;
+  font-weight: bold;
+  color: black;
 }
 
 #footer {
@@ -200,6 +264,7 @@ body {
 
   body {
     padding: 0px;
+    max-width: 1080px;
   }
 
   #navbar {
@@ -237,6 +302,22 @@ body {
   }
   #navbar_tablet_desktop #nav_links_tablet_desktop a:hover {
     text-shadow: 3px 3px 6px #232221;
+  }
+
+  #main {
+    display: grid;
+    background-size: contain;
+  }
+  #main #grid_one {
+    display: grid;
+    grid-auto-flow: column;
+  }
+  #main #grid_two {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
   }
 
   #footer #footer_links {
