@@ -120,19 +120,22 @@ main {
 #menu #menu_list_all .menu_thumbnail_text {
   color: white;
 }
-#menu #menu_list_all #hidden_menu_pizza {
+#menu #menu_list_all .background_hidden_menu {
   display: none;
+  text-align: center;
+  place-items: center;
   position: absolute;
   top: 10vh;
   left: 0px;
   background-color: #0f0c0a;
-  height: 60vh;
   width: 100%;
+  min-height: 100%;
 }
 #menu #menu_list_all .button_for_closing {
-  height: 100px;
-  width: 100px;
   position: absolute;
+  top: 10vh;
+  left: 0px;
+  width: 100px;
   top: 0px;
   left: 0px;
 }
@@ -140,6 +143,22 @@ main {
   display: grid;
   place-items: center;
   text-align: center;
+  color: white;
+  display: grid;
+  align-items: center;
+  width: 160px;
+}
+#menu #menu_list_all .menu_item button {
+  background-color: orange;
+  width: 160px;
+  padding: 5px;
+  border-radius: 5px;
+}
+#menu #menu_list_all .menu_item h4 {
+  color: orange;
+}
+#menu #menu_list_all .menu_item p {
+  justify-items: start;
 }
 #menu #menu_list_all .menu_item img {
   margin: 15px;
@@ -255,6 +274,9 @@ main {
 
   #menu #menu_list_all {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  #menu #menu_list_all .background_hidden_menu {
+    width: 100%;
   }
 
   #footer #footer_links {

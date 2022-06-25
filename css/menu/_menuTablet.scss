@@ -61,6 +61,9 @@
     #menu{
         #menu_list_all{
             grid-template-columns: 1fr 1fr 1fr;
+            .background_hidden_menu{
+                width:100%
+            }
         }
     }
     

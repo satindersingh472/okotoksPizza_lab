@@ -143,28 +143,48 @@ main {
         .menu_thumbnail_text{
             color:white
         }
-        #hidden_menu_pizza {
+        .background_hidden_menu {
             display: none;
+            text-align: center;
+            place-items: center;
             position:absolute;
             top:10vh;
             left:0px;
             background-color: #0f0c0a;
-            height: 60vh;
             width: 100%;
+            min-height: 100%;
 
         }
         .button_for_closing{
-            height: 100px;
+            position: absolute;
+            top: 10vh;
+            left: 0px;
             width:100px;
-            position:absolute;
             top:0px;
-            left:0px
+            left:0px;
+            
         }
 
         .menu_item {
             display: grid;
             place-items: center;
             text-align: center;
+            color: white;
+            display: grid;
+            align-items: center;
+            width: 160px;
+            button{
+                background-color: orange;
+                width: 160px;
+                padding:5px;
+                border-radius: 5px;
+            }
+            h4{
+                color: orange;
+            }
+            p{
+                justify-items: start;          
+            }
 
             img {
                 margin: 15px;
@@ -189,6 +209,9 @@ main {
 
         #open_menu_pizza:checked~#hidden_menu_pizza {
             display: grid;
+            
+
+            
         }
     }
 }
