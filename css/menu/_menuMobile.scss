@@ -216,6 +216,15 @@ main {
         #open_menu_pasta:checked~#hidden_menu_pasta{
             display: grid;
         }
+        #open_menu_sides:checked~#hidden_menu_sides{
+            display:grid;
+        }
+        #open_menu_drinks:checked~#hidden_menu_drinks{
+            display: grid;
+        }
+        #open_menu_desserts:checked~#hidden_menu_desserts{
+            display: grid;
+        }
     }
 }
 

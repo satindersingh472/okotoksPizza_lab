@@ -93,19 +93,36 @@
                 <input type="radio" id="open_menu_pizza" name="menu" class="radio_button">
                 <input type="radio" id="open_menu_calzone" name="menu" class="radio_button">
                 <input type="radio" id="open_menu_pasta" name="menu" class="radio_button">
+                <input type="radio" id="open_menu_sides" name="menu" class="radio_button">
+                <input type="radio" id="open_menu_drinks" name="menu" class="radio_button">
+                <input type="radio" id="open_menu_desserts" name="menu" class="radio_button">
                 <input type="radio" id="close_menu" name="menu" class="radio_button">
                 <!-- this label will act like a radio button and this button will open pizza menu-->
-                <label for="open_menu_pizza">
-                    <img class="menu_thumbnail_image" src="images/menu/pizza.jpg" alt="pizza">
+                <label for="open_menu_pizza"> 
+                    <img class="menu_thumbnail_image" src="images/menu/thumbnails/pizza.jpg" alt="pizza">
                     <h2 class="menu_thumbnail_text">Pizza</h2>
                 </label>
+                <!-- this label will act as a button for calzone -->
                 <label for="open_menu_calzone">
-                    <img class="menu_thumbnail_image" src="images/menu/calzone.jpg" alt="calzone">
+                    <img class="menu_thumbnail_image" src="images/menu/thumbnails/calzone.jpg" alt="calzone">
                     <h2 class="menu_thumbnail_text">Calzone</h2>
                 </label>
-                <label for="open_menu_calzone">
-                    <img class="menu_thumbnail_image" src="images/menu/pasta.jpg" alt="pasta">
-                    <h2 class="menu_thumbnail_text" ></h2>
+                <!-- this label will act as a button for pasta -->
+                <label for="open_menu_pasta">
+                    <img class="menu_thumbnail_image" src="images/menu/thumbnails/pasta.jpg" alt="pasta">
+                    <h2 class="menu_thumbnail_text" >Pasta</h2>
+                </label>
+                <label for="open_menu_sides">
+                    <img src="images/menu/thumbnails/sides.jpg" alt="fries and dipping sauce" class="menu_thumbnail_image">
+                    <h2 class="menu_thumbnail_text">Sides</h2>
+                </label>
+                <label for="open_for drinks">
+                    <img src="images/menu/thumbnails/drinks.jpg" alt="soft drinks" class="menu_thumbnail_image">
+                    <h2 class="menu_thumbnail_text">Drinks</h2>
+                </label>
+                <label for="open_for_desserts">
+                    <img src="images/menu/thumbnails/desserts.jpg" alt="choco lava cake" class="menu_thumbnail_image">
+                    <h2 class="menu_thumbnail_text">Desserts</h2>
                 </label>
                 <!-- this menu will come up when we press the thumbnail on the menu page and direct children of menu_all_list-->
                 <div id="hidden_menu_pizza" class="background_hidden_menu">
@@ -167,31 +184,13 @@
                     <div id="whole_pasta_menu">
                         <!-- each and every menu item will be inside this menu item div -->
                         <div class="menu_item">
-                            <img src="images/menu/calzone/veggie.jpg" alt="veggie calzone">
+                            <img src="images/menu/calzone/veggie.jpg" alt="veggie pasta">
                             <button>Order Now</button>
                             <h4>Veg Calzone $7.99</h4>
                             <p>Calzone filled with lots of veggies.</p>
                         </div>
                     </div>
                  </div>
-
-
-                <div class="menu_item">
-                    <img src="images/menu/pasta.jpg" alt="pasta">
-                    <h2>Pasta</h2>
-                </div>
-                <div class="menu_item">
-                    <img src="images/menu/sides.jpg" alt="fries and dipping">
-                    <h2>Sides</h2>
-                </div>
-                <div class="menu_item">
-                    <img src="images/menu/drinks.jpg" alt="cool drinks">
-                    <h2>Drinks</h2>
-                </div>
-                <div class="menu_item">
-                    <img src="images/menu/desserts.jpg" alt="choco lava cake">
-                    <h2>Desserts</h2>
-                </div>
             </div>
         </div>
     </main>
