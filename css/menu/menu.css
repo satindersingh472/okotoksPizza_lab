@@ -142,28 +142,28 @@ main {
 #menu #menu_list_all .menu_item {
   display: grid;
   place-items: center;
-  text-align: center;
   color: white;
   display: grid;
   align-items: center;
-  width: 160px;
+  box-sizing: border-box;
+  width: 100%;
 }
 #menu #menu_list_all .menu_item button {
   background-color: orange;
-  width: 160px;
+  width: 100%;
   padding: 5px;
   border-radius: 5px;
 }
 #menu #menu_list_all .menu_item h4 {
   color: orange;
+  font-size: 1.3rem;
 }
 #menu #menu_list_all .menu_item p {
   justify-items: start;
 }
 #menu #menu_list_all .menu_item img {
   margin: 15px;
-  height: 140px;
-  width: 160px;
+  width: 100%;
   border-radius: 15px;
   -o-object-fit: cover;
      object-fit: cover;

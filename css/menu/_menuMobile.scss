@@ -143,6 +143,7 @@ main {
         .menu_thumbnail_text{
             color:white
         }
+        // this rule has to be changed for tablet and desktop
         .background_hidden_menu {
             display: none;
             text-align: center;
@@ -168,19 +169,20 @@ main {
         .menu_item {
             display: grid;
             place-items: center;
-            text-align: center;
             color: white;
             display: grid;
             align-items: center;
-            width: 160px;
+            box-sizing: border-box;
+            width: 100%;
             button{
                 background-color: orange;
-                width: 160px;
+                width:100%;
                 padding:5px;
                 border-radius: 5px;
             }
             h4{
                 color: orange;
+                font-size: 1.3rem;
             }
             p{
                 justify-items: start;          
@@ -188,8 +190,7 @@ main {
 
             img {
                 margin: 15px;
-                height: 140px;
-                width: 160px;
+                width: 100%;
                 border-radius: 15px;
                 object-fit: cover;
             }
