@@ -183,6 +183,12 @@ main {
 #menu #menu_list_all #open_menu_pizza:checked ~ #hidden_menu_pizza {
   display: grid;
 }
+#menu #menu_list_all #open_menu_calzone:checked ~ #hidden_menu_calzone {
+  display: grid;
+}
+#menu #menu_list_all #open_menu_pasta:checked ~ #hidden_menu_pasta {
+  display: grid;
+}
 
 #footer {
   display: grid;
