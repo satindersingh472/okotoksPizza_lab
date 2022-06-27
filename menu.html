@@ -98,7 +98,7 @@
                 <input type="radio" id="open_menu_desserts" name="menu" class="radio_button">
                 <input type="radio" id="close_menu" name="menu" class="radio_button">
                 <!-- this label will act like a radio button and this button will open pizza menu-->
-                <label for="open_menu_pizza"> 
+                <label for="open_menu_pizza">
                     <img class="menu_thumbnail_image" src="images/menu/thumbnails/pizza.jpg" alt="pizza">
                     <h2 class="menu_thumbnail_text">Pizza</h2>
                 </label>
@@ -110,17 +110,18 @@
                 <!-- this label will act as a button for pasta -->
                 <label for="open_menu_pasta">
                     <img class="menu_thumbnail_image" src="images/menu/thumbnails/pasta.jpg" alt="pasta">
-                    <h2 class="menu_thumbnail_text" >Pasta</h2>
+                    <h2 class="menu_thumbnail_text">Pasta</h2>
                 </label>
                 <label for="open_menu_sides">
-                    <img src="images/menu/thumbnails/sides.jpg" alt="fries and dipping sauce" class="menu_thumbnail_image">
+                    <img src="images/menu/thumbnails/sides.jpg" alt="fries and dipping sauce"
+                        class="menu_thumbnail_image">
                     <h2 class="menu_thumbnail_text">Sides</h2>
                 </label>
-                <label for="open_for drinks">
+                <label for="open_menu_drinks">
                     <img src="images/menu/thumbnails/drinks.jpg" alt="soft drinks" class="menu_thumbnail_image">
                     <h2 class="menu_thumbnail_text">Drinks</h2>
                 </label>
-                <label for="open_for_desserts">
+                <label for="open_menu_desserts">
                     <img src="images/menu/thumbnails/desserts.jpg" alt="choco lava cake" class="menu_thumbnail_image">
                     <h2 class="menu_thumbnail_text">Desserts</h2>
                 </label>
@@ -132,7 +133,7 @@
                             <img src="images/icons/menu_close_left.svg" alt="arrow for closing menu">
                             <h2>Main Menu</h2>
                         </label>
-                        
+
                     </div>
                     <!-- all of the pizza items will be here this is the sibling of closing label and button for closing-->
                     <div id="whole_pizza_menu">
@@ -187,8 +188,8 @@
                             <p>four toppings of veggies, tomato sauce and cheese</p>
                         </div>
                         <!-- here are all the items done adding for pizza menu -->
-                    <!-- the next closing tag for div is closing the whole pizza menu div -->
-                    </div>  
+                        <!-- the next closing tag for div is closing the whole pizza menu div -->
+                    </div>
                     <!-- the next div is closing the entire pizza menu which is supposed to be hidden by default -->
                 </div>
                 <!-- this is the starting of calzone menu which is supposed to be hidden -->
@@ -204,7 +205,7 @@
                     <!-- all of the calzone menu items will go inside this div -->
                     <div id="whole_calzone_menu">
                         <!-- each and every menu item will be inside this menu item div -->
-                        
+
                         <div class="menu_item">
                             <img src="images/menu/calzone/beef_calzone.jpg" alt="beef filled calzone">
                             <button>Order Now</button>
@@ -233,8 +234,8 @@
                     </div>
 
                 </div>
-                 <!-- this menu will come up when we press the pasta thunbnail -->
-                 <div id="hidden_menu_pasta" class="background_hidden_menu">
+                <!-- this menu will come up when we press the pasta thunbnail -->
+                <div id="hidden_menu_pasta" class="background_hidden_menu">
                     <!-- this button will close the menu pop-up -->
                     <div class="button_for_closing">
                         <label for="close_menu" class="header_hidden_menu">
@@ -276,9 +277,9 @@
                             <p>special spagheti,green peppers,parmeson cheese</p>
                         </div>
                     </div>
-                 </div>
-                 <!-- underneath div is for entire hidden sides menu -->
-                 <div id="hidden_menu_sides" class="background_hidden_menu">
+                </div>
+                <!-- underneath div is for entire hidden sides menu -->
+                <div id="hidden_menu_sides" class="background_hidden_menu">
                     <!-- this div is for the button to close the current menu and go the main menu -->
                     <div class="button_for_closing">
                         <label for="close_menu" class="header_hidden_menu">
@@ -319,7 +320,87 @@
                             <p>lettuce,tomato,cucumber,onion,olives,nuts and ceaser sauce</p>
                         </div>
                     </div>
-                 </div>
+                </div>
+                <!-- this entire div will be for hidden menu drinks -->
+                <div id="hidden_menu_drinks" class="background_hidden_menu">
+                    <!-- this div will be for button to go back to the main menu -->
+                    <div class="button_for_closing">
+                        <label for="close_menu" class="header_hidden_menu">
+                            <img src="images/icons/menu_close_left.svg" alt="icon to closes sides menu">
+                            <h2>Main Menu</h2>
+                        </label>
+                    </div>
+                    <div id="whole_drinks_menu">
+                        <!-- whole drinks menu is for entire menu of drinks  -->
+                        <div class="menu_item">
+                            <img src="images/menu/drinks/coke.jpg" alt="bottle of coke">
+                            <button>Order Now</button>
+                            <h4>Coke $2.99</h4>
+                            <p>classic coke chilled from the fridge</p>
+                        </div>
+                        <div class="menu_item">
+                            <img src="images/menu/drinks/diet_coke.jpg" alt="diet coke">
+                            <button>Order Now</button>
+                            <h4>Diet Coke $2.99</h4>
+                            <p>coke with zero sugar</p>
+                        </div>
+                        <div class="menu_item">
+                            <img src="images/menu/drinks/sprite.jpg" alt="sprite drink">
+                            <button>Order Now</button>
+                            <h4>Sprite $2.99</h4>
+                            <p>refreshing sprite drink</p>
+                        </div>
+                        <div class="menu_item">
+                            <img src="images/menu/drinks/gingerale.jpg" alt="gingerale from canada dry">
+                            <button>Order Now</button>
+                            <h4>Canada Dry $2.99</h4>
+                            <p>gingerale classic drink</p>
+                        </div>
+                        <div class="menu_item">
+                            <img src="images/menu/drinks/water.png" alt="bottle of water">
+                            <button>Order Now</button>
+                            <h4>Water Bottle $2.99</h4>
+                            <p>natural spring water</p>
+                        </div>
+                        <div class="menu_item">
+                            <img src="images/menu/drinks/cocktail.jpg" alt="two shots of cocktail">
+                            <button>Order Now</button>
+                            <h4>Cocktail $4.99</h4>
+                            <p>wide variety of cocktails</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- this entire div is for hidden menu desserts -->
+                <div id="hidden_menu_desserts" class="background_hidden_menu">
+                    <!-- this entire div for button to go main menu -->
+                    <div class="button_for_closing">
+                        <label for="close_menu" class="header_hidden_menu">
+                            <img src="images/icons/menu_close_left.svg" alt="icon to closes sides menu">
+                            <h2>Main Menu</h2>
+                        </label>
+                    </div>
+                    <!-- this div is for the whole desserts menu -->
+                    <div id="whole_desserts_menu">
+                        <div class="menu_item">
+                            <img src="images/menu/desserts/choco_lave_cake.jpeg" alt="choco lava cake">
+                            <button>Order Now</button>
+                            <h4>Choco Lava $2.99</h4>
+                            <p>choco lava cake with sugar drizzled on the top</p>
+                        </div>
+                        <div class="menu_item">
+                            <img src="images/menu/desserts/brownie.jpeg" alt="fudge brownie">
+                            <button>Order Now</button>
+                            <h4>Fudge Brownie $4.99</h4>
+                            <p>hot & soft brownie</p>
+                        </div>
+                        <div class="menu_item">
+                            <img src="images/menu/desserts/sundae.jpg" alt="sundae in a cup">
+                            <button>Order Now</button>
+                            <h4>Sundae $3.99</h4>
+                            <p>different flavours of sundae can be made</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
