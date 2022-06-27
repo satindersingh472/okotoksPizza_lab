@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Varela+Round&display=swap");
 * {
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
 }
 
 body {
@@ -256,8 +256,8 @@ body {
 }
 @media only screen and (min-width: 800px) {
   * {
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
   }
 
   body {
@@ -303,7 +303,7 @@ body {
 
   #main {
     display: grid;
-    background-size: contain;
+    background-size: cover;
   }
   #main #grid_one {
     display: grid;

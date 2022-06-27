@@ -4,8 +4,8 @@
 
 
     * {
-        padding: 0;
-        margin: 0;
+        padding: 0px;
+        margin: 0px;
     }
 
     body {
@@ -60,7 +60,7 @@
     // this is section for main for desktop
         #main{
             display: grid;
-            background-size: contain;
+            background-size: cover;
             
             #grid_one{
                 display: grid;
