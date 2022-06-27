@@ -122,6 +122,7 @@ main {
 }
 #menu #menu_list_all .background_hidden_menu {
   display: none;
+  grid-auto-flow: row;
   text-align: center;
   place-items: center;
   position: absolute;
@@ -129,15 +130,21 @@ main {
   left: 0px;
   background-color: #0f0c0a;
   width: 100%;
-  min-height: 100%;
+  min-height: 60%;
 }
 #menu #menu_list_all .button_for_closing {
-  position: absolute;
-  top: 10vh;
-  left: 0px;
-  width: 100px;
-  top: 0px;
-  left: 0px;
+  display: grid;
+  color: orange;
+  place-items: center;
+}
+#menu #menu_list_all .button_for_closing .header_hidden_menu {
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+}
+#menu #menu_list_all .button_for_closing .header_hidden_menu img {
+  height: 40px;
+  width: 40px;
 }
 #menu #menu_list_all .menu_item {
   display: grid;

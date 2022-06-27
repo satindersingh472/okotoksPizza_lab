@@ -8,12 +8,14 @@
 body {
   padding: 0px;
   margin: 0px;
-  display: grid;
+  margin: 0 auto;
   text-align: center;
+  display: grid;
 }
 
 #navbar_tablet_desktop {
   display: none;
+  height: 10vh;
 }
 
 #navbar {
@@ -22,6 +24,12 @@ body {
   grid-auto-flow: column;
   align-items: center;
 }
+#navbar #tel a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
 #navbar #hidden_menu_header {
   display: none;
   align-items: center;
@@ -29,27 +37,23 @@ body {
   position: absolute;
   top: 0px;
   right: 0px;
+  z-index: 10;
   width: 50%;
   height: 100%;
   background-color: black;
   opacity: 0.85;
   text-align: center;
-  z-index: 10;
 }
 #navbar #hidden_menu_header #menu_header {
   display: grid;
+  text-align: center;
+  grid-template-columns: 1fr;
   position: absolute;
   background-color: black;
   opacity: 1;
   top: 10px;
   right: 0px;
   z-index: 10;
-}
-#navbar #tel a {
-  color: black;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: bold;
 }
 #navbar #open_links:checked ~ #hidden_menu_header {
   display: grid;
@@ -88,114 +92,6 @@ body {
   height: 40px;
   justify-self: end;
   padding: 10px;
-}
-
-#main {
-  display: grid;
-}
-#main #front_page {
-  display: grid;
-  background-image: url("../../images/index/starting_background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 80%;
-  justify-items: center;
-  align-items: center;
-  min-height: 70vh;
-}
-#main #front_page #starting_text {
-  font-weight: bold;
-  text-align: center;
-  align-self: start;
-  font-size: 2rem;
-  color: orange;
-}
-#main #front_page .link {
-  display: grid;
-  align-self: start;
-}
-#main #front_page .link a {
-  color: orange;
-  font-size: 1.5rem;
-}
-#main #front_page #starting_links {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-#main #front_page #starting_links a {
-  color: white;
-  text-decoration: none;
-  font-weight: normal;
-  padding: 12.5px;
-  font-size: 1.5rem;
-  border-radius: 10px;
-  background-color: #232221;
-  width: auto;
-  border: 1px solid orange;
-  transition: all 0.3s ease-in-out;
-}
-#main #front_page #starting_links a:hover {
-  background-color: orange;
-  font-size: 1.7rem;
-  color: black;
-  padding: 14.5px;
-  text-shadow: 3px 3px 6px #232221;
-}
-#main #under_front {
-  display: grid;
-}
-#main #under_front #offer {
-  padding: 10%;
-  background-color: #f7ab79;
-  color: white;
-  height: 20vh;
-  display: grid;
-  align-items: center;
-}
-#main #under_front #offer p {
-  display: grid;
-  align-self: start;
-}
-#main #under_front #offer h2 {
-  align-self: end;
-}
-#main #under_front #offer button {
-  display: grid;
-  align-self: start;
-  width: 150px;
-  margin: 0 auto;
-  background-color: #fce180;
-  padding: 10px;
-  border-radius: 15px;
-  color: black;
-  font-weight: bold;
-}
-#main #under_front #delivery {
-  padding: 10%;
-  background-color: #fce180;
-  color: black;
-  height: 20vh;
-  display: grid;
-  align-items: center;
-}
-#main #under_front #delivery p {
-  display: grid;
-  align-self: start;
-}
-#main #under_front #delivery h2 {
-  align-self: end;
-}
-#main #under_front #delivery button {
-  display: grid;
-  align-self: start;
-  width: 150px;
-  margin: 0 auto;
-  background-color: #f7ab79;
-  padding: 10px;
-  border-radius: 15px;
-  font-weight: bold;
-  color: black;
 }
 
 #footer {
@@ -239,7 +135,7 @@ body {
   margin: 10px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
   * {
     padding: 0;
     margin: 0;
@@ -247,11 +143,56 @@ body {
 
   body {
     padding: 0px;
-    margin: 0px;
+  }
+
+  #navbar {
+    display: none;
+  }
+
+  #navbar_tablet_desktop {
+    display: grid;
+    grid-auto-flow: column;
+    background-color: orange;
+    align-items: center;
+  }
+  #navbar_tablet_desktop p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    word-spacing: 0.3rem;
+  }
+  #navbar_tablet_desktop #logo {
+    justify-self: start;
+    padding: 10px;
+  }
+  #navbar_tablet_desktop #logo .logo {
+    height: 60px;
+    width: 70px;
+  }
+  #navbar_tablet_desktop #nav_links_tablet_desktop {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+  }
+  #navbar_tablet_desktop #nav_links_tablet_desktop a {
+    margin: 5px;
+    text-decoration: none;
+    color: #232221;
+  }
+  #navbar_tablet_desktop #nav_links_tablet_desktop a:hover {
+    text-shadow: 3px 3px 6px #232221;
+  }
+
+  /* this section is for main */
+  #menu #menu_list_all {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   #footer #footer_links {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  #footer #footer_links .list {
+    margin: 30px;
+    padding: 40px;
   }
 }
 @media only screen and (min-width: 800px) {
@@ -300,28 +241,4 @@ body {
   #navbar_tablet_desktop #nav_links_tablet_desktop a:hover {
     text-shadow: 3px 3px 6px #232221;
   }
-
-  #main {
-    display: grid;
-    background-size: contain;
-  }
-  #main #grid_one {
-    display: grid;
-    grid-auto-flow: column;
-  }
-  #main #grid_two {
-    display: grid;
-    grid-auto-flow: column;
-    align-items: center;
-    justify-items: center;
-    text-align: center;
-  }
-
-  #footer #footer_links {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  #footer #footer_links .list {
-    margin: 30px;
-    padding: 40px;
-  }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=about.css.map */
