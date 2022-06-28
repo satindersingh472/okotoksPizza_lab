@@ -13,6 +13,7 @@ body {
     margin: 0px;
     display: grid;
     text-align: center;
+    width: 100%;
 }
 
 // this section is for header
@@ -25,35 +26,6 @@ body {
     display: grid;
     grid-auto-flow: column;
     align-items: center;
-
-    #hidden_menu_header {
-        display: none;
-        align-items: center;
-        grid-auto-flow: row;
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        width: 50%;
-        height: 100%;
-        background-color: black;
-        opacity: .85;
-        text-align: center;
-        z-index: 10;
-
-
-        #menu_header {
-            display: grid;
-            position: absolute;
-            background-color: black;
-            opacity: 1;
-            top: 10px;
-            right: 0px;
-            z-index: 10;
-
-        }
-
-    }
-
     #tel {
         a {
             color: black;
@@ -62,20 +34,22 @@ body {
             font-weight: bold;
         }
     }
+    #hidden_minimized_link_page {
+        display: none;
+        align-items: center;
+        grid-auto-flow: row;
+        position: absolute;
+        top:10vh;
+        width: 50%;
+        height: 100%;
+        background-color: black;
+        text-align: center;
+        z-index: 10;
 
-
-    #open_links:checked~#hidden_menu_header {
-        display: grid;
-
-
-        #menu_header {
-            text-align: center;
-            align-self: center;
-        }
     }
 
-    #logo,
-    #show_content {
+
+    #open_links:checked~#hidden_minimized_link_page {
         display: grid;
     }
 

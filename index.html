@@ -36,35 +36,36 @@
     <header>
         <!-- this section will be shown in mobile and hidden in tablet and desktop -->
         <section id="navbar">
-            <input type="radio" id="open_links" name="minimized" class="radio_button">
-            <input type="radio" id="close_links" name="minimized" class="radio_button">
-
+           
             <div id="logo">
                 <img class="logo" src="images/allLogos/logo.png" alt="a logo for okotoks pizza">
             </div>
-
             <div id="tel">
                 <a href="tel:1234567899">📞 123456789</a>
             </div>
-            <label for="open_links" id="show_content">
-                <img class="menu_mini_image" src="images/index/hamburger.svg" alt="logo to open menu" class="hoverable">
-            </label>
+            <div id="minimized_links">
 
-            <section id="hidden_menu_header">
-                <div id="menu_header">
-                    <label for="close_links" id="hide_content">
-                        <img class="menu_mini_image" src="images/icons/menu_close_right.svg" alt="logo to minimize menu"
-                            class="hoverable">
-                    </label>
+                <input type="radio" id="open_links" name="minimized" class="radio_button">
+                <input type="radio" id="close_links" name="minimized" class="radio_button">
+
+                <label for="open_links" id="show_content">
+                    <img class="menu_mini_image" src="images/index/hamburger.svg" alt="logo to open menu" class="hoverable">
+                </label>
+                <div id="hidden_minimized_link_page">
+                    <div id="button_for_going_back_to_nav">
+                        <label for="close_links">
+                            <img class="menu_mini_image" src="images/icons/menu_close_right.svg" alt="logo to minimize menu"/>
+                        </label>
+                    </div>
+                    <div id="nav_links_mobile">
+                        <a href="order.html">Order Online</a>
+                        <a href="index.html">Home</a>
+                        <a href="menu.html">Menu</a>
+                        <a href="about.html">About</a>
+                        <a href="Login.html">Account</a>
+                    </div>
                 </div>
-                <div id="nav_links_mobile">
-                    <a href="order.html">Order Online</a>
-                    <a href="index.html">Home</a>
-                    <a href="menu.html">Menu</a>
-                    <a href="about.html">About</a>
-                    <a href="Login.html">Account</a>
-                </div>
-            </section>
+            </div>
         </section>
         <!-- this section will be shown in tablet and desktop view for navigation bar and hidden in phone -->
         <section id="navbar_tablet_desktop">
