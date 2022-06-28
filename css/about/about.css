@@ -94,6 +94,22 @@ body {
   padding: 10px;
 }
 
+#main {
+  background-color: #232221;
+}
+#main #main_heading {
+  color: orange;
+}
+#main #content .content_item .content_item_heading {
+  color: white;
+}
+#main #content .content_item .content_actual .content_item_image {
+  width: 100%;
+}
+#main #content .content_item .content_actual .content_item_paragraph {
+  color: white;
+}
+
 #footer {
   display: grid;
   background-color: #0f0c0a;

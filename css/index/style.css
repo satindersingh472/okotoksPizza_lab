@@ -34,12 +34,17 @@ body {
   align-items: center;
   grid-auto-flow: row;
   position: absolute;
-  top: 10vh;
+  top: 0px;
+  right: 0px;
   width: 50%;
   height: 100%;
   background-color: black;
   text-align: center;
-  z-index: 10;
+}
+#navbar #hidden_minimized_link_page #button_for_going_back_to_nav {
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 #navbar #open_links:checked ~ #hidden_minimized_link_page {
   display: grid;
@@ -75,7 +80,7 @@ body {
 #main {
   display: grid;
 }
-#main #front_page {
+#main #grid_one #front_page {
   display: grid;
   background-image: url("../../images/index/starting_background.jpg");
   background-repeat: no-repeat;
@@ -83,29 +88,21 @@ body {
   background-position: 80%;
   justify-items: center;
   align-items: center;
-  min-height: 70vh;
+  min-height: 90vh;
 }
-#main #front_page #starting_text {
+#main #grid_one #front_page #starting_text {
   font-weight: bold;
   text-align: center;
   align-self: start;
   font-size: 2rem;
   color: orange;
 }
-#main #front_page .link {
-  display: grid;
-  align-self: start;
-}
-#main #front_page .link a {
-  color: orange;
-  font-size: 1.5rem;
-}
-#main #front_page #starting_links {
+#main #grid_one #front_page #starting_links {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
-#main #front_page #starting_links a {
+#main #grid_one #front_page #starting_links a {
   color: white;
   text-decoration: none;
   font-weight: normal;
@@ -115,19 +112,19 @@ body {
   background-color: #232221;
   width: auto;
   border: 1px solid orange;
-  transition: all 0.3s ease-in-out;
 }
-#main #front_page #starting_links a:hover {
+#main #grid_one #front_page #starting_links a:hover {
   background-color: orange;
   font-size: 1.7rem;
   color: black;
   padding: 14.5px;
   text-shadow: 3px 3px 6px #232221;
 }
-#main #under_front {
+#main #grid_one #under_front {
   display: grid;
+  grid-auto-flow: column;
 }
-#main #under_front #offer {
+#main #grid_one #under_front #offer {
   padding: 10%;
   background-color: #f7ab79;
   color: white;
@@ -135,14 +132,14 @@ body {
   display: grid;
   align-items: center;
 }
-#main #under_front #offer p {
+#main #grid_one #under_front #offer p {
   display: grid;
   align-self: start;
 }
-#main #under_front #offer h2 {
+#main #grid_one #under_front #offer h2 {
   align-self: end;
 }
-#main #under_front #offer button {
+#main #grid_one #under_front #offer button {
   display: grid;
   align-self: start;
   width: 150px;
@@ -153,7 +150,7 @@ body {
   color: black;
   font-weight: bold;
 }
-#main #under_front #delivery {
+#main #grid_one #under_front #delivery {
   padding: 10%;
   background-color: #fce180;
   color: black;
@@ -161,14 +158,14 @@ body {
   display: grid;
   align-items: center;
 }
-#main #under_front #delivery p {
+#main #grid_one #under_front #delivery p {
   display: grid;
   align-self: start;
 }
-#main #under_front #delivery h2 {
+#main #grid_one #under_front #delivery h2 {
   align-self: end;
 }
-#main #under_front #delivery button {
+#main #grid_one #under_front #delivery button {
   display: grid;
   align-self: start;
   width: 150px;

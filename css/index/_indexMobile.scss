@@ -26,6 +26,7 @@ body {
     display: grid;
     grid-auto-flow: column;
     align-items: center;
+
     #tel {
         a {
             color: black;
@@ -34,17 +35,23 @@ body {
             font-weight: bold;
         }
     }
+
     #hidden_minimized_link_page {
         display: none;
         align-items: center;
         grid-auto-flow: row;
         position: absolute;
-        top:10vh;
+        top: 0px;
+        right: 0px;
         width: 50%;
         height: 100%;
         background-color: black;
         text-align: center;
-        z-index: 10;
+        #button_for_going_back_to_nav{
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
 
     }
 
@@ -87,129 +94,121 @@ body {
 #main {
     display: grid;
 
-    #front_page {
-        display: grid;
-        background-image: url("../../images/index/starting_background.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 80%;
-        justify-items: center;
-        align-items: center;
-        min-height: 70vh;
-
-        #starting_text {
-            font-weight: bold;
-            text-align: center;
-            align-self: start;
-            font-size: 2rem;
-            color: orange;
-
-        }
-
-        .link {
+    #grid_one {
+        #front_page {
             display: grid;
-            align-self: start;
+            background-image: url("../../images/index/starting_background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 80%;
+            justify-items: center;
+            align-items: center;
+            min-height: 90vh;
 
-            a {
+            #starting_text {
+                font-weight: bold;
+                text-align: center;
+                align-self: start;
+                font-size: 2rem;
                 color: orange;
-                font-size: 1.5rem;
+
             }
-        }
 
-        // this section is for del and carryout buttons under main
-        #starting_links {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
+            // this section is for del and carryout buttons under main
+            #starting_links {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
 
-            a {
-                color: white;
-                text-decoration: none;
-                font-weight: normal;
-                padding: 12.5px;
-                font-size: 1.5rem;
-                border-radius: 10px;
-                background-color: #232221;
-                width: auto;
-                border: 1px solid orange;
-                transition: all .3s ease-in-out;
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-weight: normal;
+                    padding: 12.5px;
+                    font-size: 1.5rem;
+                    border-radius: 10px;
+                    background-color: #232221;
+                    width: auto;
+                    border: 1px solid orange;
 
-                &:hover {
-                    background-color: orange;
-                    font-size: 1.7rem;
-                    color: black;
-                    padding: 14.5px;
-                    text-shadow: 3px 3px 6px $grey-color;
+                    &:hover {
+                        background-color: orange;
+                        font-size: 1.7rem;
+                        color: black;
+                        padding: 14.5px;
+                        text-shadow: 3px 3px 6px $grey-color;
+                    }
                 }
             }
         }
-    }
 
-    #under_front {
-        display: grid;
-
-        #offer {
-            padding: 10%;
-            background-color: #f7ab79;
-            color: white;
-            height: 20vh;
+        #under_front {
             display: grid;
-            align-items: center;
+            grid-auto-flow: column;
 
-            p {
-                display: grid;
-                align-self: start;
-            }
-
-            h2 {
-                align-self: end;
-            }
-
-            button {
-                display: grid;
-                align-self: start;
-                width: 150px;
-                margin: 0 auto;
-                background-color: #fce180;
-                padding: 10px;
-                border-radius: 15px;
-                color: black;
-                font-weight: bold;
-            }
-
-
-        }
-
-        #delivery {
-            padding: 10%;
-            background-color: #fce180;
-            color: black;
-            height: 20vh;
-            display: grid;
-            align-items: center;
-
-            p {
-                display: grid;
-                align-self: start;
-            }
-
-            h2 {
-                align-self: end;
-            }
-
-            button {
-                display: grid;
-                align-self: start;
-                width: 150px;
-                margin: 0 auto;
+            #offer {
+                padding: 10%;
                 background-color: #f7ab79;
-                padding: 10px;
-                border-radius: 15px;
-                font-weight: bold;
-                color: black;
+                color: white;
+                height: 20vh;
+                display: grid;
+                align-items: center;
+
+                p {
+                    display: grid;
+                    align-self: start;
+                }
+
+                h2 {
+                    align-self: end;
+                }
+
+                button {
+                    display: grid;
+                    align-self: start;
+                    width: 150px;
+                    margin: 0 auto;
+                    background-color: #fce180;
+                    padding: 10px;
+                    border-radius: 15px;
+                    color: black;
+                    font-weight: bold;
+                }
+
+
             }
 
+            #delivery {
+                padding: 10%;
+                background-color: #fce180;
+                color: black;
+                height: 20vh;
+                display: grid;
+                align-items: center;
 
+                p {
+                    display: grid;
+                    align-self: start;
+                }
+
+                h2 {
+                    align-self: end;
+                }
+
+                button {
+                    display: grid;
+                    align-self: start;
+                    width: 150px;
+                    margin: 0 auto;
+                    background-color: #f7ab79;
+                    padding: 10px;
+                    border-radius: 15px;
+                    font-weight: bold;
+                    color: black;
+                }
+
+
+            }
         }
     }
 }
