@@ -60,7 +60,6 @@ body {
 }
 #navbar #open_links:checked ~ #hidden_menu_header #menu_header {
   text-align: center;
-  align-self: center;
 }
 #navbar #logo,
 #navbar #show_content {
