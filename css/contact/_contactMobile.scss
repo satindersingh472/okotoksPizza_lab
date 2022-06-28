@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Varela+Round&display=swap');
 $grey-color: #232221;
 $footer-color: #0f0c0a;
+$main-color:orange;
+$links-color:white;
 
 * {
     padding: 0;
@@ -126,6 +128,7 @@ body {
 
     #contact_methods_list {
         display: grid;
+
         .contact_method {
             display: grid;
             margin: 20px;
@@ -151,14 +154,36 @@ body {
             .contact_method_information {
                 color: white;
                 line-height: 1.4;
-                a{
+
+                a {
                     color: white;
                     text-decoration: none;
                 }
-                #iframe{
-                    height:100px;
+
+                #iframe {
+                    height: 100px;
                     width: 300px;
                     margin: 20px;
+                }
+
+                #form {
+                    place-items: center;
+
+                    input[type=text],
+                    input[type=number],
+                    textarea {
+                        width: 300px;
+                        margin: 10px;
+                        line-height: 1.5;
+                        padding: 5px;
+                        border: 2px solid orange;
+                    }
+                    input[type=submit]{
+                        background-color: orange;
+                        padding: 5px;
+                        border-radius: 10px;
+                
+                    }
                 }
             }
         }

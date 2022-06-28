@@ -138,6 +138,23 @@ body {
   width: 300px;
   margin: 20px;
 }
+#main_mobile #contact_methods_list .contact_method .contact_method_information #form {
+  place-items: center;
+}
+#main_mobile #contact_methods_list .contact_method .contact_method_information #form input[type=text],
+#main_mobile #contact_methods_list .contact_method .contact_method_information #form input[type=number],
+#main_mobile #contact_methods_list .contact_method .contact_method_information #form textarea {
+  width: 300px;
+  margin: 10px;
+  line-height: 1.5;
+  padding: 5px;
+  border: 2px solid orange;
+}
+#main_mobile #contact_methods_list .contact_method .contact_method_information #form input[type=submit] {
+  background-color: orange;
+  padding: 5px;
+  border-radius: 10px;
+}
 
 #footer {
   display: grid;
