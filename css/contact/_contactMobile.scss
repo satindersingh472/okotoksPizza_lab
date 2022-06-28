@@ -114,7 +114,56 @@ body {
     justify-self: end;
     padding: 10px;
 }
+
 // end of main section
+#main_mobile {
+    background-color: $grey-color;
+
+    #main_heading {
+        color: orange;
+        background-color: $footer-color;
+    }
+
+    #contact_methods_list {
+        display: grid;
+        .contact_method {
+            display: grid;
+            margin: 20px;
+            align-items: center;
+            justify-items: center;
+            text-align: center;
+
+            .contact_method_icon {
+                height: 40px;
+                width: 40px;
+                background-color: white;
+                text-align: center;
+                object-fit: contain;
+                padding: 5px;
+                border: 1px solid orange;
+                border-radius: 100%;
+            }
+
+            .contact_method_heading {
+                color: orange;
+            }
+
+            .contact_method_information {
+                color: white;
+                line-height: 1.4;
+                a{
+                    color: white;
+                    text-decoration: none;
+                }
+                #iframe{
+                    height:100px;
+                    width: 300px;
+                    margin: 20px;
+                }
+            }
+        }
+    }
+}
 
 // this section is for footer
 #footer {
