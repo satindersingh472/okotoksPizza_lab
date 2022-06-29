@@ -1,8 +1,8 @@
 @media only screen and (min-width:800px) {
     $grey-color: #232221;
     $footer-color: #0f0c0a;
-    $main-color:orange;
-    $links-color:white;
+    $main-color: orange;
+    $links-color: white;
 
     * {
         padding: 0;
@@ -54,16 +54,77 @@
 
                 }
             }
+
             // underneath bracket is to close id nav_links_tablet_desktop
         }
+
         // the underneath bracket is for closing id navbar_tabet_desktop
-    } 
+    }
+
     // here is the end of header css
-    #main_mobile{
+    #main_mobile {
         display: none;
     }
-    #main_desktop{
-        display: grid;
+
+    #location {
+        display: none;
     }
-// the underneath bracket is for closing the media query bracket
+
+    #location_desktop {
+        display: grid;
+        width: 200%;
+
+        #iframe {
+           width: 100%;
+        }
+    }
+
+    #phone {
+        border: none;
+    }
+
+    #main_tablet_desktop {
+        display: grid;
+
+        #contact_methods_list {
+            grid-template-columns: 1fr 1fr;
+
+            #phone_and_address {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+                width: 100%;
+
+                .contact_method {
+                    display: grid;
+                    align-self: start;
+                    justify-self: center;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    // footer section started
+    #footer {
+
+        #footer_links {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+
+            .list {
+                margin: 10px;
+                padding: 10px;
+
+                h2 {
+                    padding: 5px;
+                }
+
+                a {
+                    padding: 5px;
+                }
+            }
+        }
+    }
+
+    // the underneath bracket is for closing the media query bracket
 }

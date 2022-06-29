@@ -259,6 +259,10 @@ body {
     display: none;
   }
 
+  #location_desktop {
+    display: none;
+  }
+
   #hours {
     border-right: 1px solid orange;
   }
@@ -287,7 +291,8 @@ body {
     background-color: #232221;
     text-align: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
+    box-sizing: border-box;
   }
   #main_tablet_desktop #main_heading {
     color: orange;
@@ -304,7 +309,7 @@ body {
   }
   #main_tablet_desktop #contact_methods_list .contact_method {
     display: grid;
-    padding: 30px;
+    padding: 10px;
     line-height: 1.5;
     align-items: center;
     text-align: center;
@@ -378,11 +383,17 @@ body {
   }
 
   #footer #footer_links {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   #footer #footer_links .list {
-    margin: 30px;
-    padding: 40px;
+    margin: 10px;
+    padding: 10px;
+  }
+  #footer #footer_links .list h2 {
+    padding: 5px;
+  }
+  #footer #footer_links .list a {
+    padding: 5px;
   }
 }
 @media only screen and (min-width: 800px) {
@@ -436,7 +447,52 @@ body {
     display: none;
   }
 
-  #main_desktop {
+  #location {
+    display: none;
+  }
+
+  #location_desktop {
     display: grid;
+    width: 200%;
+  }
+  #location_desktop #iframe {
+    width: 100%;
+  }
+
+  #phone {
+    border: none;
+  }
+
+  #main_tablet_desktop {
+    display: grid;
+  }
+  #main_tablet_desktop #contact_methods_list {
+    grid-template-columns: 1fr 1fr;
+  }
+  #main_tablet_desktop #contact_methods_list #phone_and_address {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 100%;
+  }
+  #main_tablet_desktop #contact_methods_list #phone_and_address .contact_method {
+    display: grid;
+    align-self: start;
+    justify-self: center;
+    width: 100%;
+  }
+
+  #footer #footer_links {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  #footer #footer_links .list {
+    margin: 10px;
+    padding: 10px;
+  }
+  #footer #footer_links .list h2 {
+    padding: 5px;
+  }
+  #footer #footer_links .list a {
+    padding: 5px;
   }
 }/*# sourceMappingURL=contact.css.map */

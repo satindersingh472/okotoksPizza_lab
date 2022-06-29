@@ -63,7 +63,9 @@
     #main_mobile {
         display: none;
     }
-
+#location_desktop{
+    display:none;
+}
     #hours {
         border-right: 1px solid $main-color;
     }
@@ -71,6 +73,7 @@
     #phone {
         border-bottom: 1px solid $main-color;
     }
+    
 
     #location {
         height: 300px;
@@ -92,7 +95,8 @@
         background-color: $grey-color;
         text-align: center;
         align-items: center;
-        padding: 20px;
+        padding: 10px;
+        box-sizing: border-box;
 
         #main_heading {
             color: $main-color;
@@ -111,7 +115,7 @@
 
             .contact_method {
                 display: grid;
-                padding: 30px;
+                padding: 10px;
                 line-height: 1.5;
                 align-items: center;
                 text-align: center;
@@ -208,11 +212,17 @@
     #footer {
 
         #footer_links {
-            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
 
             .list {
-                margin: 30px;
-                padding: 40px
+                margin: 10px;
+                padding: 10px;
+                h2{
+                    padding: 5px;
+                }
+                a{
+                    padding: 5px;
+                }
             }
         }
     }
