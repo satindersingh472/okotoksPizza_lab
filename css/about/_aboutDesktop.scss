@@ -1,58 +1,68 @@
 @media only screen and (min-width:800px) {
+    @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Varela+Round&display=swap');
     $grey-color: #232221;
     $footer-color: #0f0c0a;
+    
 
 
     * {
-        padding: 0;
-        margin: 0;
+        padding: 0px;
+        margin: 0px;
     }
 
     body {
         padding: 0px;
     }
 
-#navbar {
-    display: none;
-}
-
-#navbar_tablet_desktop {
-    display: grid;
-    grid-auto-flow: column;
-    background-color: orange;
-    align-items: center;
-
-    p {
-        font-size: 1.2rem;
-        font-weight: bold;
-        word-spacing: .3rem;
+    // this is the navigation section for desktop
+    #navbar_mobile_tablet {
+        display: none;
     }
 
-    #logo {
-        justify-self: start;
-        padding: 10px;
-
-        .logo {
-            height: 60px;
-            width: 70px;
-        }
-    }
-
-    #nav_links_tablet_desktop {
+    #navbar_desktop {
         display: grid;
         grid-auto-flow: column;
+        background-color: orange;
         align-items: center;
+        height: 100px;
 
-        a {
-            margin: 5px;
-            text-decoration: none;
-            color: $grey-color;
+        p {
+            font-size: 1.2rem;
+            font-weight: bold;
+            word-spacing: .3rem;
+        }
 
-            &:hover {
-                text-shadow: 3px 3px 6px $grey-color;
+        #logo {
+            justify-self: start;
+            padding: 20px;
 
+            .logo {
+                height: 60px;
+                width: 70px;
+            }
+        }
+
+        #nav_links_tablet_desktop {
+            display: grid;
+            grid-auto-flow: column;
+            align-items: center;
+
+            img {
+                width: 60px;
+                height: 70px;
+            }
+
+            a {
+                text-decoration: none;
+                color: $grey-color;
+
+                &:hover {
+                    text-shadow: 3px 3px 6px $grey-color;
+
+                }
             }
         }
     }
-}
+
 }

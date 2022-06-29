@@ -1,4 +1,8 @@
 @media only screen and (min-width:600px){
+    $grey-color: #232221;
+    $footer-color: #0f0c0a;
+    $main-color: orange;
+    $links-color: white;
 * {
     padding: 0;
     margin: 0;
@@ -8,6 +12,8 @@ body {
     padding: 0px;
     margin: 0px;
 }
+// this section is for main
+
  #footer{
         #footer_links{
             grid-template-columns: 1fr 1fr;

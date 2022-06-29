@@ -1,27 +1,28 @@
 @media only screen and (min-width:800px) {
     $grey-color: #232221;
     $footer-color: #0f0c0a;
-    $main-color: orange;
-    $links-color: white;
+
 
     * {
-        padding: 0;
-        margin: 0;
+        padding: 0px;
+        margin: 0px;
     }
 
     body {
         padding: 0px;
     }
 
-    #navbar {
+    // this is the navigation section for desktop
+    #navbar_mobile_tablet {
         display: none;
     }
 
-    #navbar_tablet_desktop {
+    #navbar_desktop {
         display: grid;
         grid-auto-flow: column;
         background-color: orange;
         align-items: center;
+        height: 100px;
 
         p {
             font-size: 1.2rem;
@@ -31,7 +32,7 @@
 
         #logo {
             justify-self: start;
-            padding: 10px;
+            padding: 20px;
 
             .logo {
                 height: 60px;
@@ -43,9 +44,12 @@
             display: grid;
             grid-auto-flow: column;
             align-items: center;
+            img{
+                width:60px;
+                height: 70px;
+            }
 
             a {
-                margin: 5px;
                 text-decoration: none;
                 color: $grey-color;
 
@@ -54,11 +58,7 @@
 
                 }
             }
-
-            // underneath bracket is to close id nav_links_tablet_desktop
         }
-
-        // the underneath bracket is for closing id navbar_tabet_desktop
     }
 
     // here is the end of header css
@@ -79,7 +79,7 @@
         #iframe {
            width: 100%;
            height: 100%;
-           transform: scaleX(1.8) translateX(60px);
+           transform: scaleX(1.5) translateX(60px);
         }
     }
 

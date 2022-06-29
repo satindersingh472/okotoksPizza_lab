@@ -6,26 +6,25 @@ $main-color:orange;
 $links-color:white;
 
 * {
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
 }
 
 body {
     padding: 0px;
     margin: 0px;
-    margin: 0 auto;
-    text-align: center;
     display: grid;
+    text-align: center;
+    width: 100%;
 }
-
-
+img{
+    width:100%;
+}
 // this section is for header
-#navbar_tablet_desktop {
+#navbar_desktop {
     display: none;
-    height: 10vh;
 }
-
-#navbar {
+#navbar_mobile_tablet {
     background-color: orange;
     display: grid;
     grid-auto-flow: column;
@@ -40,50 +39,27 @@ body {
         }
     }
 
-
-
-    #hidden_menu_header {
+    #hidden_minimized_link_page {
         display: none;
         align-items: center;
         grid-auto-flow: row;
         position: absolute;
         top: 0px;
         right: 0px;
-        z-index: 10;
         width: 50%;
         height: 100%;
         background-color: black;
-        opacity: .85;
         text-align: center;
-
-
-        #menu_header {
-            display: grid;
-            text-align: center;
-            grid-template-columns: 1fr;
+        #button_for_going_back_to_nav{
             position: absolute;
-            background-color: black;
-            opacity: 1;
-            top: 10px;
+            top: 0px;
             right: 0px;
-            z-index: 10;
-
         }
 
     }
 
-    #open_links:checked~#hidden_menu_header {
-        display: grid;
 
-
-        #menu_header {
-            text-align: center;
-            align-self: center;
-        }
-    }
-
-    #logo,
-    #show_content {
+    #open_links:checked~#hidden_minimized_link_page {
         display: grid;
     }
 
@@ -113,11 +89,12 @@ body {
 
 .menu_mini_image {
     height: 40px;
+    width: 40px;
     justify-self: end;
     padding: 10px;
 }
 
-// end of main section
+// end of header section
 // we will hide the desktop and tablet content in mobile view
 #main_tablet_desktop{
     display: none;

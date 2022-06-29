@@ -11,51 +11,7 @@
 
     body {
         padding: 0px;
-    }
-
-    // this is the navigation section for desktop
-    #navbar {
-        display: none;
-    }
-
-    #navbar_tablet_desktop {
-        display: grid;
-        grid-auto-flow: column;
-        background-color: orange;
-        align-items: center;
-
-        p {
-            font-size: 1.2rem;
-            font-weight: bold;
-            word-spacing: .3rem;
-        }
-
-        #logo {
-            justify-self: start;
-            padding: 10px;
-
-            .logo {
-                height: 60px;
-                width: 70px;
-            }
-        }
-
-        #nav_links_tablet_desktop {
-            display: grid;
-            grid-auto-flow: column;
-            align-items: center;
-
-            a {
-                margin: 5px;
-                text-decoration: none;
-                color: $grey-color;
-
-                &:hover {
-                    text-shadow: 3px 3px 6px $grey-color;
-
-                }
-            }
-        }
+        margin: 0px;
     }
 
     /* this section is for main */
@@ -63,9 +19,11 @@
     #main_mobile {
         display: none;
     }
-#location_desktop{
-    display:none;
-}
+
+    #location_desktop {
+        display: none;
+    }
+
     #hours {
         border-right: 1px solid $main-color;
     }
@@ -73,17 +31,16 @@
     #phone {
         border-bottom: 1px solid $main-color;
     }
-    #hours{
+
+    #hours {
         padding-left: 20px;
     }
 
     #location {
-        height: 300px;
-        width: 100%;
-        margin: 20px;
-        #iframe{
-            width: 70%;
-            height: 100%;
+        margin-top: 20px;
+
+        #iframe {
+            width: 90%;
         }
     }
 
@@ -97,8 +54,7 @@
         background-color: $grey-color;
         text-align: center;
         align-items: center;
-        padding: 10px;
-        box-sizing: border-box;
+
 
         #main_heading {
             color: $main-color;
@@ -112,20 +68,19 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             place-items: center;
-            padding: 10px;
             text-align: center;
 
             .contact_method {
                 display: grid;
-                padding: 10px;
+                padding: 30px;
                 line-height: 1.5;
                 align-items: center;
                 text-align: center;
                 justify-items: center;
 
                 .contact_method_icon {
-                    height: 50px;
-                    width: 50px;
+                    height: 30px;
+                    width: 30px;
                     border: 2px solid $main-color;
                     border-radius: 50%;
                     padding: 8px;
@@ -164,7 +119,7 @@
 
     #lets_get_connected {
         text-align: center;
-        margin: 80px;
+        margin: 20px;
 
         .contact_method {
             width: 100%;
@@ -219,10 +174,12 @@
             .list {
                 margin: 10px;
                 padding: 10px;
-                h2{
+
+                h2 {
                     padding: 5px;
                 }
-                a{
+
+                a {
                     padding: 5px;
                 }
             }

@@ -13,23 +13,27 @@ body {
   width: 100%;
 }
 
-#navbar_tablet_desktop {
+img {
+  width: 100%;
+}
+
+#navbar_desktop {
   display: none;
 }
 
-#navbar {
+#navbar_mobile_tablet {
   background-color: orange;
   display: grid;
   grid-auto-flow: column;
   align-items: center;
 }
-#navbar #tel a {
+#navbar_mobile_tablet #tel a {
   color: black;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
 }
-#navbar #hidden_minimized_link_page {
+#navbar_mobile_tablet #hidden_minimized_link_page {
   display: none;
   align-items: center;
   grid-auto-flow: row;
@@ -41,15 +45,15 @@ body {
   background-color: black;
   text-align: center;
 }
-#navbar #hidden_minimized_link_page #button_for_going_back_to_nav {
+#navbar_mobile_tablet #hidden_minimized_link_page #button_for_going_back_to_nav {
   position: absolute;
   top: 0px;
   right: 0px;
 }
-#navbar #open_links:checked ~ #hidden_minimized_link_page {
+#navbar_mobile_tablet #open_links:checked ~ #hidden_minimized_link_page {
   display: grid;
 }
-#navbar .logo {
+#navbar_mobile_tablet .logo {
   height: 60px;
   width: 70px;
   justify-self: start;
@@ -73,6 +77,7 @@ body {
 
 .menu_mini_image {
   height: 40px;
+  width: 40px;
   justify-self: end;
   padding: 10px;
 }
@@ -88,7 +93,7 @@ body {
   background-position: 80%;
   justify-items: center;
   align-items: center;
-  min-height: 90vh;
+  min-height: 60vh;
 }
 #main #grid_one #front_page #starting_text {
   font-weight: bold;
@@ -122,7 +127,7 @@ body {
 }
 #main #grid_one #under_front {
   display: grid;
-  grid-auto-flow: column;
+  grid-auto-flow: row;
 }
 #main #grid_one #under_front #offer {
   padding: 10%;
@@ -243,40 +248,44 @@ body {
     padding: 0px;
   }
 
-  #navbar {
+  #navbar_mobile_tablet {
     display: none;
   }
 
-  #navbar_tablet_desktop {
+  #navbar_desktop {
     display: grid;
     grid-auto-flow: column;
     background-color: orange;
     align-items: center;
+    height: 100px;
   }
-  #navbar_tablet_desktop p {
+  #navbar_desktop p {
     font-size: 1.2rem;
     font-weight: bold;
     word-spacing: 0.3rem;
   }
-  #navbar_tablet_desktop #logo {
+  #navbar_desktop #logo {
     justify-self: start;
-    padding: 10px;
+    padding: 20px;
   }
-  #navbar_tablet_desktop #logo .logo {
+  #navbar_desktop #logo .logo {
     height: 60px;
     width: 70px;
   }
-  #navbar_tablet_desktop #nav_links_tablet_desktop {
+  #navbar_desktop #nav_links_tablet_desktop {
     display: grid;
     grid-auto-flow: column;
     align-items: center;
   }
-  #navbar_tablet_desktop #nav_links_tablet_desktop a {
-    margin: 5px;
+  #navbar_desktop #nav_links_tablet_desktop img {
+    width: 60px;
+    height: 70px;
+  }
+  #navbar_desktop #nav_links_tablet_desktop a {
     text-decoration: none;
     color: #232221;
   }
-  #navbar_tablet_desktop #nav_links_tablet_desktop a:hover {
+  #navbar_desktop #nav_links_tablet_desktop a:hover {
     text-shadow: 3px 3px 6px #232221;
   }
 
