@@ -79,6 +79,10 @@ img {
   top: 0px;
   right: 0px;
 }
+#navbar_mobile_tablet #minimized_links #hidden_minimized_link_page #button_for_going_back_to_nav img {
+  height: 40px;
+  width: 40px;
+}
 #navbar_mobile_tablet #minimized_links #open_links:checked ~ #hidden_minimized_link_page {
   display: grid;
 }
