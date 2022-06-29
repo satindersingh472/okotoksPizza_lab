@@ -29,6 +29,7 @@ img{
     display: grid;
     grid-auto-flow: column;
     align-items: center;
+    height:10vh;
 
     #tel {
         a {
@@ -64,8 +65,8 @@ img{
     }
 
     .logo {
-        height: 60px;
-        width: 70px;
+        height: 40px;
+        width: 50px;
         justify-self: start;
         padding: 10px;
     }

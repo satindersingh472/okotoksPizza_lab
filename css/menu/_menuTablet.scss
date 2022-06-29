@@ -3,34 +3,73 @@
     $footer-color: #0f0c0a;
     $main-color: orange;
     $links-color: white;
-* {
-    padding: 0;
-    margin: 0;
-}
 
-body {
-    padding: 0px;
-    margin: 0px;
-}
-    // this is the main section
-    #menu{
-        #menu_list_all{
-            grid-template-columns: 1fr 1fr 1fr;
-            .background_hidden_menu{
-                width:100%
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #navbar_mobile_tablet {
+        #logo {
+            display: grid;
+
+            .logo {
+                padding: 10px;
+                justify-self: start;
+                height: 50px;
+                width: 70px;
+            }
+        }
+        #show_content{
+            display: grid;
+            .menu_thumbnail_image{
+                justify-self: end;
             }
         }
     }
-    
+
+    // this is the main section
+    #menu {
+        #menu_list_all {
+            grid-template-columns: 1fr 1fr;
+
+            label {
+                display: grid;
+                margin: 10px;
+
+                .menu_thumbnail_image {
+                    height: 250px;
+                    width: 100%;
+                    border-radius: 15px;
+                    object-fit: cover;
+                    border: 1px solid $main-color;
+                }
+                .menu_thumbnail_text{
+                    font-size: 1.2rem;
+                    margin: 5px;
+                }
+            }
+
+            .background_hidden_menu {
+                width: 100%;
+            }
+        }
+    }
+
     // this section is for the footer for desktop
     #footer {
 
         #footer_links {
-            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
 
             .list {
-                margin: 30px;
-                padding: 40px
+                margin: 10px;
+                padding: 10px
             }
         }
     }

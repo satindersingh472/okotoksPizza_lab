@@ -26,6 +26,7 @@ img {
   display: grid;
   grid-auto-flow: column;
   align-items: center;
+  height: 10vh;
 }
 #navbar_mobile_tablet #tel a {
   color: black;
@@ -54,8 +55,8 @@ img {
   display: grid;
 }
 #navbar_mobile_tablet .logo {
-  height: 60px;
-  width: 70px;
+  height: 40px;
+  width: 50px;
   justify-self: start;
   padding: 10px;
 }

@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Varela+Round&display=swap');
 $grey-color: #232221;
 $footer-color: #0f0c0a;
-$main-color:orange;
-$links-color:white;
+$main-color: orange;
+$links-color: white;
 
 * {
     padding: 0px;
@@ -17,82 +17,101 @@ body {
     text-align: center;
     width: 100%;
 }
-img{
-    width:100%;
+
+img {
+    width: 100%;
 }
+
 // this section is for header
 #navbar_desktop {
     display: none;
 }
+
 #navbar_mobile_tablet {
     background-color: orange;
     display: grid;
     grid-auto-flow: column;
     align-items: center;
+    height: 10vh;
+
+    #logo {
+        display: grid;
+
+        .logo {
+            height: 40px;
+            width: 50px;
+            justify-self: start;
+            padding: 10px;
+        }
+    }
 
     #tel {
         a {
             color: black;
             text-decoration: none;
-            font-size: 1.2rem;
-            font-weight: bold;
+            font-size: 1rem;
         }
     }
 
-    #hidden_minimized_link_page {
-        display: none;
-        align-items: center;
-        grid-auto-flow: row;
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        width: 50%;
-        height: 100%;
-        background-color: black;
-        text-align: center;
-        #button_for_going_back_to_nav{
+    #minimized_links {
+        #show_content {
+            display: grid;
+
+            .menu_mini_image {
+                justify-self: end;
+                height: 40px;
+                width: 40px;
+                padding: 10px;
+            }
+        }
+
+
+        #hidden_minimized_link_page {
+            display: none;
+            align-items: center;
+            grid-auto-flow: row;
             position: absolute;
             top: 0px;
             right: 0px;
+            width: 50%;
+            height: 100%;
+            background-color: black;
+            text-align: center;
+            opacity: .9;
+
+            #nav_links_mobile {
+                display: grid;
+                grid-auto-flow: row;
+                gap: 20px;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 1.5rem;
+                }
+            }
+
+            #button_for_going_back_to_nav {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+            }
+
         }
 
+
+        #open_links:checked~#hidden_minimized_link_page {
+            display: grid;
+        }
     }
 
-
-    #open_links:checked~#hidden_minimized_link_page {
-        display: grid;
-    }
-
-    .logo {
-        height: 60px;
-        width: 70px;
-        justify-self: start;
-        padding: 10px;
-    }
 }
 
-#nav_links_mobile {
-    display: grid;
-    grid-auto-flow: row;
-    gap: 10px;
-
-    a {
-        text-decoration: none;
-        color: white;
-        font-size: 2rem;
-    }
-}
 
 .radio_button {
     display: none;
 }
 
-.menu_mini_image {
-    height: 40px;
-    width: 40px;
-    justify-self: end;
-    padding: 10px;
-}
 
 // this section is for main
 main {
@@ -102,55 +121,69 @@ main {
 
 #heading {
     color: orange;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     padding: 10px;
 }
 
 #menu {
+
     // this section is for all of the menu thumbnails
-    #menu_list_all {     
+    #menu_list_all {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        //    this section is for one particular thumbnail
-        .menu_thumbnail_image {
-            margin: 15px;
-            height: 140px;
-            width: 160px;
-            border-radius: 15px;
-            object-fit: cover;
+        height: 70vh;
+        overflow: scroll;
+
+        label {
+            display: grid;
+            margin: 10px;
+
+            //    this section is for one particular thumbnail
+            .menu_thumbnail_image {
+                height: 100px;
+                width: 100%;
+                border-radius: 10px;
+                object-fit: cover;
+            }
+
+            .menu_thumbnail_text {
+                color: $links-color;
+                font-size: 1rem;
+            }
         }
-        .menu_thumbnail_text{
-            color:white
-        }
+
         // this rule has to be changed for tablet and desktop
         .background_hidden_menu {
             display: none;
             grid-auto-flow: row;
             text-align: center;
             place-items: center;
-            position:absolute;
-            top:10vh;
-            left:0px;
+            position: absolute;
+            top: 10vh;
+            left: 0px;
             background-color: #0f0c0a;
             width: 100%;
             min-height: 60%;
 
         }
-        .button_for_closing{
+
+        .button_for_closing {
             display: grid;
             color: orange;
             place-items: center;
-            .header_hidden_menu{
+
+            .header_hidden_menu {
                 display: grid;
                 grid-auto-flow: column;
                 place-items: center;
-                img{
+
+                img {
                     height: 40px;
                     width: 40px;
-        
-                   }
+
+                }
             }
-          
+
         }
 
         .menu_item {
@@ -161,18 +194,21 @@ main {
             align-items: center;
             box-sizing: border-box;
             width: 100%;
-            button{
+
+            button {
                 background-color: orange;
-                width:100%;
-                padding:5px;
+                width: 100%;
+                padding: 5px;
                 border-radius: 5px;
             }
-            h4{
+
+            h4 {
                 color: orange;
                 font-size: 1.3rem;
             }
-            p{
-                justify-items: start;          
+
+            p {
+                justify-items: start;
             }
 
             img {
@@ -196,21 +232,26 @@ main {
         }
 
         #open_menu_pizza:checked~#hidden_menu_pizza {
-            display: grid;   
-        }
-        #open_menu_calzone:checked~#hidden_menu_calzone{
             display: grid;
         }
-        #open_menu_pasta:checked~#hidden_menu_pasta{
+
+        #open_menu_calzone:checked~#hidden_menu_calzone {
             display: grid;
         }
-        #open_menu_sides:checked~#hidden_menu_sides{
-            display:grid;
-        }
-        #open_menu_drinks:checked~#hidden_menu_drinks{
+
+        #open_menu_pasta:checked~#hidden_menu_pasta {
             display: grid;
         }
-        #open_menu_desserts:checked~#hidden_menu_desserts{
+
+        #open_menu_sides:checked~#hidden_menu_sides {
+            display: grid;
+        }
+
+        #open_menu_drinks:checked~#hidden_menu_drinks {
+            display: grid;
+        }
+
+        #open_menu_desserts:checked~#hidden_menu_desserts {
             display: grid;
         }
     }
