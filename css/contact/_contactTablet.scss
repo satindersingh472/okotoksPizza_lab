@@ -1,7 +1,8 @@
-@media only screen and (min-width:800px) {
+@media only screen and (min-width:600px) {
     $grey-color: #232221;
     $footer-color: #0f0c0a;
-
+    $main-color: orange;
+    $links-color: white;
 
     * {
         padding: 0;
@@ -58,12 +59,151 @@
     }
 
     /* this section is for main */
-    
-    #menu{
-        #menu_list_all{
-            grid-template-columns: 1fr 1fr 1fr;
+
+    #main_mobile {
+        display: none;
+    }
+
+    #hours {
+        border-right: 1px solid $main-color;
+    }
+
+    #phone {
+        border-bottom: 1px solid $main-color;
+    }
+
+    #location {
+        height: 300px;
+        width: 100%;
+        margin: 20px;
+        #iframe{
+            width: 70%;
+            height: 100%;
         }
     }
+
+    #note {
+        color: $links-color;
+        font-size: 1.2rem;
+    }
+
+    #main_tablet_desktop {
+        display: grid;
+        background-color: $grey-color;
+        text-align: center;
+        align-items: center;
+        padding: 20px;
+
+        #main_heading {
+            color: $main-color;
+            background-color: $footer-color;
+            font-size: 1.6rem;
+            padding: 20px;
+
+        }
+
+        #contact_methods_list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            place-items: center;
+            padding: 10px;
+            text-align: center;
+
+            .contact_method {
+                display: grid;
+                padding: 30px;
+                line-height: 1.5;
+                align-items: center;
+                text-align: center;
+                justify-items: center;
+
+                .contact_method_icon {
+                    height: 50px;
+                    width: 50px;
+                    border: 2px solid $main-color;
+                    border-radius: 50%;
+                    padding: 8px;
+                    background-color: $links-color;
+
+
+
+                }
+
+                .contact_method_heading {
+                    color: $main-color;
+                    font-size: 1.7rem;
+                    padding: 10px;
+                }
+
+                .contact_method_information {
+                    color: $links-color;
+
+                    p {
+                        font-size: 1.2rem;
+                        margin: 20px;
+                        text-align: start;
+                    }
+
+                    a {
+                        color: $links-color;
+                        text-decoration: none;
+                    }
+
+
+                }
+
+            }
+        }
+    }
+
+    #lets_get_connected {
+        text-align: center;
+        margin: 80px;
+
+        .contact_method {
+            width: 100%;
+            text-align: center;
+            place-items: center;
+
+            .contact_method_heading {
+                color: $main-color;
+                font-size: 1.7rem;
+                padding: 10px;
+            }
+
+            .contact_method_information {
+                display: grid;
+                color: $links-color;
+                text-align: center;
+
+                #form {
+                    display: grid;
+                    grid-auto-flow: row;
+                    align-items: center;
+                    justify-items: center;
+
+                    input[type=text],
+                    input[type=number],
+                    textarea {
+                        width: 70%;
+                        padding: 15px;
+                        border: 2px solid $main-color;
+                        line-height: 1.5;
+                        font-size: 1.5rem;
+                    }
+
+                    input[type=submit] {
+                        background-color: orange;
+                        padding: 20px;
+                        border-radius: 10px;
+                        font-size: 1.7rem;
+                    }
+                }
+
+            }
+        }
+    }
+
     // this section is for the footer for desktop
     #footer {
 

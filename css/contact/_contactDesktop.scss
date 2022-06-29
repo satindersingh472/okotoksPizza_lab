@@ -1,7 +1,8 @@
 @media only screen and (min-width:800px) {
     $grey-color: #232221;
     $footer-color: #0f0c0a;
-
+    $main-color:orange;
+    $links-color:white;
 
     * {
         padding: 0;
@@ -12,47 +13,57 @@
         padding: 0px;
     }
 
-#navbar {
-    display: none;
-}
-
-#navbar_tablet_desktop {
-    display: grid;
-    grid-auto-flow: column;
-    background-color: orange;
-    align-items: center;
-
-    p {
-        font-size: 1.2rem;
-        font-weight: bold;
-        word-spacing: .3rem;
+    #navbar {
+        display: none;
     }
 
-    #logo {
-        justify-self: start;
-        padding: 10px;
-
-        .logo {
-            height: 60px;
-            width: 70px;
-        }
-    }
-
-    #nav_links_tablet_desktop {
+    #navbar_tablet_desktop {
         display: grid;
         grid-auto-flow: column;
+        background-color: orange;
         align-items: center;
 
-        a {
-            margin: 5px;
-            text-decoration: none;
-            color: $grey-color;
+        p {
+            font-size: 1.2rem;
+            font-weight: bold;
+            word-spacing: .3rem;
+        }
 
-            &:hover {
-                text-shadow: 3px 3px 6px $grey-color;
+        #logo {
+            justify-self: start;
+            padding: 10px;
 
+            .logo {
+                height: 60px;
+                width: 70px;
             }
         }
+
+        #nav_links_tablet_desktop {
+            display: grid;
+            grid-auto-flow: column;
+            align-items: center;
+
+            a {
+                margin: 5px;
+                text-decoration: none;
+                color: $grey-color;
+
+                &:hover {
+                    text-shadow: 3px 3px 6px $grey-color;
+
+                }
+            }
+            // underneath bracket is to close id nav_links_tablet_desktop
+        }
+        // the underneath bracket is for closing id navbar_tabet_desktop
+    } 
+    // here is the end of header css
+    #main_mobile{
+        display: none;
     }
-}
+    #main_desktop{
+        display: grid;
+    }
+// the underneath bracket is for closing the media query bracket
 }

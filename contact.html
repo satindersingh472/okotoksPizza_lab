@@ -87,7 +87,7 @@
     <!-- this section is to be displayed on mobile and hidden in desktop -->
     <section id="main_mobile">
         <div id="main_heading">
-            <h1>Contact</h1>
+            <h1>Get In Touch</h1>
         </div>
         <div id="contact_methods_list">
             <div class="contact_method">
@@ -106,7 +106,8 @@
             </div>
             <div class="contact_method">
                 <img src="images/contact/hours.png" alt="clock icon" class="contact_method_icon">
-                <h2 class="contact_method_heading">Hours of Operation</h2>
+                <h2 class="contact_method_heading">Hours of Operation <br><span id="note">note: hours may vary on
+                        statuary holidays</span></h2>
                 <div class="contact_method_information">
                     <p>Sun-Thur: 10AM - 11PM</p>
                     <p>Fri & Sat: 10AM - 1AM</p>
@@ -126,19 +127,76 @@
             <div class="contact_method">
                 <h2 class="contact_method_heading">Let's Get Connected</h2>
                 <div class="contact_method_information">
-                <form id="form">
-                    <input type="text" name="Name" placeholder="Name">
-                    <input type="text" name="Email" placeholder="Email">
-                    <input type="number" name="Phone" placeholder="Phone Number">
-                    <textarea type="text" name="message" placeholder="Comment or Message"></textarea><br>
-                    <input type="submit" value="submit">
-                </form>   
+                    <form id="form">
+                        <input type="text" name="Name" placeholder="Name">
+                        <input type="text" name="Email" placeholder="Email">
+                        <input type="number" name="Phone" placeholder="Phone Number">
+                        <textarea type="text" name="message" placeholder="Comment or Message"></textarea><br>
+                        <input type="submit" value="submit">
+                    </form>
                 </div>
             </div>
         </div>
     </section>
-    <section id="main_desktop">
-
+    <!-- this section is to be displayed on tablet and desktop -->
+    <section id="main_tablet_desktop">
+        <div id="main_heading">
+            <h1>Get In Touch</h1>
+        </div>
+        <div id="contact_methods_list">
+            <div class="contact_method" id="hours">
+                <img src="images/contact/hours.png" alt="clock icon" class="contact_method_icon">
+                <h2 class="contact_method_heading">Hours of Operation<br><span id="note">(note:hours of operation may
+                        vary on statuary holidays)</span></h2>
+                <div class="contact_method_information">
+                    <p>Sunday: 10AM - 11PM</p>
+                    <p>Monday: 10AM - 11PM</p>
+                    <p>Tuesday: 10AM - 11PM</p>
+                    <p>Wednesday: 10AM - 11PM</p>
+                    <p>Thursday: 10AM - 11PM</p>
+                    <p>Friday: 10AM - 1AM</p>
+                    <p>Saturday: 10AM - 1AM</p>
+                </div>
+            </div>
+            <!-- underneath div will contain two contact method for phone and address -->
+            <div id="phone_and_address">
+                <div class="contact_method" id="phone">
+                    <img src="images/contact/phone.png" alt="phone icon" class="contact_method_icon">
+                    <h2 class="contact_method_heading">Phone</h2>
+                    <div class="contact_method_information">
+                        <p>123-456-7890</p>
+                    </div>
+                </div>
+                <div class="contact_method" id="address">
+                    <div class="contact_method">
+                        <img src="images/contact/address.png" alt="location icon" class="contact_method_icon">
+                        <h2 class="contact_method_heading">Address</h2>
+                        <div class="contact_method_information">
+                            <p>123 First ST NW<br>Okotoks,AB<br>T0T 0T0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="location">
+            <iframe id="iframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2526.7585463507635!2d-113.97373978380894!3d50.7058650768081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bbe1106704bb7%3A0xb7f545b31bdf21f6!2sDomino&#39;s%20Pizza!5e0!3m2!1sen!2sca!4v1656471472082!5m2!1sen!2sca"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="lets_get_connected">
+            <div class="contact_method">
+                <h2 class="contact_method_heading">Let's Get Connected</h2>
+                <div class="contact_method_information">
+                    <form id="form">
+                        <input type="text" name="Name" placeholder="Name"><br>
+                        <input type="text" name="Email" placeholder="Email"><br>
+                        <input type="number" name="Phone" placeholder="Phone Number"><br>
+                        <textarea type="text" name="message" placeholder="Comment or Message"></textarea><br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
     <footer>
 

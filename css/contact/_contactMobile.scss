@@ -118,6 +118,15 @@ body {
 }
 
 // end of main section
+// we will hide the desktop and tablet content in mobile view
+#main_tablet_desktop{
+    display: none;
+}
+#note{
+    font-size: 1.2rem;
+    color: $links-color;
+}
+// this section is for the main content section
 #main_mobile {
     background-color: $grey-color;
 
@@ -135,6 +144,7 @@ body {
             align-items: center;
             justify-items: center;
             text-align: center;
+            gap: 10px;
 
             .contact_method_icon {
                 height: 40px;
@@ -177,6 +187,7 @@ body {
                         line-height: 1.5;
                         padding: 5px;
                         border: 2px solid orange;
+                        align-items: center;
                     }
                     input[type=submit]{
                         background-color: orange;
@@ -194,20 +205,18 @@ body {
 #footer {
     display: grid;
     background-color: $footer-color;
-    color: orange;
+    color: $links-color;
     place-items: center;
 
     #footer_links {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        justify-self: center;
-        text-align: center;
-
+        text-align: start;
         .list {
             display: grid;
             color: white;
             min-height: 170px;
-            text-align: center;
+            text-align: start;
             margin: 20px;
 
             h2 {

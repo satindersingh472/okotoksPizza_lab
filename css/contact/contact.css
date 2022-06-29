@@ -94,6 +94,15 @@ body {
   padding: 10px;
 }
 
+#main_tablet_desktop {
+  display: none;
+}
+
+#note {
+  font-size: 1.2rem;
+  color: white;
+}
+
 #main_mobile {
   background-color: #232221;
 }
@@ -110,6 +119,7 @@ body {
   align-items: center;
   justify-items: center;
   text-align: center;
+  gap: 10px;
 }
 #main_mobile #contact_methods_list .contact_method .contact_method_icon {
   height: 40px;
@@ -149,6 +159,7 @@ body {
   line-height: 1.5;
   padding: 5px;
   border: 2px solid orange;
+  align-items: center;
 }
 #main_mobile #contact_methods_list .contact_method .contact_method_information #form input[type=submit] {
   background-color: orange;
@@ -159,20 +170,19 @@ body {
 #footer {
   display: grid;
   background-color: #0f0c0a;
-  color: orange;
+  color: white;
   place-items: center;
 }
 #footer #footer_links {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-self: center;
-  text-align: center;
+  text-align: start;
 }
 #footer #footer_links .list {
   display: grid;
   color: white;
   min-height: 170px;
-  text-align: center;
+  text-align: start;
   margin: 20px;
 }
 #footer #footer_links .list h2 {
@@ -197,7 +207,7 @@ body {
   margin: 10px;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 600px) {
   * {
     padding: 0;
     margin: 0;
@@ -245,8 +255,126 @@ body {
   }
 
   /* this section is for main */
-  #menu #menu_list_all {
-    grid-template-columns: 1fr 1fr 1fr;
+  #main_mobile {
+    display: none;
+  }
+
+  #hours {
+    border-right: 1px solid orange;
+  }
+
+  #phone {
+    border-bottom: 1px solid orange;
+  }
+
+  #location {
+    height: 300px;
+    width: 100%;
+    margin: 20px;
+  }
+  #location #iframe {
+    width: 70%;
+    height: 100%;
+  }
+
+  #note {
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  #main_tablet_desktop {
+    display: grid;
+    background-color: #232221;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+  }
+  #main_tablet_desktop #main_heading {
+    color: orange;
+    background-color: #0f0c0a;
+    font-size: 1.6rem;
+    padding: 20px;
+  }
+  #main_tablet_desktop #contact_methods_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    padding: 10px;
+    text-align: center;
+  }
+  #main_tablet_desktop #contact_methods_list .contact_method {
+    display: grid;
+    padding: 30px;
+    line-height: 1.5;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+  }
+  #main_tablet_desktop #contact_methods_list .contact_method .contact_method_icon {
+    height: 50px;
+    width: 50px;
+    border: 2px solid orange;
+    border-radius: 50%;
+    padding: 8px;
+    background-color: white;
+  }
+  #main_tablet_desktop #contact_methods_list .contact_method .contact_method_heading {
+    color: orange;
+    font-size: 1.7rem;
+    padding: 10px;
+  }
+  #main_tablet_desktop #contact_methods_list .contact_method .contact_method_information {
+    color: white;
+  }
+  #main_tablet_desktop #contact_methods_list .contact_method .contact_method_information p {
+    font-size: 1.2rem;
+    margin: 20px;
+    text-align: start;
+  }
+  #main_tablet_desktop #contact_methods_list .contact_method .contact_method_information a {
+    color: white;
+    text-decoration: none;
+  }
+
+  #lets_get_connected {
+    text-align: center;
+    margin: 80px;
+  }
+  #lets_get_connected .contact_method {
+    width: 100%;
+    text-align: center;
+    place-items: center;
+  }
+  #lets_get_connected .contact_method .contact_method_heading {
+    color: orange;
+    font-size: 1.7rem;
+    padding: 10px;
+  }
+  #lets_get_connected .contact_method .contact_method_information {
+    display: grid;
+    color: white;
+    text-align: center;
+  }
+  #lets_get_connected .contact_method .contact_method_information #form {
+    display: grid;
+    grid-auto-flow: row;
+    align-items: center;
+    justify-items: center;
+  }
+  #lets_get_connected .contact_method .contact_method_information #form input[type=text],
+#lets_get_connected .contact_method .contact_method_information #form input[type=number],
+#lets_get_connected .contact_method .contact_method_information #form textarea {
+    width: 70%;
+    padding: 15px;
+    border: 2px solid orange;
+    line-height: 1.5;
+    font-size: 1.5rem;
+  }
+  #lets_get_connected .contact_method .contact_method_information #form input[type=submit] {
+    background-color: orange;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.7rem;
   }
 
   #footer #footer_links {
@@ -302,5 +430,13 @@ body {
   }
   #navbar_tablet_desktop #nav_links_tablet_desktop a:hover {
     text-shadow: 3px 3px 6px #232221;
+  }
+
+  #main_mobile {
+    display: none;
+  }
+
+  #main_desktop {
+    display: grid;
   }
 }/*# sourceMappingURL=contact.css.map */
