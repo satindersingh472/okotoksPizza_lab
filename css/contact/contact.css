@@ -271,6 +271,10 @@ body {
     border-bottom: 1px solid orange;
   }
 
+  #hours {
+    padding-left: 20px;
+  }
+
   #location {
     height: 300px;
     width: 100%;
@@ -326,14 +330,14 @@ body {
   #main_tablet_desktop #contact_methods_list .contact_method .contact_method_heading {
     color: orange;
     font-size: 1.7rem;
-    padding: 10px;
+    padding: 1px;
   }
   #main_tablet_desktop #contact_methods_list .contact_method .contact_method_information {
     color: white;
   }
   #main_tablet_desktop #contact_methods_list .contact_method .contact_method_information p {
     font-size: 1.2rem;
-    margin: 20px;
+    margin: 10px;
     text-align: start;
   }
   #main_tablet_desktop #contact_methods_list .contact_method .contact_method_information a {
@@ -453,10 +457,13 @@ body {
 
   #location_desktop {
     display: grid;
-    width: 200%;
+    width: 100%;
+    height: 27vh;
   }
   #location_desktop #iframe {
     width: 100%;
+    height: 100%;
+    transform: scaleX(1.8) translateX(60px);
   }
 
   #phone {
@@ -468,18 +475,19 @@ body {
   }
   #main_tablet_desktop #contact_methods_list {
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
   }
   #main_tablet_desktop #contact_methods_list #phone_and_address {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
+    align-items: start;
     width: 100%;
   }
   #main_tablet_desktop #contact_methods_list #phone_and_address .contact_method {
     display: grid;
     align-self: start;
     justify-self: center;
-    width: 100%;
+    padding: 10px;
   }
 
   #footer #footer_links {

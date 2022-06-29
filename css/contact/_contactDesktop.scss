@@ -72,10 +72,14 @@
 
     #location_desktop {
         display: grid;
-        width: 200%;
+        width: 100%;
+        height: 27vh;
+        
 
         #iframe {
            width: 100%;
+           height: 100%;
+           transform: scaleX(1.8) translateX(60px);
         }
     }
 
@@ -88,18 +92,20 @@
 
         #contact_methods_list {
             grid-template-columns: 1fr 1fr;
+           justify-items: center;
 
             #phone_and_address {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                align-items: center;
+                align-items: start;
                 width: 100%;
 
                 .contact_method {
                     display: grid;
                     align-self: start;
                     justify-self: center;
-                    width: 100%;
+                    padding: 10px;
+                   
                 }
             }
         }

@@ -73,7 +73,9 @@
     #phone {
         border-bottom: 1px solid $main-color;
     }
-    
+    #hours{
+        padding-left: 20px;
+    }
 
     #location {
         height: 300px;
@@ -136,7 +138,7 @@
                 .contact_method_heading {
                     color: $main-color;
                     font-size: 1.7rem;
-                    padding: 10px;
+                    padding: 1px;
                 }
 
                 .contact_method_information {
@@ -144,7 +146,7 @@
 
                     p {
                         font-size: 1.2rem;
-                        margin: 20px;
+                        margin: 10px;
                         text-align: start;
                     }
 
