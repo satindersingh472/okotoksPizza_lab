@@ -44,8 +44,9 @@
             display: grid;
             grid-auto-flow: column;
             align-items: center;
-            img{
-                width:60px;
+
+            img {
+                width: 60px;
                 height: 70px;
             }
 
@@ -60,23 +61,30 @@
             }
         }
     }
+
     /* this section is for main */
-    
-    #menu{
-        #menu_list_all{
+
+    #menu {
+        #menu_list_all {
             grid-template-columns: 1fr 1fr 1fr;
-        }
-    }
-    // this section is for the footer for desktop
-    #footer {
 
-        #footer_links {
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-
-            .list {
-                margin: 30px;
-                padding: 40px
+            label {
+                display: grid;
             }
         }
     }
+
+
+// this section is for the footer for desktop
+#footer {
+
+    #footer_links {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        .list {
+            margin: 30px;
+            padding: 40px
+        }
+    }
+}
 }
