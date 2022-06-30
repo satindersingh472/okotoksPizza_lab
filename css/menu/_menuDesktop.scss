@@ -70,6 +70,12 @@
 
             label {
                 display: grid;
+                .menu_thumbnail_image{
+                    height:300px;
+                }
+                .menu-thumbnail_text{
+                    font-size: 1.5rem;
+                }
             }
         }
     }

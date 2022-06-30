@@ -38,8 +38,8 @@ img {
         display: grid;
 
         .logo {
-            height: 40px;
-            width: 50px;
+            height: 50px;
+            width: 60px;
             justify-self: start;
             padding: 10px;
         }
@@ -139,7 +139,7 @@ main {
     // this section is for all of the menu thumbnails
     #menu_list_all {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         height: 70vh;
         overflow: scroll;
 
@@ -153,7 +153,7 @@ main {
 
             //    this section is for one particular thumbnail
             .menu_thumbnail_image {
-                height: 100px;
+                height: 200px;
                 width: 100%;
                 border-radius: 10px;
                 border: 1px solid $main-color;
@@ -162,21 +162,21 @@ main {
 
             .menu_thumbnail_text {
                 color: $links-color;
-                font-size: 1rem;
+                font-size: 1.5rem;
             }
         }
 
         // this rule has to be changed for tablet and desktop
         .background_hidden_menu {
             display: none;
-            grid-auto-flow: row;
+            grid-template-rows: auto 1fr;
             text-align: center;
-            position: absolute;
-            top: 10vh;
+            position: fixed;
+            top: 0vh;
             left: 0px;
-            background-color: #0f0c0a;
+            background-color: $grey-color;
             width: 100%;
-            min-height:100vh;
+            height: 100vh;
             overflow: scroll;
 
             .button_for_closing {
@@ -185,29 +185,25 @@ main {
                 color: orange;
                 align-items: center;
                 width: 65%;
-                height: 50px;
+                height: 15%;
 
 
                 .header_hidden_menu_back {
                     display: grid;
-                    width: 40%;
-                    height: 40px;
 
-                 img {
-                        height: 40px;
-                        width: 40px;
-                        justify-self: start
-
-                    }
-                    
-                }
-                .header_hidden_menu_heading{
-                    h4{ 
-                        
+                    img {
+                        height: 70px;
+                        width: 70px;
                         align-self: center;
-                        justify-self: start;
-                        font-size: 1.5rem;
+                        justify-self: start
                     }
+
+                }
+
+                .header_hidden_menu_heading {
+                        align-self: center;
+                        justify-self: center;
+                        font-size: 2rem;
                 }
 
             }
@@ -216,36 +212,46 @@ main {
                 display: grid;
                 grid-template-columns: 1fr;
                 place-items: center;
-                
+                height: 300px;
 
                 .menu_item {
                     display: grid;
+                    grid-template-columns: 1fr 1fr;
                     place-items: center;
                     color: white;
-                    width: 60%;
-                    margin: 10px;
+                    width: 80%;
+
+                    text-align: start;
 
                     img {
-                        height:100px;
-                        width: 70%;
-                        margin:10px;
-                        border-radius: 15px;
+                        height: 150px;
+                        width: 100%;
+                        margin: 10px;
+                        border-radius: 10px;
                         object-fit: cover;
                     }
 
-                    button {
-                        background-color: orange;
-                        padding: 5px;
-                        border-radius: 5px;
-                    }
+                    .menu_item_description {
+                        margin: 10px;
+                        display: grid;
+                        button {
+                            box-sizing: border-box;
+                            background-color: orange;
+                            padding: 5px;
+                            border-radius: 5px;
+                            order: 3;
 
-                    h4 {
-                        color: $main-color;
-                    }
+                        }
 
-                    p {
-                        justify-items: start;
-                        font-size: 1rem;
+                        h4 {
+                            justify-self: start;
+                            color: $main-color;
+                        }
+
+                        p {
+                            justify-items: start;
+                            font-size: 1rem;
+                        }
                     }
 
                 }
@@ -275,7 +281,7 @@ main {
 
         #open_menu_desserts:checked~#hidden_menu_desserts {
             display: grid;
-            
+
         }
     }
 }

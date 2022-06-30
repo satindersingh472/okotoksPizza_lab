@@ -22,7 +22,7 @@
                 padding: 10px;
                 justify-self: start;
                 height: 50px;
-                width: 70px;
+                width: 60px;
             }
         }
         #show_content{
@@ -50,20 +50,22 @@
                     border: 1px solid $main-color;
                 }
                 .menu_thumbnail_text{
-                    font-size: 1.2rem;
+                    font-size: 1.5rem;
                     margin: 5px;
                 }
             }
 
             .background_hidden_menu {
                 width: 100%;
+                .any_type_menu{
+                    grid-template-columns: 1fr 1fr;
+                }
             }
         }
     }
 
     // this section is for the footer for desktop
     #footer {
-
         #footer_links {
             grid-template-columns: 1fr 1fr;
 
