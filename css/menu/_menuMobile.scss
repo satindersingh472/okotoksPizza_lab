@@ -46,9 +46,10 @@ img {
     }
 
     #tel {
-        #navbar_phone_hidden_mobile{
-            display:none;
+        #navbar_phone_hidden_mobile {
+            display: none;
         }
+
         a {
             color: black;
             text-decoration: none;
@@ -98,9 +99,10 @@ img {
                 position: absolute;
                 top: 0px;
                 right: 0px;
-                img{
+
+                img {
                     height: 40px;
-                    width:40px;
+                    width: 40px;
                 }
             }
 
@@ -141,6 +143,10 @@ main {
         height: 70vh;
         overflow: scroll;
 
+        .radio_button {
+            display: none;
+        }
+
         label {
             display: grid;
             margin: 10px;
@@ -174,72 +180,62 @@ main {
             min-height: 60vh;
             overflow: scroll;
 
-        }
-
-        .button_for_closing {
-            display: grid;
-            color: orange;
-            place-items: center;
-
-            .header_hidden_menu {
+            .button_for_closing {
                 display: grid;
-                grid-auto-flow: column;
+                color: orange;
                 place-items: center;
 
-                img {
-                    height: 40px;
-                    width: 40px;
+                .header_hidden_menu {
+                    display: grid;
+                    grid-auto-flow: column;
+                    place-items: center;
+
+                    img {
+                        height: 40px;
+                        width: 40px;
+
+                    }
+                }
+
+            }
+
+            .any_type_menu {
+
+                .menu_item {
+                    display: grid;
+                    place-items: center;
+                    color: white;
+                    display: grid;
+                    align-items: center;
+                    box-sizing: border-box;
+                    width: 100%;
+
+                    img {
+                        margin: 15px;
+                        width: 100%;
+                        border-radius: 15px;
+                        object-fit: cover;
+                    }
+                    button {
+                        background-color: orange;
+                        width: 100%;
+                        padding: 5px;
+                        border-radius: 5px;
+                    }
+
+                    h4 {
+                        color: orange;
+                        font-size: 1.3rem;
+                    }
+
+                    p {
+                        justify-items: start;
+                    }
 
                 }
             }
-
         }
-
-        .menu_item {
-            display: grid;
-            place-items: center;
-            color: white;
-            display: grid;
-            align-items: center;
-            box-sizing: border-box;
-            width: 100%;
-
-            button {
-                background-color: orange;
-                width: 100%;
-                padding: 5px;
-                border-radius: 5px;
-            }
-
-            h4 {
-                color: orange;
-                font-size: 1.3rem;
-            }
-
-            p {
-                justify-items: start;
-            }
-
-            img {
-                margin: 15px;
-                width: 100%;
-                border-radius: 15px;
-                object-fit: cover;
-            }
-
-            h2 {
-                padding: 5px;
-                text-align: center;
-                color: white;
-                border-radius: 15px;
-                width: max-content;
-            }
-        }
-
-        .radio_button {
-            display: none;
-        }
-
+        // these rules will help open menu because they are radio buttons
         #open_menu_pizza:checked~#hidden_menu_pizza {
             display: grid;
         }

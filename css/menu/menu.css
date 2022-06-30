@@ -111,6 +111,9 @@ main {
   height: 70vh;
   overflow: scroll;
 }
+#menu #menu_list_all .radio_button {
+  display: none;
+}
 #menu #menu_list_all label {
   display: grid;
   margin: 10px;
@@ -140,21 +143,21 @@ main {
   min-height: 60vh;
   overflow: scroll;
 }
-#menu #menu_list_all .button_for_closing {
+#menu #menu_list_all .background_hidden_menu .button_for_closing {
   display: grid;
   color: orange;
   place-items: center;
 }
-#menu #menu_list_all .button_for_closing .header_hidden_menu {
+#menu #menu_list_all .background_hidden_menu .button_for_closing .header_hidden_menu {
   display: grid;
   grid-auto-flow: column;
   place-items: center;
 }
-#menu #menu_list_all .button_for_closing .header_hidden_menu img {
+#menu #menu_list_all .background_hidden_menu .button_for_closing .header_hidden_menu img {
   height: 40px;
   width: 40px;
 }
-#menu #menu_list_all .menu_item {
+#menu #menu_list_all .background_hidden_menu .any_type_menu .menu_item {
   display: grid;
   place-items: center;
   color: white;
@@ -163,37 +166,25 @@ main {
   box-sizing: border-box;
   width: 100%;
 }
-#menu #menu_list_all .menu_item button {
-  background-color: orange;
-  width: 100%;
-  padding: 5px;
-  border-radius: 5px;
-}
-#menu #menu_list_all .menu_item h4 {
-  color: orange;
-  font-size: 1.3rem;
-}
-#menu #menu_list_all .menu_item p {
-  justify-items: start;
-}
-#menu #menu_list_all .menu_item img {
+#menu #menu_list_all .background_hidden_menu .any_type_menu .menu_item img {
   margin: 15px;
   width: 100%;
   border-radius: 15px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#menu #menu_list_all .menu_item h2 {
+#menu #menu_list_all .background_hidden_menu .any_type_menu .menu_item button {
+  background-color: orange;
+  width: 100%;
   padding: 5px;
-  text-align: center;
-  color: white;
-  border-radius: 15px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  border-radius: 5px;
 }
-#menu #menu_list_all .radio_button {
-  display: none;
+#menu #menu_list_all .background_hidden_menu .any_type_menu .menu_item h4 {
+  color: orange;
+  font-size: 1.3rem;
+}
+#menu #menu_list_all .background_hidden_menu .any_type_menu .menu_item p {
+  justify-items: start;
 }
 #menu #menu_list_all #open_menu_pizza:checked ~ #hidden_menu_pizza {
   display: grid;
