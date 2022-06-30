@@ -171,70 +171,87 @@ main {
             display: none;
             grid-auto-flow: row;
             text-align: center;
-            place-items: center;
             position: absolute;
             top: 10vh;
             left: 0px;
             background-color: #0f0c0a;
             width: 100%;
-            min-height: 60vh;
+            min-height:100vh;
             overflow: scroll;
 
             .button_for_closing {
                 display: grid;
+                grid-auto-flow: column;
                 color: orange;
-                place-items: center;
+                align-items: center;
+                width: 65%;
+                height: 50px;
 
-                .header_hidden_menu {
+
+                .header_hidden_menu_back {
                     display: grid;
-                    grid-auto-flow: column;
-                    place-items: center;
+                    width: 40%;
+                    height: 40px;
 
-                    img {
+                 img {
                         height: 40px;
                         width: 40px;
+                        justify-self: start
 
+                    }
+                    
+                }
+                .header_hidden_menu_heading{
+                    h4{ 
+                        
+                        align-self: center;
+                        justify-self: start;
+                        font-size: 1.5rem;
                     }
                 }
 
             }
 
             .any_type_menu {
+                display: grid;
+                grid-template-columns: 1fr;
+                place-items: center;
+                
 
                 .menu_item {
                     display: grid;
                     place-items: center;
                     color: white;
-                    display: grid;
-                    align-items: center;
-                    box-sizing: border-box;
-                    width: 100%;
+                    width: 60%;
+                    margin: 10px;
 
                     img {
-                        margin: 15px;
-                        width: 100%;
+                        height:100px;
+                        width: 70%;
+                        margin:10px;
                         border-radius: 15px;
                         object-fit: cover;
                     }
+
                     button {
                         background-color: orange;
-                        width: 100%;
                         padding: 5px;
                         border-radius: 5px;
                     }
 
                     h4 {
-                        color: orange;
-                        font-size: 1.3rem;
+                        color: $main-color;
                     }
 
                     p {
                         justify-items: start;
+                        font-size: 1rem;
                     }
 
                 }
             }
         }
+
         // these rules will help open menu because they are radio buttons
         #open_menu_pizza:checked~#hidden_menu_pizza {
             display: grid;
@@ -258,6 +275,7 @@ main {
 
         #open_menu_desserts:checked~#hidden_menu_desserts {
             display: grid;
+            
         }
     }
 }

@@ -4,7 +4,7 @@
 <head>
     <meta charset=UTF-8>
 
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Okotoks Pizza's Menu</title>
@@ -16,12 +16,12 @@
     <header>
         <!-- this section will be shown in mobile and hidden in tablet and desktop -->
         <section id="navbar_mobile_tablet">
-           
+
             <div id="logo">
                 <img class="logo" src="images/allLogos/logo.png" alt="a logo for okotoks pizza">
             </div>
             <div id="tel">
-                <a  id="phone_hidden_mobile" href="tel:12345677">☎️ 1234567890</a>
+                <a id="phone_hidden_mobile" href="tel:12345677">☎️ 1234567890</a>
                 <p id="navbar_phone_hidden_mobile">1234567890</p>
             </div>
             <div id="minimized_links">
@@ -30,12 +30,14 @@
                 <input type="radio" id="close_links" name="minimized" class="radio_button">
 
                 <label for="open_links" id="show_content">
-                    <img class="menu_mini_image" src="images/index/hamburger.svg" alt="logo to open menu" class="hoverable">
+                    <img class="menu_mini_image" src="images/index/hamburger.svg" alt="logo to open menu"
+                        class="hoverable">
                 </label>
                 <div id="hidden_minimized_link_page">
                     <div id="button_for_going_back_to_nav">
                         <label for="close_links">
-                            <img class="menu_mini_image" src="images/icons/menu_close_right.svg" alt="logo to minimize menu"/>
+                            <img class="menu_mini_image" src="images/icons/menu_close_right.svg"
+                                alt="logo to minimize menu" />
                         </label>
                     </div>
                     <div id="nav_links_mobile">
@@ -114,11 +116,10 @@
                 <div id="hidden_menu_pizza" class="background_hidden_menu">
                     <!-- button for closing pizza menu -->
                     <div class="button_for_closing">
-                        <label for="close_menu" class="header_hidden_menu">
+                        <label for="close_menu" class="header_hidden_menu_back">
                             <img src="images/icons/menu_close_left.svg" alt="arrow for closing menu">
-                            <h2>Main Menu</h2>
                         </label>
-
+                        <h4 class="header_hidden_menu_heading">Pizza</h4>
                     </div>
                     <!-- all of the pizza items will be here this is the sibling of closing label and button for closing-->
                     <div id="whole_pizza_menu" class="any_type_menu">
@@ -182,13 +183,14 @@
                 <div id="hidden_menu_calzone" class="background_hidden_menu">
                     <!-- this button will close the menu pop-up -->
                     <div class="button_for_closing">
-                        <label for="close_menu" class="header_hidden_menu">
+                        <label for="close_menu" class="header_hidden_menu_back">
                             <img src="images/icons/menu_close_left.svg" alt="icon to close calzone menu">
-                            <h2>Main Menu</h2>
                         </label>
+                        <h4 class="header_hidden_menu_heading">Calzone</h4>
+
                     </div>
                     <!-- all of the calzone menu items will go inside this div -->
-                    <div id="whole_calzone_menu">
+                    <div id="whole_calzone_menu" class="any_type_menu">
                         <!-- each and every menu item will be inside this menu item div -->
 
                         <div class="menu_item">
@@ -223,13 +225,13 @@
                 <div id="hidden_menu_pasta" class="background_hidden_menu">
                     <!-- this button will close the menu pop-up -->
                     <div class="button_for_closing">
-                        <label for="close_menu" class="header_hidden_menu">
+                        <label for="close_menu" class="header_hidden_menu_back">
                             <img src="images/icons/menu_close_left.svg" alt="icon to close calzone menu">
-                            <h2>Main Menu</h2>
                         </label>
+                        <h4 class="header_hidden_menu_heading">Pasta</h4>
                     </div>
                     <!-- all of the calzone menu items will go inside this div -->
-                    <div id="whole_pasta_menu">
+                    <div id="whole_pasta_menu" class="any_type_menu">
                         <!-- each and every menu item will be inside this menu item div -->
                         <div class="menu_item">
                             <img src="images/menu/pasta/linguine.jpg" alt="linguine pasta">
@@ -267,13 +269,13 @@
                 <div id="hidden_menu_sides" class="background_hidden_menu">
                     <!-- this div is for the button to close the current menu and go the main menu -->
                     <div class="button_for_closing">
-                        <label for="close_menu" class="header_hidden_menu">
+                        <label for="close_menu" class="header_hidden_menu_back">
                             <img src="images/icons/menu_close_left.svg" alt="icon to closes sides menu">
-                            <h2>Main Menu</h2>
                         </label>
+                        <h4 class="header_hidden_menu_heading">Sides</h4>
                     </div>
                     <!-- whole sides menu is for all of the sides menu which will present underneath the closing button -->
-                    <div id="whole_sides_menu">
+                    <div id="whole_sides_menu" class="any_type_menu">
                         <div class="menu_item">
                             <img src="images/menu/sides/boneless_wings.jpg" alt="boneless chicken wings">
                             <button>Order Now</button>
@@ -310,12 +312,12 @@
                 <div id="hidden_menu_drinks" class="background_hidden_menu">
                     <!-- this div will be for button to go back to the main menu -->
                     <div class="button_for_closing">
-                        <label for="close_menu" class="header_hidden_menu">
+                        <label for="close_menu" class="header_hidden_menu_back">
                             <img src="images/icons/menu_close_left.svg" alt="icon to closes sides menu">
-                            <h2>Main Menu</h2>
                         </label>
+                        <h4 class="header_hidden_menu_heading">Drinks</h4>
                     </div>
-                    <div id="whole_drinks_menu">
+                    <div id="whole_drinks_menu" class="any_type_menu">
                         <!-- whole drinks menu is for entire menu of drinks  -->
                         <div class="menu_item">
                             <img src="images/menu/drinks/coke.jpg" alt="bottle of coke">
@@ -359,13 +361,13 @@
                 <div id="hidden_menu_desserts" class="background_hidden_menu">
                     <!-- this entire div for button to go main menu -->
                     <div class="button_for_closing">
-                        <label for="close_menu" class="header_hidden_menu">
+                        <label for="close_menu" class="header_hidden_menu_back">
                             <img src="images/icons/menu_close_left.svg" alt="icon to closes sides menu">
-                            <h2>Main Menu</h2>
                         </label>
+                        <h4 class="header_hidden_menu_heading">Desserts</h4>
                     </div>
                     <!-- this div is for the whole desserts menu -->
-                    <div id="whole_desserts_menu">
+                    <div id="whole_desserts_menu" class="any_type_menu">
                         <div class="menu_item">
                             <img src="images/menu/desserts/choco_lave_cake.jpeg" alt="choco lava cake">
                             <button>Order Now</button>
