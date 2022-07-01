@@ -25,16 +25,7 @@
         align-items: center;
         height: 100px;
 
-        #tel{
-            #phone_hidden_tablet_desktop{
-                display: none;
-            }
-            #phone_hidden_mobile{
-                display: grid;
-            }
-            
-        }
-
+        
         #logo {
             justify-self: start;
             padding: 20px;
@@ -130,8 +121,8 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
 
         .list {
-            margin: 30px;
-            padding: 40px
+            margin: 15px;
+           
         }
     }
 }

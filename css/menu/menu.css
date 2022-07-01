@@ -233,7 +233,6 @@ main {
 #footer #footer_links {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-self: center;
   text-align: center;
 }
 #footer #footer_links .list {
@@ -241,13 +240,15 @@ main {
   color: white;
   min-height: 170px;
   text-align: start;
-  margin: 20px;
+  margin: 10px;
 }
 #footer #footer_links .list h2 {
   justify-self: start;
   font-size: 1.5rem;
+  margin: 10px;
 }
 #footer #footer_links .list a {
+  margin: 10px;
   font-size: 0.9em;
   justify-self: start;
   color: white;
@@ -260,9 +261,16 @@ main {
   font-size: 1rem;
 }
 #footer #follow_us .footer_icon {
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   margin: 10px;
+}
+#footer #disclaimer {
+  color: lightgrey;
+  margin: 10px;
+}
+#footer #disclaimer p {
+  font-size: 1rem;
 }
 
 @media only screen and (min-width: 500px) {
@@ -366,6 +374,16 @@ main {
   #footer #footer_links .list a {
     font-size: 1rem;
   }
+  #footer #follow_us h2 {
+    font-size: 1.5rem;
+  }
+  #footer #follow_us .footer_icon {
+    height: 60px;
+    width: 60px;
+  }
+  #footer #disclaimer p {
+    font-size: 1.2rem;
+  }
 }
 @media only screen and (min-width: 800px) {
   * {
@@ -387,12 +405,6 @@ main {
     background-color: orange;
     align-items: center;
     height: 100px;
-  }
-  #navbar_desktop #tel #phone_hidden_tablet_desktop {
-    display: none;
-  }
-  #navbar_desktop #tel #phone_hidden_mobile {
-    display: grid;
   }
   #navbar_desktop #logo {
     justify-self: start;
@@ -464,7 +476,6 @@ main {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   #footer #footer_links .list {
-    margin: 30px;
-    padding: 40px;
+    margin: 15px;
   }
 }/*# sourceMappingURL=menu.css.map */
