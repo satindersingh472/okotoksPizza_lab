@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Varela+Round&display=swap');
 $grey-color: #232221;
 $footer-color: #0f0c0a;
-$main-color:orange;
-$links-color:white;
+$main-color: orange;
+$links-color: white;
 
 * {
     padding: 0px;
@@ -17,24 +17,28 @@ body {
     text-align: center;
     width: 100%;
 }
-img{
-    width:100%;
+
+img {
+    width: 100%;
 }
+
 // this section is for header
 #navbar_desktop {
     display: none;
 }
+
 #navbar_mobile_tablet {
     background-color: orange;
     display: grid;
     grid-auto-flow: column;
     align-items: center;
-    height:10vh;
+    height: 10vh;
 
     #tel {
-        #phone_hidden_mobile{
+        #phone_hidden_mobile {
             display: none;
         }
+
         a {
             color: black;
             text-decoration: none;
@@ -53,7 +57,8 @@ img{
         height: 100%;
         background-color: black;
         text-align: center;
-        #button_for_going_back_to_nav{
+
+        #button_for_going_back_to_nav {
             position: absolute;
             top: 0px;
             right: 0px;
@@ -106,96 +111,122 @@ img{
     #main_heading {
         color: $main-color;
         padding: 30px;
-        h1{
-            font-size:3rem;
+
+        h1 {
+            font-size: 3rem;
         }
-        
+
     }
 
     #content {
         .content_item {
+            display: grid;
+            grid-auto-flow: row;
+
             .content_item_heading {
                 color: $links-color;
                 padding: 30px;
                 margin: 30px;
                 background-color: $footer-color;
+                order: 1;
             }
-                .content_actual {
-                    margin: 10px;
-                    .content_item_image {
-                        width: 100%;
-                    }
 
-                    .content_item_paragraph {
-                        color: $footer-color;
-                        font-size: 1.2rem;
-                        padding: 30px;
-                        background-color: $main-color;
-                        text-align: start;
-                        box-sizing: border-box;
-                    }
+            .content_actual {
+                display: grid;
+                place-items: center;
+                margin: 10px;
+                order:3;
+                gap: 10px;
+
+                iframe {
+                    height: 300px;
+                    width: 100%;
+                    border: 5px solid $main-color;
+                    box-sizing: border-box;
+                }
+
+                .content_item_image {
+                    object-fit: cover;
+                    height: 250px;
+                    width: 100%;
+                  
+
                 }
             }
-        }
 
-    }
-
-    // this section is for footer
-    #footer {
-        display: grid;
-        background-color: $footer-color;
-        color: $main-color;
-        place-items: center;
-    
-        #footer_links {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            text-align: center;
-    
-            .list {
-                display: grid;
-                color: white;
-                min-height: 170px;
+            .content_item_paragraph {
+                color: $footer-color;
+                font-size: 1rem;
+                padding: 5%;
+                background-color: $main-color;
                 text-align: start;
                 margin: 10px;
-    
-                h2 {
-    
-                    justify-self: start;
-                    font-size: 1.5rem;
-                    margin: 10px;
-                }
-    
-                a {
-                    margin: 10px;
-                    font-size: .9em;
-                    justify-self: start;
-                    color: white;
-                    text-decoration: none;
-    
-                    &:hover {
-                        text-shadow: 3px 3px 6px white;
-                    }
-                }
+                order:2;
             }
+
         }
-    
-        #follow_us {
+    }
+
+}
+
+// this section is for footer
+#footer {
+    display: grid;
+    background-color: $footer-color;
+    color: $main-color;
+    place-items: center;
+
+    #footer_links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+
+        .list {
+            display: grid;
+            color: white;
+            min-height: 170px;
+            text-align: start;
+            margin: 10px;
+
             h2 {
-                font-size: 1rem;
-            }
-    
-            .footer_icon {
-                height: 40px;
-                width: 40px;
+
+                justify-self: start;
+                font-size: 1.5rem;
                 margin: 10px;
             }
-        }
-        #disclaimer{
-            color: lightgrey;
-            margin: 10px;
-            p{
-                font-size: 1rem;
+
+            a {
+                margin: 10px;
+                font-size: .9em;
+                justify-self: start;
+                color: white;
+                text-decoration: none;
+
+                &:hover {
+                    text-shadow: 3px 3px 6px white;
+                }
             }
         }
     }
+
+    #follow_us {
+        h2 {
+            font-size: 1rem;
+        }
+
+        .footer_icon {
+            height: 40px;
+            width: 40px;
+            margin: 10px;
+        }
+    }
+
+    #disclaimer {
+        color: lightgrey;
+        margin: 10px;
+
+        p {
+            font-size: 1rem;
+        }
+    }
+}

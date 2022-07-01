@@ -42,24 +42,29 @@
     }
 
     #content {
-        .content_item{
-            .content_item_heading{
-                font-size: 2rem;
+        .content_item {
+            .content_item_heading {
+                font-size: 2.5rem;
             }
-            .content_actual{
+
+            .content_actual {
                 display: grid;
-                .content_item_image{
-                    width:100%;
-                order: 1;
-                }
-                .content_item_paragraph{
-                    width: 100%;
-                    order:2
-                }
-                .content_item_image_two{
-                    order:3;
+                place-items: center;
+                grid-template-columns: 1fr 1fr;
+                .content_item_image {
+                    display: grid;
+                    object-fit: cover;
+                    width: 100%;    
                 }
             }
+            .content_item_paragraph {
+                padding: 20%;
+                margin: 10px;
+               box-sizing: border-box;
+
+
+            }
+
         }
 
     }

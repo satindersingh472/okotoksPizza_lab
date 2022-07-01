@@ -3,7 +3,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Varela+Round&display=swap');
     $grey-color: #232221;
     $footer-color: #0f0c0a;
-    
+
 
 
     * {
@@ -64,15 +64,47 @@
         }
     }
 
+    // end of header
+    #main {
+        #main_heading {
+            h1 {
+                font-size: 5rem;
+            }
+        }
+
+        #content {
+            .content_item {
+                .content_item_heading {
+                    font-size: 1.7rem;
+                }
+
+                .content_actual {
+                    iframe {
+                        width: 100%;
+
+                    }
+
+                    .content_item_image {
+                        display: grid;
+                    }
+                }
+
+                .content_item_paragraph {
+                    display: grid;
+                }
+            }
+        }
+    }
+
     // this section is for footer
     #footer {
 
         #footer_links {
             grid-template-columns: 1fr 1fr 1fr 1fr;
-    
+
             .list {
                 margin: 15px;
-               
+
             }
         }
     }
