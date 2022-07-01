@@ -37,7 +37,7 @@ img {
   justify-self: start;
   padding: 10px;
 }
-#navbar_mobile_tablet #tel #navbar_phone_hidden_mobile {
+#navbar_mobile_tablet #tel #phone_hidden_mobile {
   display: none;
 }
 #navbar_mobile_tablet #tel a {
@@ -168,41 +168,41 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
-  height: 300px;
 }
 #menu #menu_list_all .background_hidden_menu .any_type_menu .menu_item {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  place-items: center;
+  align-items: center;
+  justify-items: center;
   color: white;
-  width: 80%;
+  width: 95%;
+  margin-top: 20px;
   text-align: start;
 }
 #menu #menu_list_all .background_hidden_menu .any_type_menu .menu_item img {
   height: 150px;
-  width: 100%;
-  margin: 10px;
+  width: 60%;
   border-radius: 10px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 #menu #menu_list_all .background_hidden_menu .any_type_menu .menu_item .menu_item_description {
-  margin: 10px;
+  margin: auto;
   display: grid;
 }
 #menu #menu_list_all .background_hidden_menu .any_type_menu .menu_item .menu_item_description button {
-  box-sizing: border-box;
   background-color: orange;
   padding: 5px;
+  width: 100px;
   border-radius: 5px;
   order: 3;
+  margin-top: 5px;
 }
 #menu #menu_list_all .background_hidden_menu .any_type_menu .menu_item .menu_item_description h4 {
-  justify-self: start;
   color: orange;
+  font-size: 1rem;
 }
 #menu #menu_list_all .background_hidden_menu .any_type_menu .menu_item .menu_item_description p {
-  justify-items: start;
   font-size: 1rem;
 }
 #menu #menu_list_all #open_menu_pizza:checked ~ #hidden_menu_pizza {
@@ -285,6 +285,12 @@ main {
     height: 50px;
     width: 60px;
   }
+  #navbar_mobile_tablet #tel #phone_hidden_tablet_desktop {
+    display: none;
+  }
+  #navbar_mobile_tablet #tel #phone_hidden_mobile {
+    display: grid;
+  }
   #navbar_mobile_tablet #show_content {
     display: grid;
   }
@@ -314,8 +320,37 @@ main {
   #menu #menu_list_all .background_hidden_menu {
     width: 100%;
   }
+  #menu #menu_list_all .background_hidden_menu .button_for_closing .header_hidden_menu_back img {
+    width: 100px;
+    height: 100px;
+  }
+  #menu #menu_list_all .background_hidden_menu .button_for_closing .header_hidden_menu_heading {
+    font-size: 3rem;
+  }
   #menu #menu_list_all .background_hidden_menu .any_type_menu {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  #menu #menu_list_all .background_hidden_menu .any_type_menu .menu_item {
+    width: 90%;
+  }
+  #menu #menu_list_all .background_hidden_menu .any_type_menu .menu_item img {
+    height: 250px;
+    width: 250px;
+  }
+  #menu #menu_list_all .background_hidden_menu .any_type_menu .menu_item .menu_item_description {
+    display: grid;
+  }
+  #menu #menu_list_all .background_hidden_menu .any_type_menu .menu_item .menu_item_description button {
+    margin-top: 5px;
+    justify-self: start;
+    width: 150px;
+  }
+  #menu #menu_list_all .background_hidden_menu .any_type_menu .menu_item .menu_item_description h4 {
+    margin: 5px 5px 0px 0px;
+    font-size: 1.4rem;
+  }
+  #menu #menu_list_all .background_hidden_menu .any_type_menu .menu_item .menu_item_description p {
+    font-size: 1.4rem;
   }
 
   #footer #footer_links {
@@ -324,6 +359,12 @@ main {
   #footer #footer_links .list {
     margin: 10px;
     padding: 10px;
+  }
+  #footer #footer_links .list h2 {
+    font-size: 1.5rem;
+  }
+  #footer #footer_links .list a {
+    font-size: 1rem;
   }
 }
 @media only screen and (min-width: 800px) {
@@ -347,10 +388,11 @@ main {
     align-items: center;
     height: 100px;
   }
-  #navbar_desktop p {
-    font-size: 1.2rem;
-    font-weight: bold;
-    word-spacing: 0.3rem;
+  #navbar_desktop #tel #phone_hidden_tablet_desktop {
+    display: none;
+  }
+  #navbar_desktop #tel #phone_hidden_mobile {
+    display: grid;
   }
   #navbar_desktop #logo {
     justify-self: start;
@@ -385,10 +427,37 @@ main {
     display: grid;
   }
   #menu #menu_list_all label .menu_thumbnail_image {
-    height: 300px;
+    height: 400px;
   }
   #menu #menu_list_all label .menu-thumbnail_text {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+  }
+  #menu #menu_list_all .background_hidden_menu .button_for_closing .header_hidden_menu_back img {
+    height: 150px;
+    width: 150px;
+  }
+  #menu #menu_list_all .background_hidden_menu .button_for_closing .header_hidden_menu_back .header_hidden_menu_heading {
+    font-size: 6rem;
+  }
+  #menu #menu_list_all .background_hidden_menu .any_type_menu {
+    grid-template-columns: 1fr 1fr;
+  }
+  #menu #menu_list_all .background_hidden_menu .any_type_menu .menu_item img {
+    height: 400px;
+    width: 100%;
+  }
+  #menu #menu_list_all .background_hidden_menu .any_type_menu .menu_item .menu_item_description {
+    margin: 15px;
+  }
+  #menu #menu_list_all .background_hidden_menu .any_type_menu .menu_item .menu_item_description button {
+    width: 200px;
+    justify-self: start;
+  }
+  #menu #menu_list_all .background_hidden_menu .any_type_menu .menu_item .menu_item_description h4 {
+    margin: 5px 5px 0px 5px;
+  }
+  #menu #menu_list_all .background_hidden_menu .any_type_menu .menu_item .menu_item_description p {
+    margin: 0px;
   }
 
   #footer #footer_links {

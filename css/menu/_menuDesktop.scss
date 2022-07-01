@@ -1,7 +1,8 @@
 @media only screen and (min-width:800px) {
     $grey-color: #232221;
     $footer-color: #0f0c0a;
-
+    $main-color:orange;
+    $links-color:white;
 
     * {
         padding: 0px;
@@ -24,10 +25,14 @@
         align-items: center;
         height: 100px;
 
-        p {
-            font-size: 1.2rem;
-            font-weight: bold;
-            word-spacing: .3rem;
+        #tel{
+            #phone_hidden_tablet_desktop{
+                display: none;
+            }
+            #phone_hidden_mobile{
+                display: grid;
+            }
+            
         }
 
         #logo {
@@ -70,11 +75,48 @@
 
             label {
                 display: grid;
+                
                 .menu_thumbnail_image{
-                    height:300px;
+                    height:400px;
                 }
                 .menu-thumbnail_text{
-                    font-size: 1.5rem;
+                    font-size: 2.5rem;
+                }
+            }
+            .background_hidden_menu{
+                .button_for_closing{
+                    .header_hidden_menu_back{
+                        img{
+                            height: 150px;
+                            width: 150px;
+                        }
+                        .header_hidden_menu_heading{
+                            font-size: 6rem;
+                        }
+                    }
+                }
+                .any_type_menu{
+                    grid-template-columns: 1fr 1fr;
+                    .menu_item{
+                        img{
+                            height:400px;
+                            width: 100%;
+                        }
+                        .menu_item_description{
+                            margin: 15px;
+                            button{
+                                width: 200px;
+                                justify-self: start;
+                                
+                            }
+                            h4{
+                                margin:5px 5px 0px 5px;
+                            }
+                            p{
+                                margin:0px;
+                            }
+                        }
+                    }
                 }
             }
         }
