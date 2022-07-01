@@ -32,11 +32,13 @@ img{
     height: 10vh;
 
     #tel {
+        #phone_hidden_mobile{
+            display:none;
+        }
         a {
             color: black;
             text-decoration: none;
             font-size: 1rem;
-            font-weight: bold;
         }
     }
 

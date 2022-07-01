@@ -32,11 +32,13 @@ img{
     height:10vh;
 
     #tel {
+        #phone_hidden_mobile{
+            display: none;
+        }
         a {
             color: black;
             text-decoration: none;
-            font-size: 1.2rem;
-            font-weight: bold;
+            font-size: 1rem;
         }
     }
 
@@ -99,24 +101,38 @@ img{
 // this section is for main
 #main {
     background-color: $grey-color;
+    display: grid;
 
     #main_heading {
         color: $main-color;
+        padding: 30px;
+        h1{
+            font-size:3rem;
+        }
+        
     }
 
     #content {
         .content_item {
             .content_item_heading {
                 color: $links-color;
+                padding: 30px;
+                margin: 30px;
+                background-color: $footer-color;
             }
                 .content_actual {
-
+                    margin: 10px;
                     .content_item_image {
                         width: 100%;
                     }
 
                     .content_item_paragraph {
-                        color: $links-color
+                        color: $footer-color;
+                        font-size: 1.2rem;
+                        padding: 30px;
+                        background-color: $main-color;
+                        text-align: start;
+                        box-sizing: border-box;
                     }
                 }
             }

@@ -140,9 +140,7 @@ main {
     #menu_list_all {
         display: grid;
         grid-template-columns: 1fr;
-        height: 70vh;
-        overflow: scroll;
-
+        min-height: 70vh;
         .radio_button {
             display: none;
         }

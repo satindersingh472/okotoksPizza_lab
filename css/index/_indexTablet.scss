@@ -12,7 +12,21 @@ body {
     padding: 0px;
     margin: 0px;
 }
-// this section is for main
+// this section is for header
+#navbar_desktop{
+    display:none;
+}
+#navbar_mobile_tablet{
+  #tel{
+    #phone_hidden_tablet_desktop{
+        display:none;
+    }
+    #phone_hidden_mobile{
+        display:grid;
+    }
+  }
+}
+// this section is for footer
 #footer {
     #footer_links {
         grid-template-columns: 1fr 1fr;

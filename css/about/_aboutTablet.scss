@@ -1,25 +1,68 @@
-@media only screen and (min-width:800px) {
+@media only screen and (min-width:500px) {
     $grey-color: #232221;
     $footer-color: #0f0c0a;
     $main-color: orange;
     $links-color: white;
-* {
-    padding: 0;
-    margin: 0;
-}
 
-body {
-    padding: 0px;
-    margin: 0px;
-}
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    // this section is for header
+    #navbar_desktop {
+        display: none;
+    }
+
+    #navbar_mobile_tablet {
+        #tel {
+            #phone_hidden_tablet_desktop {
+                display: none;
+            }
+
+            #phone_hidden_mobile {
+                display: grid;
+            }
+        }
+
+    }
 
     /* this section is for main */
-    
-    #menu{
-        #menu_list_all{
-            grid-template-columns: 1fr 1fr 1fr;
+    #main {
+        #main_heading {
+            h1 {
+                font-size: 4rem;
+            }
         }
     }
+
+    #content {
+        .content_item{
+            .content_item_heading{
+                font-size: 2rem;
+            }
+            .content_actual{
+                display: grid;
+                .content_item_image{
+                    width:100%;
+                
+                }
+                .content_item_paragraph{
+                    width: 100%;
+                }
+                .content_item_image_two{
+                    order:2;
+                }
+            }
+        }
+
+    }
+
     // this section is for the footer for desktop
     #footer {
         #footer_links {
@@ -28,25 +71,30 @@ body {
             .list {
                 margin: 10px;
                 padding: 10px;
-                h2{
+
+                h2 {
                     font-size: 1.5rem;
                 }
-                a{
+
+                a {
                     font-size: 1rem;
                 }
             }
         }
-        #follow_us{
-            h2{
+
+        #follow_us {
+            h2 {
                 font-size: 1.5rem;
             }
-            .footer_icon{
-                height:60px;
+
+            .footer_icon {
+                height: 60px;
                 width: 60px;
             }
         }
-        #disclaimer{
-            p{
+
+        #disclaimer {
+            p {
                 font-size: 1.2rem;
             }
         }
