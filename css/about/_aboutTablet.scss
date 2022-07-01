@@ -50,13 +50,14 @@
                 display: grid;
                 .content_item_image{
                     width:100%;
-                
+                order: 1;
                 }
                 .content_item_paragraph{
                     width: 100%;
+                    order:2
                 }
                 .content_item_image_two{
-                    order:2;
+                    order:3;
                 }
             }
         }
