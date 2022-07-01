@@ -29,7 +29,6 @@
 
         p {
             font-size: 1.2rem;
-            font-weight: bold;
             word-spacing: .3rem;
         }
 
@@ -61,6 +60,19 @@
                     text-shadow: 3px 3px 6px $grey-color;
 
                 }
+            }
+        }
+    }
+
+    // this section is for footer
+    #footer {
+
+        #footer_links {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+            .list {
+                margin: 15px;
+               
             }
         }
     }

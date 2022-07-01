@@ -128,50 +128,58 @@ img{
     #footer {
         display: grid;
         background-color: $footer-color;
-        color: orange;
+        color: $main-color;
         place-items: center;
-
+    
         #footer_links {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            justify-self: center;
             text-align: center;
-
+    
             .list {
                 display: grid;
                 color: white;
                 min-height: 170px;
                 text-align: start;
-                margin: 20px;
-
+                margin: 10px;
+    
                 h2 {
-
+    
                     justify-self: start;
                     font-size: 1.5rem;
+                    margin: 10px;
                 }
-
+    
                 a {
+                    margin: 10px;
                     font-size: .9em;
                     justify-self: start;
                     color: white;
                     text-decoration: none;
-
+    
                     &:hover {
                         text-shadow: 3px 3px 6px white;
                     }
                 }
             }
         }
-
+    
         #follow_us {
             h2 {
                 font-size: 1rem;
             }
-
+    
             .footer_icon {
-                height: 30px;
-                width: 30px;
+                height: 40px;
+                width: 40px;
                 margin: 10px;
+            }
+        }
+        #disclaimer{
+            color: lightgrey;
+            margin: 10px;
+            p{
+                font-size: 1rem;
             }
         }
     }

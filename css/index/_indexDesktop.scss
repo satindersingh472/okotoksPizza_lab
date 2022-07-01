@@ -26,7 +26,6 @@
 
         p {
             font-size: 1.2rem;
-            font-weight: bold;
             word-spacing: .3rem;
         }
 
@@ -88,10 +87,10 @@
 
         #footer_links {
             grid-template-columns: 1fr 1fr 1fr 1fr;
-
+    
             .list {
-                margin: 30px;
-                padding: 40px
+                margin: 15px;
+               
             }
         }
     }
