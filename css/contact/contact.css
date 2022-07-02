@@ -28,6 +28,15 @@ img {
   align-items: center;
   height: 10vh;
 }
+#navbar_mobile_tablet #logo {
+  display: grid;
+  justify-items: start;
+}
+#navbar_mobile_tablet #logo .logo {
+  height: 50px;
+  width: 60px;
+  padding: 10px;
+}
 #navbar_mobile_tablet #tel #phone_hidden_mobile {
   display: none;
 }
@@ -36,7 +45,16 @@ img {
   text-decoration: none;
   font-size: 1rem;
 }
-#navbar_mobile_tablet #hidden_minimized_link_page {
+#navbar_mobile_tablet #minimized_links #show_content {
+  display: grid;
+}
+#navbar_mobile_tablet #minimized_links #show_content .menu_mini_image {
+  justify-self: end;
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+}
+#navbar_mobile_tablet #minimized_links #hidden_minimized_link_page {
   display: none;
   align-items: center;
   grid-auto-flow: row;
@@ -47,42 +65,33 @@ img {
   height: 100%;
   background-color: black;
   text-align: center;
+  opacity: 0.9;
 }
-#navbar_mobile_tablet #hidden_minimized_link_page #button_for_going_back_to_nav {
+#navbar_mobile_tablet #minimized_links #hidden_minimized_link_page #nav_links_mobile {
+  display: grid;
+  grid-auto-flow: row;
+  gap: 20px;
+}
+#navbar_mobile_tablet #minimized_links #hidden_minimized_link_page #nav_links_mobile a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+#navbar_mobile_tablet #minimized_links #hidden_minimized_link_page #button_for_going_back_to_nav {
   position: absolute;
   top: 0px;
   right: 0px;
 }
-#navbar_mobile_tablet #open_links:checked ~ #hidden_minimized_link_page {
+#navbar_mobile_tablet #minimized_links #hidden_minimized_link_page #button_for_going_back_to_nav img {
+  height: 80px;
+  width: 80px;
+}
+#navbar_mobile_tablet #minimized_links #open_links:checked ~ #hidden_minimized_link_page {
   display: grid;
-}
-#navbar_mobile_tablet .logo {
-  height: 40px;
-  width: 50px;
-  justify-self: start;
-  padding: 10px;
-}
-
-#nav_links_mobile {
-  display: grid;
-  grid-auto-flow: row;
-  gap: 10px;
-}
-#nav_links_mobile a {
-  text-decoration: none;
-  color: white;
-  font-size: 2rem;
 }
 
 .radio_button {
   display: none;
-}
-
-.menu_mini_image {
-  height: 40px;
-  width: 40px;
-  justify-self: end;
-  padding: 10px;
 }
 
 #main_tablet_desktop {
@@ -100,13 +109,19 @@ img {
 #main_mobile #main_heading {
   color: orange;
   background-color: #0f0c0a;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#main_mobile #main_heading h1 {
+  font-size: 3rem;
 }
 #main_mobile #contact_methods_list {
   display: grid;
 }
 #main_mobile #contact_methods_list .contact_method {
   display: grid;
-  margin: 20px;
+  margin: 30px 20px;
   align-items: center;
   justify-items: center;
   text-align: center;
@@ -135,9 +150,9 @@ img {
   text-decoration: none;
 }
 #main_mobile #contact_methods_list .contact_method .contact_method_information #iframe {
-  height: 100px;
-  width: 300px;
-  margin: 20px;
+  height: 300px;
+  width: 100%;
+  margin: 20px auto;
 }
 #main_mobile #contact_methods_list .contact_method .contact_method_information #form {
   place-items: center;
