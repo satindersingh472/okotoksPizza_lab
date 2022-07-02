@@ -17,13 +17,33 @@
         display:none;
     }
     #navbar_mobile_tablet{
+        height: 10vh;
+        display: grid;
+        align-items: center;
+        #logo{
+            .logo{
+                padding: 10px;
+                height: 70px;
+                width: 80px;
+            }
+        }
         #tel{
             #phone_hidden_tablet_desktop{
                 display: none;
+                
             }
             #phone_hidden_mobile{
                 display: grid;
+                font-size: 1.5rem;
             }
+        }
+        #minimized_links{
+            #show_content{
+            .menu_mini_image{
+                height: 90px;
+                width: 90px;
+            }
+        }
         }
     }
     /* this section is for main */
