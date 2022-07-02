@@ -286,7 +286,12 @@ body {
   }
 
   #location {
-    margin-top: 20px;
+    margin: 20px 0px;
+    height: 70vh;
+  }
+  #location iframe {
+    height: 100%;
+    width: 90%;
   }
 
   #note {

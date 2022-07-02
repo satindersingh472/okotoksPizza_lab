@@ -86,7 +86,12 @@
     }
 
     #location {
-        margin-top: 20px;
+        margin: 20px 0px;
+        height: 70vh;
+        iframe{
+            height: 100%;
+            width: 90%;
+        }
     }
 
     #note {
