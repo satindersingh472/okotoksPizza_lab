@@ -13,39 +13,46 @@
         padding: 0px;
         margin: 0px;
     }
-    #navbar_desktop{
-        display:none;
+
+    #navbar_desktop {
+        display: none;
     }
-    #navbar_mobile_tablet{
+
+    #navbar_mobile_tablet {
         height: 10vh;
         display: grid;
         align-items: center;
-        #logo{
-            .logo{
+
+        #logo {
+            .logo {
                 padding: 10px;
                 height: 70px;
                 width: 80px;
             }
         }
-        #tel{
-            #phone_hidden_tablet_desktop{
+
+        #tel {
+            #phone_hidden_tablet_desktop {
                 display: none;
-                
+
             }
-            #phone_hidden_mobile{
+
+            #phone_hidden_mobile {
                 display: grid;
                 font-size: 1.5rem;
             }
         }
-        #minimized_links{
-            #show_content{
-            .menu_mini_image{
-                height: 90px;
-                width: 90px;
+
+        #minimized_links {
+            #show_content {
+                .menu_mini_image {
+                    height: 90px;
+                    width: 80px;
+                }
             }
         }
-        }
     }
+
     /* this section is for main */
 
     #main_mobile {
@@ -58,22 +65,28 @@
 
     #hours {
         border-right: 1px solid $main-color;
+        align-self: start;
     }
 
     #phone {
         border-bottom: 1px solid $main-color;
     }
 
+    #email {
+        border-bottom: 1px solid $main-color;
+    }
+
     #hours {
-        padding-left: 20px;
+
+        .contact_method_information {
+            p {
+                padding: 20px 0px;
+            }
+        }
     }
 
     #location {
         margin-top: 20px;
-
-        #iframe {
-            width: 90%;
-        }
     }
 
     #note {
@@ -86,6 +99,7 @@
         background-color: $grey-color;
         text-align: center;
         align-items: center;
+        padding-bottom: 30px;
 
 
         #main_heading {
@@ -99,23 +113,25 @@
         #contact_methods_list {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            place-items: center;
             text-align: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
 
             .contact_method {
                 display: grid;
-                padding: 30px;
+                padding-top: 50px;
+                padding-bottom: 30px;
                 line-height: 1.5;
-                align-items: center;
+                place-items: center;
                 text-align: center;
-                justify-items: center;
+
 
                 .contact_method_icon {
-                    height: 30px;
+                    height: 40px;
                     width: 30px;
                     border: 2px solid $main-color;
                     border-radius: 50%;
-                    padding: 8px;
+                    padding: 5px 10px;
                     background-color: $links-color;
 
 
@@ -125,23 +141,15 @@
                 .contact_method_heading {
                     color: $main-color;
                     font-size: 1.7rem;
-                    padding: 1px;
+
                 }
 
                 .contact_method_information {
                     color: $links-color;
-
-                    p {
-                        font-size: 1.2rem;
-                        margin: 10px;
-                        text-align: start;
-                    }
-
-                    a {
-                        color: $links-color;
-                        text-decoration: none;
-                    }
-
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                    margin: 10px;
+                    text-align: start;
 
                 }
 
@@ -205,25 +213,30 @@
             .list {
                 margin: 10px;
                 padding: 10px;
-                h2{
+
+                h2 {
                     font-size: 1.5rem;
                 }
-                a{
+
+                a {
                     font-size: 1rem;
                 }
             }
         }
-        #follow_us{
-            h2{
+
+        #follow_us {
+            h2 {
                 font-size: 1.5rem;
             }
-            .footer_icon{
-                height:60px;
+
+            .footer_icon {
+                height: 60px;
                 width: 60px;
             }
         }
-        #disclaimer{
-            p{
+
+        #disclaimer {
+            p {
                 font-size: 1.2rem;
             }
         }
