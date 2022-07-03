@@ -377,6 +377,7 @@ body {
   #lets_get_connected .contact_method .contact_method_information #form div {
     display: grid;
     width: 100%;
+    place-items: center;
   }
   #lets_get_connected .contact_method .contact_method_information #form div input[type=text],
 #lets_get_connected .contact_method .contact_method_information #form div input[type=number],

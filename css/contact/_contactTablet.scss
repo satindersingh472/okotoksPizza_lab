@@ -204,6 +204,7 @@
                     div {
                         display: grid;
                         width: 100%;
+                        place-items: center;
                         input[type=text],
                         input[type=number],
                         textarea {
