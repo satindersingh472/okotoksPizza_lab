@@ -442,7 +442,7 @@ img {
   #main #content .content_item .content_item_paragraph {
     display: grid;
     padding: 5%;
-    height: 50vh;
+    min-height: 50vh;
     width: 30%;
     text-align: center;
     align-items: center;
