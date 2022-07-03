@@ -36,11 +36,11 @@ img {
 
     #logo {
         display: grid;
+        justify-items: start;
 
         .logo {
             height: 50px;
             width: 60px;
-            justify-self: start;
             padding: 10px;
         }
     }
@@ -62,10 +62,10 @@ img {
             display: grid;
 
             .menu_mini_image {
+                height: 50px;
+                width: 50px;
                 justify-self: end;
-                height: 40px;
-                width: 40px;
-                padding: 10px;
+                box-sizing: border-box;
             }
         }
 
@@ -81,18 +81,18 @@ img {
             height: 100%;
             background-color: black;
             text-align: center;
-            opacity: .9;
 
             #nav_links_mobile {
                 display: grid;
                 grid-auto-flow: row;
-                gap: 20px;
+                gap: 40px;
 
                 a {
                     text-decoration: none;
-                    color: white;
+                    color: $links-color;
                     font-size: 1.5rem;
                 }
+
             }
 
             #button_for_going_back_to_nav {
@@ -101,21 +101,21 @@ img {
                 right: 0px;
 
                 img {
-                    height: 40px;
-                    width: 40px;
+                    height: 80px;
+                    width: 80px;
                 }
             }
 
-        }
 
-
-        #open_links:checked~#hidden_minimized_link_page {
-            display: grid;
         }
     }
 
-}
 
+    #open_links:checked~#hidden_minimized_link_page {
+        display: grid;
+    }
+
+}
 
 .radio_button {
     display: none;

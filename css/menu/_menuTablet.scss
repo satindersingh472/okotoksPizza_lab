@@ -14,32 +14,56 @@
         margin: 0px;
     }
 
-    #navbar_mobile_tablet {
-        #logo {
-            display: grid;
+    #navbar_desktop {
+        display: none;
+    }
 
+    #navbar_mobile_tablet {
+        height: 10vh;
+        display: grid;
+        align-items: center;
+
+        #logo {
             .logo {
                 padding: 10px;
-                justify-self: start;
-                height: 50px;
-                width: 60px;
+                height: 70px;
+                width: 80px;
             }
         }
-        #tel{
-            #phone_hidden_tablet_desktop{
+
+        #tel {
+            #phone_hidden_tablet_desktop {
                 display: none;
+
             }
-            #phone_hidden_mobile{
+
+            #phone_hidden_mobile {
                 display: grid;
+                font-size: 1.5rem;
             }
-            
         }
 
-        #show_content {
-            display: grid;
+        #minimized_links {
+            #show_content {
+                .menu_mini_image {
+                    height: 90px;
+                    width: 80px;
+                }
+            }
 
-            .menu_thumbnail_image {
-                justify-self: end;
+            #hidden_minimized_link_page {
+                #button_for_going_back_to_nav {
+                    img {
+                        height: 100px;
+                        width: 100px;
+                    }
+                }
+            }
+
+            #nav_links_mobile {
+                a {
+                    padding: 20px;
+                }
             }
         }
     }
