@@ -1,6 +1,8 @@
 @media only screen and (min-width:800px) {
     $grey-color: #232221;
     $footer-color: #0f0c0a;
+    $main-color:orange;
+    $links-color:white;
 
 
     * {
@@ -61,48 +63,52 @@
     }
 
     // here is the end of header css
-    #main_mobile {
+    #main_mobile{
         display: none;
     }
-
-    #location {
-        display: none;
+    #hours{
+    .contact_method_information{
+        p{
+            padding: 10px 0px;
+        }
     }
-
-    #location_desktop {
-        display: grid;
-        width: 100%;
-        height: 27vh;
-        
-
-        #iframe {
-           width: 100%;
-           height: 100%;
-         
+    }
+    #location{
+        height: 70vh;
+        iframe{
+            height: 100%;
         }
     }
 
     #phone {
         border: none;
     }
+    #email{
+        border-bottom:none;
+    }
 
     #main_tablet_desktop {
         display: grid;
+        #main_heading{
+            margin-top: 30px;
+            h1{
+                font-size: 5rem;
+            }
+        }
 
         #contact_methods_list {
-            grid-template-columns: 1fr 1fr;
-           justify-items: center;
-
+            display: grid;
+           grid-template-columns: 1fr;
+               
             #phone_and_address {
                 display: grid;
-                grid-template-columns: 1fr 1fr;
-                align-items: start;
+                grid-template-columns: 1fr 1fr 1fr;
+              align-items: start;
                 width: 100%;
 
                 .contact_method {
                     display: grid;
-                    align-self: start;
-                    justify-self: center;
+                   place-items: center;
                     padding: 10px;
                    
                 }

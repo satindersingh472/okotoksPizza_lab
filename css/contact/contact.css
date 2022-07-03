@@ -62,7 +62,6 @@ body {
   height: 100%;
   background-color: black;
   text-align: center;
-  opacity: 0.9;
 }
 #navbar_mobile_tablet #minimized_links #hidden_minimized_link_page #nav_links_mobile {
   display: grid;
@@ -106,11 +105,11 @@ body {
 #main_mobile #main_heading {
   color: orange;
   background-color: #0f0c0a;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 20px;
 }
 #main_mobile #main_heading h1 {
   font-size: 2rem;
+  padding: 20px 0px;
 }
 #main_mobile #contact_methods_list {
   display: grid;
@@ -258,13 +257,16 @@ body {
     height: 90px;
     width: 80px;
   }
+  #navbar_mobile_tablet #minimized_links #hidden_minimized_link_page #button_for_going_back_to_nav img {
+    height: 100px;
+    width: 100px;
+  }
+  #navbar_mobile_tablet #minimized_links #nav_links_mobile a {
+    padding: 20px;
+  }
 
   /* this section is for main */
   #main_mobile {
-    display: none;
-  }
-
-  #location_desktop {
     display: none;
   }
 
@@ -287,7 +289,7 @@ body {
 
   #location {
     margin: 20px 0px;
-    height: 70vh;
+    height: 50vh;
   }
   #location iframe {
     height: 100%;
@@ -372,16 +374,20 @@ body {
     align-items: center;
     justify-items: center;
   }
-  #lets_get_connected .contact_method .contact_method_information #form input[type=text],
-#lets_get_connected .contact_method .contact_method_information #form input[type=number],
-#lets_get_connected .contact_method .contact_method_information #form textarea {
+  #lets_get_connected .contact_method .contact_method_information #form div {
+    display: grid;
+    width: 100%;
+  }
+  #lets_get_connected .contact_method .contact_method_information #form div input[type=text],
+#lets_get_connected .contact_method .contact_method_information #form div input[type=number],
+#lets_get_connected .contact_method .contact_method_information #form div textarea {
     width: 70%;
     padding: 15px;
     border: 2px solid orange;
     line-height: 1.5;
     font-size: 1.5rem;
   }
-  #lets_get_connected .contact_method .contact_method_information #form input[type=submit] {
+  #lets_get_connected .contact_method .contact_method_information #form div input[type=submit] {
     background-color: orange;
     padding: 20px;
     border-radius: 10px;
@@ -466,17 +472,14 @@ body {
     display: none;
   }
 
-  #location {
-    display: none;
+  #hours .contact_method_information p {
+    padding: 10px 0px;
   }
 
-  #location_desktop {
-    display: grid;
-    width: 100%;
-    height: 27vh;
+  #location {
+    height: 70vh;
   }
-  #location_desktop #iframe {
-    width: 100%;
+  #location iframe {
     height: 100%;
   }
 
@@ -484,23 +487,32 @@ body {
     border: none;
   }
 
+  #email {
+    border-bottom: none;
+  }
+
   #main_tablet_desktop {
     display: grid;
   }
+  #main_tablet_desktop #main_heading {
+    margin-top: 30px;
+  }
+  #main_tablet_desktop #main_heading h1 {
+    font-size: 5rem;
+  }
   #main_tablet_desktop #contact_methods_list {
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
   }
   #main_tablet_desktop #contact_methods_list #phone_and_address {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: start;
     width: 100%;
   }
   #main_tablet_desktop #contact_methods_list #phone_and_address .contact_method {
     display: grid;
-    align-self: start;
-    justify-self: center;
+    place-items: center;
     padding: 10px;
   }
 

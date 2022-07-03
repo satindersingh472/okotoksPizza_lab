@@ -78,7 +78,6 @@ body {
             height: 100%;
             background-color: black;
             text-align: center;
-            opacity: .9;
 
             #nav_links_mobile {
                 display: grid;
@@ -138,11 +137,12 @@ body {
         color: orange;
         background-color: $footer-color;
 
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 20px;
+        
 
         h1 {
             font-size: 2rem;
+            padding: 20px 0px;
         }
     }
 

@@ -50,6 +50,21 @@
                     width: 80px;
                 }
             }
+
+            #hidden_minimized_link_page {
+                #button_for_going_back_to_nav {
+                    img {
+                        height: 100px;
+                        width: 100px;
+                    }
+                }
+            }
+
+            #nav_links_mobile {
+                a {
+                    padding: 20px;
+                }
+            }
         }
     }
 
@@ -59,9 +74,6 @@
         display: none;
     }
 
-    #location_desktop {
-        display: none;
-    }
 
     #hours {
         border-right: 1px solid $main-color;
@@ -87,8 +99,9 @@
 
     #location {
         margin: 20px 0px;
-        height: 70vh;
-        iframe{
+        height: 50vh;
+
+        iframe {
             height: 100%;
             width: 90%;
         }
@@ -188,21 +201,25 @@
                     align-items: center;
                     justify-items: center;
 
-                    input[type=text],
-                    input[type=number],
-                    textarea {
-                        width: 70%;
-                        padding: 15px;
-                        border: 2px solid $main-color;
-                        line-height: 1.5;
-                        font-size: 1.5rem;
-                    }
+                    div {
+                        display: grid;
+                        width: 100%;
+                        input[type=text],
+                        input[type=number],
+                        textarea {
+                            width: 70%;
+                            padding: 15px;
+                            border: 2px solid $main-color;
+                            line-height: 1.5;
+                            font-size: 1.5rem;
+                        }
 
-                    input[type=submit] {
-                        background-color: orange;
-                        padding: 20px;
-                        border-radius: 10px;
-                        font-size: 1.7rem;
+                        input[type=submit] {
+                            background-color: orange;
+                            padding: 20px;
+                            border-radius: 10px;
+                            font-size: 1.7rem;
+                        }
                     }
                 }
 
