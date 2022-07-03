@@ -127,7 +127,9 @@
 
             }
 
-
+            #iframe_desktop{
+                display: none;
+            }
         #iframe {
             display: grid;
             place-items: center;

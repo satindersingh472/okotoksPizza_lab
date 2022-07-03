@@ -3,6 +3,8 @@
     @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Varela+Round&display=swap');
     $grey-color: #232221;
     $footer-color: #0f0c0a;
+    $main-color: orange;
+    $links-color: white;
 
 
 
@@ -74,24 +76,79 @@
 
         #content {
             .content_item {
+                display: grid;
+                align-items: center;
+                width: 100%;
                 .content_item_heading {
-                    font-size: 1.7rem;
+                    font-size: 3rem;
                 }
 
-                .content_actual {
-                    iframe {
-                        width: 100%;
-
-                    }
+                
+                .content_actual_first {
 
                     .content_item_image {
                         display: grid;
+                        height: 60vh;
+                        width: 100%;
+                    }
+                }
+
+                .content_actual_second {
+                    .content_item_image {
+                        display: grid;
+                        height: 60vh;
+                        width: 100%;
                     }
                 }
 
                 .content_item_paragraph {
                     display: grid;
+                    padding:5%;
+                    height: 50vh;
+                    width: 30%;
+                    text-align: center;
+                    align-items: center;
+                   justify-self: center;
+                    border-radius: 50%;
                 }
+                
+            }
+
+
+            #iframe {
+                display: none;
+            }
+
+            #iframe_desktop {
+                display: grid;
+                
+
+                .content_item_heading_iframe {
+                    font-size: 1.5rem;
+                    color: $links-color;
+                    background-color: $footer-color;
+                    padding: 30px 0px;
+                    margin: 20px 0px;
+                }
+
+                #all_iframe {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+
+                    .iframe_content {
+                        display: grid;
+                        width: 100%;
+                        height: 60vh;
+
+                        iframe {
+
+                            width: 100%;
+                            height: 100%;
+
+                        }
+                    }
+                }
+
             }
         }
     }
