@@ -24,7 +24,7 @@ body {
 }
 
 #navbar_mobile_tablet {
-    background-color: orange;
+    background-color: $main-color;
     display: grid;
     grid-auto-flow: column;
     align-items: center;
@@ -86,7 +86,7 @@ body {
 
                 a {
                     text-decoration: none;
-                    color: white;
+                    color: $links-color;
                     font-size: 1.5rem;
 
                 }
@@ -168,7 +168,7 @@ body {
                 text-align: center;
                 align-self: start;
                 font-size: 2rem;
-                color: orange;
+                color: $main-color;
 
             }
 
@@ -179,7 +179,7 @@ body {
                 gap: 10px;
 
                 a {
-                    color: white;
+                    color: $links-color;
                     text-decoration: none;
                     font-weight: normal;
                     padding: 12.5px;
@@ -187,10 +187,10 @@ body {
                     border-radius: 10px;
                     background-color: #232221;
                     width: auto;
-                    border: 1px solid orange;
+                    border: 1px solid $main-color;
 
                     &:hover {
-                        background-color: orange;
+                        background-color: $main-color;
                         font-size: 1.7rem;
                         color: black;
                         padding: 14.5px;
@@ -289,11 +289,11 @@ body {
                 margin: 10px;
                 font-size: .9em;
                 justify-self: start;
-                color: white;
+                color:$links-color;
                 text-decoration: none;
 
                 &:hover {
-                    text-shadow: 3px 3px 6px white;
+                    text-shadow: 3px 3px 6px $links-color;
                 }
             }
         }

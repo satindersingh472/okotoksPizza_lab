@@ -28,7 +28,7 @@ img {
 }
 
 #navbar_mobile_tablet {
-    background-color: orange;
+    background-color: $main-color;
     display: grid;
     grid-auto-flow: column;
     align-items: center;
@@ -124,12 +124,12 @@ img {
 
 // this section is for main
 main {
-    background-color: #2e2c2c;
+    background-color: $grey-color;
     min-height: 60vh;
 }
 
 #heading {
-    color: orange;
+    color: $main-color;
     font-size: 1.1rem;
     padding: 10px;
 }
@@ -180,7 +180,7 @@ main {
             .button_for_closing {
                 display: grid;
                 grid-auto-flow: column;
-                color: orange;
+                color: $main-color;
                 align-items: center;
                 width: 65%;
                 height: 15%;
@@ -235,7 +235,7 @@ main {
                         display: grid;
 
                         button {
-                            background-color: orange;
+                            background-color: $main-color;
                             padding: 5px;
                             width: 100px;
                             border-radius: 5px;
@@ -303,7 +303,7 @@ main {
 
         .list {
             display: grid;
-            color: white;
+            color: $links-color;
             min-height: 170px;
             text-align: start;
             margin: 10px;
@@ -319,11 +319,11 @@ main {
                 margin: 10px;
                 font-size: .9em;
                 justify-self: start;
-                color: white;
+                color: $links-color;
                 text-decoration: none;
 
                 &:hover {
-                    text-shadow: 3px 3px 6px white;
+                    text-shadow: 3px 3px 6px $links-color;
                 }
             }
         }
