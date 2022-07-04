@@ -296,6 +296,7 @@ img {
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
+    height: 400px;
   }
   #main #content .content_item .content_actual_second {
     display: grid;
@@ -309,12 +310,14 @@ img {
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
+    height: 400px;
   }
   #main #content .content_item .content_item_paragraph {
     padding: 8%;
     margin: 10px 4px;
     box-sizing: border-box;
     order: 3;
+    font-size: 1.5rem;
   }
   #main #content #iframe_desktop {
     display: none;
@@ -458,9 +461,9 @@ img {
   }
   #main #content .content_item .content_item_paragraph {
     display: grid;
-    padding: 4%;
+    padding: 7%;
     min-height: 50vh;
-    width: 30%;
+    width: 50%;
     text-align: center;
     align-items: center;
     justify-self: center;

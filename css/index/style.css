@@ -333,6 +333,7 @@ body {
     background-color: orange;
     align-items: center;
     box-sizing: border-box;
+    margin-right: 2.5px;
   }
   #main #under_front #offer img {
     -o-object-fit: cover;
@@ -470,6 +471,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #232221;
+    gap: 10px;
   }
   #main #under_front #offer {
     display: grid;
@@ -482,6 +484,7 @@ body {
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
+    order: 2;
   }
   #main #under_front #offer div {
     background-color: orange;
@@ -502,6 +505,7 @@ body {
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
+    order: 2;
   }
   #main #under_front #delivery div {
     background-color: orange;

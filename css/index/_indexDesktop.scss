@@ -93,6 +93,7 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 background-color: $grey-color;
+                gap: 10px;
 
                 #offer {
                     display: grid;
@@ -104,6 +105,7 @@
                     img {
                         object-fit: cover;
                         width: 100%;
+                        order: 2;
                     }
 
                     div {
@@ -128,6 +130,7 @@
                     img {
                         object-fit: cover;
                         width: 100%;
+                        order:2;
                     }
 
                     div {
