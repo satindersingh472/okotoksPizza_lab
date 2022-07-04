@@ -389,7 +389,6 @@ body {
 
   #main #grid_one {
     display: grid;
-    grid-template-columns: 1fr 1fr;
   }
   #main #grid_one #under_front {
     display: grid;
