@@ -75,9 +75,9 @@
         background-color: $grey-color;
 
         #offer {
+            margin: 0px;
             display: grid;
             align-items: center;
-            margin: 10px 0px;
             background-color: $main-color;
             font-weight: bold;
 
@@ -91,14 +91,14 @@
                 width: 100%;
                 color: $footer-color;
                 align-items: center;
-                margin: 20px 0px;
+               margin: 0px;
 
             }
 
         }
 
         #delivery {
-            margin: 10px 0px;
+           
                 color: $links-color;
                 font-weight: bold;
                 display: grid;
@@ -115,7 +115,7 @@
                 width: 100%;
                 color: $footer-color;
                 align-items: center;
-                margin: 20px 0px;
+                
             }
 
 
