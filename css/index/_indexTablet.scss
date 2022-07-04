@@ -1,60 +1,162 @@
-@media only screen and (min-width:600px){
+@media only screen and (min-width:600px) {
     $grey-color: #232221;
     $footer-color: #0f0c0a;
     $main-color: orange;
     $links-color: white;
-* {
-    padding: 0;
-    margin: 0;
-}
 
-body {
-    padding: 0px;
-    margin: 0px;
-}
-// this section is for header
-#navbar_desktop{
-    display:none;
-}
-#navbar_mobile_tablet{
-  #tel{
-    #phone_hidden_tablet_desktop{
-        display:none;
+    * {
+        padding: 0;
+        margin: 0;
     }
-    #phone_hidden_mobile{
-        display:grid;
-    }
-  }
-}
-// this section is for footer
-#footer {
-    #footer_links {
-        grid-template-columns: 1fr 1fr;
 
-        .list {
-            margin: 10px;
-            padding: 10px;
-            h2{
+    body {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #navbar_desktop {
+        display: none;
+    }
+
+    #navbar_mobile_tablet {
+        height: 10vh;
+        display: grid;
+        align-items: center;
+
+        #logo {
+            .logo {
+                padding: 10px;
+                height: 70px;
+                width: 80px;
+            }
+        }
+
+        #tel {
+            #phone_hidden_tablet_desktop {
+                display: none;
+
+            }
+
+            #phone_hidden_mobile {
+                display: grid;
                 font-size: 1.5rem;
             }
-            a{
-                font-size: 1rem;
+        }
+
+        #minimized_links {
+            #show_content {
+                .menu_mini_image {
+                    height: 90px;
+                    width: 80px;
+                }
+            }
+
+            #hidden_minimized_link_page {
+                #button_for_going_back_to_nav {
+                    img {
+                        height: 100px;
+                        width: 100px;
+                    }
+                }
+            }
+
+            #nav_links_mobile {
+                a {
+                    padding: 20px;
+                }
             }
         }
     }
-    #follow_us{
-        h2{
-            font-size: 1.5rem;
+
+    // this section is for main
+    #under_front {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: $grey-color;
+
+        #offer {
+            display: grid;
+            align-items: center;
+            margin: 10px 0px;
+            background-color: $main-color;
+            font-weight: bold;
+
+            img {
+                object-fit: cover;
+                width: 100%;
+            }
+
+            div {
+                background-color: $main-color;
+                width: 100%;
+                color: $footer-color;
+                align-items: center;
+                margin: 20px 0px;
+
+            }
+
         }
-        .footer_icon{
-            height:60px;
-            width: 60px;
+
+        #delivery {
+            margin: 10px 0px;
+                color: $links-color;
+                font-weight: bold;
+                display: grid;
+                background-color: $main-color;
+                align-items: center;
+
+            img {
+                object-fit: cover;
+                width: 100%;
+            }
+
+            div {
+                background-color: $main-color;
+                width: 100%;
+                color: $footer-color;
+                align-items: center;
+                margin: 20px 0px;
+            }
+
+
+
         }
     }
-    #disclaimer{
-        p{
-            font-size: 1.2rem;
+
+    // this section is for footer
+    #footer {
+        #footer_links {
+            grid-template-columns: 1fr 1fr;
+
+            .list {
+                margin: 10px;
+                padding: 10px;
+
+                h2 {
+                    font-size: 1.5rem;
+                }
+
+                a {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        #follow_us {
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .footer_icon {
+                height: 60px;
+                width: 60px;
+            }
+        }
+
+        #disclaimer {
+            p {
+                font-size: 1.2rem;
+            }
         }
     }
-}
 }

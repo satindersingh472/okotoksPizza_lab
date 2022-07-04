@@ -1,6 +1,8 @@
 @media only screen and (min-width:800px) {
     $grey-color: #232221;
     $footer-color: #0f0c0a;
+    $main-color: orange;
+    $links-color: white;
 
 
     * {
@@ -43,8 +45,9 @@
             display: grid;
             grid-auto-flow: column;
             align-items: center;
-            img{
-                width:60px;
+
+            img {
+                width: 60px;
                 height: 70px;
             }
 
@@ -60,25 +63,67 @@
         }
     }
 
+
     // this is section for main for desktop
-        #main{
+    #main {
+        #grid_one {
             display: grid;
-            background-size: cover;
-            
-            #grid_one{
+            grid-template-columns: 1fr 1fr;
+            #under_front {
+
                 display: grid;
-                grid-auto-flow: column;
-            }
-            #grid_two{
+                grid-template-columns: 1fr 1fr;
+                background-color: $grey-color;
+
+                #offer {
+                    display: grid;
+                    align-items: center;
+                    margin: 10px 0px;
+                    background-color: $main-color;
+                    font-weight: bold;
+
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                    }
+
+                    div {
+                        background-color: $main-color;
+                        width: 100%;
+                        color: $footer-color;
+                        align-items: center;
+                        margin: 20px 0px;
+
+                    }
+
+                }
+
+                #delivery {
+                    margin: 10px 0px;
+                color: $links-color;
+                font-weight: bold;
                 display: grid;
-                grid-auto-flow: column;
+                background-color: $main-color;
                 align-items: center;
-                justify-items: center;
-                text-align: center;
-               
-                
+
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                    }
+
+                    div {
+                        background-color: $main-color;
+                        width: 100%;
+                        color: $footer-color;
+                        align-items: center;
+                        margin: 20px 0px;
+                    }
+
+
+                }
             }
         }
+    }
 
 
 
@@ -87,10 +132,10 @@
 
         #footer_links {
             grid-template-columns: 1fr 1fr 1fr 1fr;
-    
+
             .list {
                 margin: 15px;
-               
+
             }
         }
     }
