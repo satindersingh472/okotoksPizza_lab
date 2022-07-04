@@ -69,57 +69,84 @@
     }
 
     // this section is for main
-    #under_front {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    #main {
         background-color: $grey-color;
-
-        #offer {
-            margin: 0px;
+        display: grid;
+        gap: 10px;
+        #grid_one {
             display: grid;
-            align-items: center;
-            background-color: $main-color;
-            font-weight: bold;
-
-            img {
-                object-fit: cover;
-                width: 100%;
+            grid-template-columns: 1fr 1fr;
+            height: 80vh;
+            min-height: 80vh;
+            margin: 10px;
+            gap: 10px;
+            #special_deal{
+                margin: 0px;
+                img{
+                    align-self: end;
+                 
+                }
             }
 
-            div {
-                background-color: $main-color;
-                width: 100%;
-                color: $footer-color;
-                align-items: center;
-               margin: 0px;
-
+            #front_page {
+                display: grid;
             }
-
         }
 
-        #delivery {
-           
-                color: $links-color;
-                font-weight: bold;
+            #under_front {
                 display: grid;
-                background-color: $main-color;
-                align-items: center;
+                grid-template-columns: 1fr 1fr;
 
-            img {
-                object-fit: cover;
-                width: 100%;
+                #offer {
+                    margin: 10px;
+                    color: $links-color;
+                    font-weight: bold;
+                    display: grid;
+                    background-color: $main-color;
+                    align-items: center;
+                    box-sizing: border-box;
+
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                    }
+
+                    div {
+                        background-color: $main-color;
+                        width: 100%;
+                        color: $footer-color;
+                        align-items: center;
+                        margin: 0px;
+                        padding: 10px 0px;
+
+                    }
+
+                }
+
+                #delivery {
+                    margin: 10px;
+                    color: $links-color;
+                    font-weight: bold;
+                    display: grid;
+                    background-color: $main-color;
+                    align-items: center;
+                    box-sizing: border-box;
+
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                    }
+
+                    div {
+                        background-color: $main-color;
+                        width: 100%;
+                        color: $footer-color;
+                        align-items: center;
+                        margin: 0px;
+                        padding: 10px 0px;
+
+                    }
             }
-
-            div {
-                background-color: $main-color;
-                width: 100%;
-                color: $footer-color;
-                align-items: center;
-                
-            }
-
-
-
         }
     }
 

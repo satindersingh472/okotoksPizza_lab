@@ -68,7 +68,26 @@
     #main {
         #grid_one {
             display: grid;
-         
+            grid-template-columns: 1fr 1fr;
+        #special_deal{
+            display: grid;
+            min-height:60vh ;
+            background-color: $main-color;
+            h2{
+                font-size: 1.5rem;
+                padding: 20px 0px;
+    
+            }
+            p{
+                font-size: 1.2rem;
+            }
+            img{
+                width: 100%;
+                height: 50vh;
+                object-fit: cover;
+            }
+        }
+    }
             #under_front {
 
                 display: grid;
@@ -100,11 +119,11 @@
 
                 #delivery {
                     margin: 10px 0px;
-                color: $links-color;
-                font-weight: bold;
-                display: grid;
-                background-color: $main-color;
-                align-items: center;
+                    color: $links-color;
+                    font-weight: bold;
+                    display: grid;
+                    background-color: $main-color;
+                    align-items: center;
 
                     img {
                         object-fit: cover;
@@ -120,7 +139,7 @@
                     }
 
 
-                }
+                
             }
         }
     }

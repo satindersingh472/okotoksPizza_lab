@@ -121,9 +121,37 @@ body {
 // end of header section
 // this section is for main
 #main {
+    background-color: $grey-color;
     display: grid;
-
     #grid_one {
+    display: grid;
+    min-height: 100vh;
+    #special_deal{
+        display: grid;
+        place-items: center;
+        height: 80vh;
+        margin: 10px 0px 0px 0px;
+        background-color: $main-color;
+        h2{
+            font-size: 1.5rem;
+            align-self: end;
+            padding: 20px;
+            
+
+        }
+        p{
+            background-color: $main-color;
+            font-size: 1rem;
+            align-self: start;
+            padding: 20px;
+        }
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    
         #front_page {
             display: grid;
             background-image: url("../../images/index/starting_background.jpg");
@@ -132,7 +160,8 @@ body {
             background-position: 80%;
             justify-items: center;
             align-items: center;
-            min-height: 60vh;
+           height: 80vh;
+      
 
             #starting_text {
                 font-weight: bold;
@@ -170,18 +199,19 @@ body {
                 }
             }
         }
+    }
 
         #under_front {
             display: grid;
-            background-color: $grey-color;
+            background-color: $main-color;
 
             #offer {
-                display: grid;
-                align-items: center;
                 margin: 10px 0px;
-                background-color: $main-color;
+                color: $links-color;
                 font-weight: bold;
-
+                display: grid;
+                background-color: $main-color;
+                align-items: center;
                 img {
 
                     object-fit: cover;
@@ -227,7 +257,6 @@ body {
             }
         }
     }
-}
 
 // this section is for footer
 

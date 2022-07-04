@@ -91,7 +91,35 @@ body {
 }
 
 #main {
+  background-color: #232221;
   display: grid;
+}
+#main #grid_one {
+  display: grid;
+  min-height: 100vh;
+}
+#main #grid_one #special_deal {
+  display: grid;
+  place-items: center;
+  height: 80vh;
+  margin: 10px 0px 0px 0px;
+  background-color: orange;
+}
+#main #grid_one #special_deal h2 {
+  font-size: 1.5rem;
+  align-self: end;
+  padding: 20px;
+}
+#main #grid_one #special_deal p {
+  background-color: orange;
+  font-size: 1rem;
+  align-self: start;
+  padding: 20px;
+}
+#main #grid_one #special_deal img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #main #grid_one #front_page {
   display: grid;
@@ -101,7 +129,7 @@ body {
   background-position: 80%;
   justify-items: center;
   align-items: center;
-  min-height: 60vh;
+  height: 80vh;
 }
 #main #grid_one #front_page #starting_text {
   font-weight: bold;
@@ -133,30 +161,11 @@ body {
   padding: 14.5px;
   text-shadow: 3px 3px 6px #232221;
 }
-#main #grid_one #under_front {
+#main #under_front {
   display: grid;
-  background-color: #232221;
-}
-#main #grid_one #under_front #offer {
-  display: grid;
-  align-items: center;
-  margin: 10px 0px;
   background-color: orange;
-  font-weight: bold;
 }
-#main #grid_one #under_front #offer img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-}
-#main #grid_one #under_front #offer div {
-  background-color: orange;
-  width: 100%;
-  color: #0f0c0a;
-  align-items: center;
-  margin: 20px 0px;
-}
-#main #grid_one #under_front #delivery {
+#main #under_front #offer {
   margin: 10px 0px;
   color: white;
   font-weight: bold;
@@ -164,12 +173,32 @@ body {
   background-color: orange;
   align-items: center;
 }
-#main #grid_one #under_front #delivery img {
+#main #under_front #offer img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
 }
-#main #grid_one #under_front #delivery div {
+#main #under_front #offer div {
+  background-color: orange;
+  width: 100%;
+  color: #0f0c0a;
+  align-items: center;
+  margin: 20px 0px;
+}
+#main #under_front #delivery {
+  margin: 10px 0px;
+  color: white;
+  font-weight: bold;
+  display: grid;
+  background-color: orange;
+  align-items: center;
+}
+#main #under_front #delivery img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+#main #under_front #delivery div {
   background-color: orange;
   width: 100%;
   color: #0f0c0a;
@@ -270,47 +299,75 @@ body {
     padding: 20px;
   }
 
-  #under_front {
+  #main {
+    background-color: #232221;
+    display: grid;
+    gap: 10px;
+  }
+  #main #grid_one {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: #232221;
+    height: 80vh;
+    min-height: 80vh;
+    margin: 10px;
+    gap: 10px;
   }
-  #under_front #offer {
+  #main #grid_one #special_deal {
     margin: 0px;
+  }
+  #main #grid_one #special_deal img {
+    align-self: end;
+  }
+  #main #grid_one #front_page {
     display: grid;
-    align-items: center;
-    background-color: orange;
-    font-weight: bold;
   }
-  #under_front #offer img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    width: 100%;
+  #main #under_front {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
-  #under_front #offer div {
-    background-color: orange;
-    width: 100%;
-    color: #0f0c0a;
-    align-items: center;
-    margin: 0px;
-  }
-  #under_front #delivery {
+  #main #under_front #offer {
+    margin: 10px;
     color: white;
     font-weight: bold;
     display: grid;
     background-color: orange;
     align-items: center;
+    box-sizing: border-box;
   }
-  #under_front #delivery img {
+  #main #under_front #offer img {
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
   }
-  #under_front #delivery div {
+  #main #under_front #offer div {
     background-color: orange;
     width: 100%;
     color: #0f0c0a;
     align-items: center;
+    margin: 0px;
+    padding: 10px 0px;
+  }
+  #main #under_front #delivery {
+    margin: 10px;
+    color: white;
+    font-weight: bold;
+    display: grid;
+    background-color: orange;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  #main #under_front #delivery img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+  }
+  #main #under_front #delivery div {
+    background-color: orange;
+    width: 100%;
+    color: #0f0c0a;
+    align-items: center;
+    margin: 0px;
+    padding: 10px 0px;
   }
 
   #footer #footer_links {
@@ -389,32 +446,51 @@ body {
 
   #main #grid_one {
     display: grid;
+    grid-template-columns: 1fr 1fr;
   }
-  #main #grid_one #under_front {
+  #main #grid_one #special_deal {
+    display: grid;
+    min-height: 60vh;
+    background-color: orange;
+  }
+  #main #grid_one #special_deal h2 {
+    font-size: 1.5rem;
+    padding: 20px 0px;
+  }
+  #main #grid_one #special_deal p {
+    font-size: 1.2rem;
+  }
+  #main #grid_one #special_deal img {
+    width: 100%;
+    height: 50vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #main #under_front {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #232221;
   }
-  #main #grid_one #under_front #offer {
+  #main #under_front #offer {
     display: grid;
     align-items: center;
     margin: 10px 0px;
     background-color: orange;
     font-weight: bold;
   }
-  #main #grid_one #under_front #offer img {
+  #main #under_front #offer img {
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
   }
-  #main #grid_one #under_front #offer div {
+  #main #under_front #offer div {
     background-color: orange;
     width: 100%;
     color: #0f0c0a;
     align-items: center;
     margin: 20px 0px;
   }
-  #main #grid_one #under_front #delivery {
+  #main #under_front #delivery {
     margin: 10px 0px;
     color: white;
     font-weight: bold;
@@ -422,12 +498,12 @@ body {
     background-color: orange;
     align-items: center;
   }
-  #main #grid_one #under_front #delivery img {
+  #main #under_front #delivery img {
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
   }
-  #main #grid_one #under_front #delivery div {
+  #main #under_front #delivery div {
     background-color: orange;
     width: 100%;
     color: #0f0c0a;
