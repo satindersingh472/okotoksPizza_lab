@@ -276,9 +276,9 @@ body {
     background-color: #232221;
   }
   #under_front #offer {
+    margin: 0px;
     display: grid;
     align-items: center;
-    margin: 10px 0px;
     background-color: orange;
     font-weight: bold;
   }
@@ -292,10 +292,9 @@ body {
     width: 100%;
     color: #0f0c0a;
     align-items: center;
-    margin: 20px 0px;
+    margin: 0px;
   }
   #under_front #delivery {
-    margin: 10px 0px;
     color: white;
     font-weight: bold;
     display: grid;
@@ -312,7 +311,6 @@ body {
     width: 100%;
     color: #0f0c0a;
     align-items: center;
-    margin: 20px 0px;
   }
 
   #footer #footer_links {
